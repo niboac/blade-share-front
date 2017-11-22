@@ -1,0 +1,22 @@
+{
+  "name": "blade-share-front",
+  "version": "0.0.1",
+  "description": "blade share files",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niboac/blade-share-front.git"
+  },
+  "keywords": [
+    "blade"
+  ],
+  "author": "caobin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/niboac/blade-share-front/issues"
+  },
+  "homepage": "https://github.com/niboac/blade-share-front#readme"
+}
