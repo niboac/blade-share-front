@@ -1,10 +1,6 @@
-/**
- * Created by yangshan on 2017/8/25.
- */
 import industries from './industries'
 import cities from './cities'
 // import request from '../utils/fetch.js';
-import { vue } from '../global'
 // import * as api from '..//api/order'
 export const applicantLabel = {
   name: '姓名',
