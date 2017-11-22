@@ -1,1 +1,1 @@
-export * from './dist/vue-filters.min.js';
+export * from './dist/options.min.js';
