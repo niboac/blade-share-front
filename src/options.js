@@ -95,7 +95,7 @@ export const houseLabel = {
   certNumber: '房产证号码',
   city: '城市',
   communityName: '小区名称',
-  constructionArea: '建筑面积（平方米）',
+  constructionArea: '建筑面积',
   constructionTime: '建成时间',
   floor: '楼层',
   roomNumber: '房号',
