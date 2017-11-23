@@ -1,9 +1,7 @@
 import industries from './industries'
 import cities from './cities'
-// import request from '../utils/fetch.js';
-// import * as api from '..//api/order'
 export const applicantLabel = {
-  name: '姓名',
+  name: '客户姓名',
   gender: '性别',
   homePhone: null,
   mobile: '手机号码',
@@ -742,24 +740,6 @@ export let houseCities = [
   { key: '北京', value: '北京' },
   // { key: '上海', value: '上海' },
 ]
-function getCityList() {
-  // console.log('vue = ', vue)
-  // return request({
-  //   url: 'v1/cities',
-  //   method: 'get',
-  // });
-}
-getCityList()
-//   .then(rsp => {
-//   console.log('城市是  ', rsp)
-// })
-//
-// export function initHouseCities() {
-//   // api.getCityList().then(rsp => {
-//   //   console.log('城市是 ', rsp)
-//   // })
-//
-// }
 
 export {
   educations, livingConditions, professionTypes,
