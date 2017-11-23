@@ -1,6 +1,6 @@
 {
   "name": "blade-share-front",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "blade share files",
   "main": "index.js",
   "scripts": {
