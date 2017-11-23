@@ -93,13 +93,10 @@ var _cities = __webpack_require__(2);
 
 var _cities2 = _interopRequireDefault(_cities);
 
-var _global = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../global\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// import * as api from '..//api/order'
 var applicantLabel = exports.applicantLabel = {
-  name: '姓名',
+  name: '客户姓名',
   gender: '性别',
   homePhone: null,
   mobile: '手机号码',
@@ -119,7 +116,7 @@ var applicantLabel = exports.applicantLabel = {
   householdCity: '户籍所在市',
   householdAddress: '户籍地址',
   payPeriod: 1, // 还款间隔，默认为1，页面不需要展示。
-  addressCity: '居住地址',
+  addressCity: '居住省市',
   addressCityCodes: '居住省市', //  []
   officeCity: '公司地区',
   officeCityCodes: '公司地区', //  []
@@ -165,7 +162,7 @@ var applicantLabel = exports.applicantLabel = {
   companyAddress: '公司地址',
   companyPhone: '办公电话',
 
-  increaseCreditItems: null,
+  increaseCreditItems: '增信项',
   // officeOwner: '经营场所所有权',
   email: '电子邮件',
   birthdate: '出生日期',
@@ -184,10 +181,6 @@ var applicantLabel = exports.applicantLabel = {
     professionCatType: '职业类型' // 职业类型
   }
 };
-// import request from '../utils/fetch.js';
-/**
- * Created by yangshan on 2017/8/25.
- */
 var houseLabel = exports.houseLabel = {
   accountSituation: '房产内户口情况',
   address: '房屋地址',
@@ -297,8 +290,7 @@ var orderLabel = exports.orderLabel = {
   priceEvaluationCustom: '客户评房值',
   repaySource: '还款来源',
   repayMode: '还款方式',
-  serviceFee: '服务费',
-  extra: {}
+  serviceFee: '服务费'
 };
 var orderDefault = exports.orderDefault = {
   loanType: null,
@@ -372,14 +364,14 @@ var unionBorrowerDefault = exports.unionBorrowerDefault = {
 };
 var childrenLabel = exports.childrenLabel = {
   name: '姓名',
-  birthdate: null,
-  mobile: null,
-  company: null,
-  householdAddress: null,
-  householdCity: null,
-  householdProvince: null,
-  householdType: null,
-  profession: null
+  birthdate: '出生年月日',
+  mobile: '手机号码',
+  company: '单位名称',
+  householdAddress: '户籍地址',
+  householdCity: '户籍所在城市',
+  householdProvince: '户籍所在省份',
+  householdType: '户籍类型',
+  profession: '职业'
 };
 var childrenDefault = exports.childrenDefault = {
   name: null,
@@ -681,24 +673,6 @@ var loanPurposes = exports.loanPurposes = [// 借款用途
 { value: '消费品', key: '0' }, { value: '支付货款', key: '1' }, { value: '支付经营费用', key: '2' }, { value: '装修经营场所', key: '3' }, { value: '开新店', key: '4' }, { value: '购置类固定资产', key: '5' }, { value: '购车', key: '6' }, { value: '婚庆', key: '7' }, { value: '旅游', key: '8' }, { value: '装修', key: '9' }, { value: '教育', key: '10' }, { value: '其他', key: '11' }];
 
 var houseCities = exports.houseCities = [{ key: '北京', value: '北京' }];
-function getCityList() {
-  // console.log('vue = ', vue)
-  // return request({
-  //   url: 'v1/cities',
-  //   method: 'get',
-  // });
-}
-getCityList();
-//   .then(rsp => {
-//   console.log('城市是  ', rsp)
-// })
-//
-// export function initHouseCities() {
-//   // api.getCityList().then(rsp => {
-//   //   console.log('城市是 ', rsp)
-//   // })
-//
-// }
 
 exports.educations = educations;
 exports.livingConditions = livingConditions;

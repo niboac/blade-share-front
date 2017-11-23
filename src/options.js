@@ -21,7 +21,7 @@ export const applicantLabel = {
   householdCity: '户籍所在市',
   householdAddress: '户籍地址',
   payPeriod: 1, // 还款间隔，默认为1，页面不需要展示。
-  addressCity: '居住地址',
+  addressCity: '居住省市',
   addressCityCodes: '居住省市', //  []
   officeCity: '公司地区',
   officeCityCodes: '公司地区', //  []
@@ -67,7 +67,7 @@ export const applicantLabel = {
   companyAddress: '公司地址',
   companyPhone: '办公电话',
 
-  increaseCreditItems: null,
+  increaseCreditItems: '增信项',
   // officeOwner: '经营场所所有权',
   email: '电子邮件',
   birthdate: '出生日期',
