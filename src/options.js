@@ -196,7 +196,6 @@ export const orderLabel = {
   repaySource: '还款来源',
   repayMode: '还款方式',
   serviceFee: '服务费',
-  extra: {},
 };
 export const orderDefault = {
   loanType: null,
@@ -270,14 +269,14 @@ export const unionBorrowerDefault = {
 };
 export const childrenLabel = {
   name: '姓名',
-  birthdate: null,
-  mobile: null,
-  company: null,
-  householdAddress: null,
-  householdCity: null,
-  householdProvince: null,
-  householdType: null,
-  profession: null
+  birthdate: '出生年月日',
+  mobile: '手机号码',
+  company: '单位名称',
+  householdAddress: '户籍地址',
+  householdCity: '户籍所在城市',
+  householdProvince: '户籍所在省份',
+  householdType: '户籍类型',
+  profession: '职业'
 };
 export const childrenDefault = {
   name: null,
