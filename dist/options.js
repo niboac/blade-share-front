@@ -83,7 +83,7 @@ return /******/ (function(modules) { // webpackBootstrap
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.cities = exports.industries = exports.companyTypes = exports.bankCodes = exports.taskTypeBtnShow = exports.houseTypes = exports.allOrientations = exports.houseDefault = exports.housingSituations = exports.relationshipType = exports.rwApplicant = exports.applicantDefault = exports.businessTypes = exports.periods = exports.maritalStatus = exports.time = exports.applicantRelationshipTypes = exports.relationshipTypes = exports.professionTypes = exports.livingConditions = exports.educations = exports.houseCities = exports.loanPurposes = exports.mortgageSituations = exports.companySizes = exports.officeOwnerTypes = exports.ownerTypes = exports.landGains = exports.planningPurposes = exports.buildingTypes = exports.professionalTitles = exports.titles = exports.propertyTypes = exports.professionCatTypes = exports.genders = exports.addressTypes = exports.commonResidents = exports.taskType2Submit = exports.clientWorkTypes = exports.childrenDefault = exports.childrenLabel = exports.unionBorrowerDefault = exports.hlMortgageDefault = exports.orderDefault = exports.orderLabel = exports.hlMortgageLabel = exports.unionBorrowerLabel = exports.houseLabel = exports.applicantLabel = undefined;
+exports.cities = exports.industries = exports.companyTypes = exports.bankCodes = exports.taskTypeBtnShow = exports.houseTypes = exports.allOrientations = exports.houseDefault = exports.housingSituations = exports.relationshipType = exports.rwApplicant = exports.applicantDefault = exports.businessTypes = exports.periods = exports.maritalStatus = exports.time = exports.applicantRelationshipTypes = exports.relationshipTypes = exports.professionTypes = exports.livingConditions = exports.educations = exports.houseCities = exports.loanPurposes = exports.loanPurposesGuoyu = exports.mortgageSituations = exports.companySizes = exports.officeOwnerTypes = exports.ownerTypes = exports.landGains = exports.planningPurposes = exports.buildingTypes = exports.professionalTitles = exports.titles = exports.propertyTypes = exports.professionCatTypes = exports.genders = exports.addressTypes = exports.commonResidents = exports.taskType2Submit = exports.clientWorkTypes = exports.childrenDefault = exports.childrenLabel = exports.unionBorrowerDefault = exports.hlMortgageDefault = exports.orderDefault = exports.orderLabel = exports.hlMortgageLabel = exports.unionBorrowerLabel = exports.houseLabel = exports.applicantLabel = undefined;
 
 var _industries = __webpack_require__(1);
 
@@ -190,7 +190,7 @@ var houseLabel = exports.houseLabel = {
   certNumber: '房产证号码',
   city: '城市',
   communityName: '小区名称',
-  constructionArea: '建筑面积（平方米）',
+  constructionArea: '建筑面积',
   constructionTime: '建成时间',
   floor: '楼层',
   roomNumber: '房号',
@@ -227,7 +227,7 @@ var unionBorrowerLabel = exports.unionBorrowerLabel = {
   name: '姓名',
   gender: '性别',
   idType: '证件类型',
-  idNumber: '证件号码',
+  idNumber: '身份证号',
   mobile: '手机号码',
   housingSituation: '现住房情况',
   graduatedSchool: '毕业院校',
@@ -670,8 +670,12 @@ var officeOwnerTypes = exports.officeOwnerTypes = [// 经营场所所有权
 var companySizes = exports.companySizes = [{ key: '10人以下', value: '10人以下' }, { key: '10-100人', value: '10-100人' }, { key: '100-300人', value: '100-300人' }, { key: '300人以上', value: '300人以上' }];
 var mortgageSituations = exports.mortgageSituations = [// 抵押情况
 { key: '无抵押', value: '无抵押' }, { key: '一抵', value: '一抵' }, { key: '二抵', value: '二抵' }, { key: '其它', value: '其它' }];
-var loanPurposes = exports.loanPurposes = [// 借款用途
+
+var loanPurposesGuoyu = exports.loanPurposesGuoyu = [// 借款用途
 { value: '消费品', key: '0' }, { value: '支付货款', key: '1' }, { value: '支付经营费用', key: '2' }, { value: '装修经营场所', key: '3' }, { value: '开新店', key: '4' }, { value: '购置类固定资产', key: '5' }, { value: '购车', key: '6' }, { value: '婚庆', key: '7' }, { value: '旅游', key: '8' }, { value: '装修', key: '9' }, { value: '教育', key: '10' }, { value: '其他', key: '11' }];
+
+var loanPurposes = exports.loanPurposes = [// 借款用途
+{ label: '转抵押垫资', value: '21' }].concat(loanPurposesGuoyu);
 
 var houseCities = exports.houseCities = [{ key: '北京', value: '北京' }];
 

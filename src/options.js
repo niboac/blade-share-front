@@ -132,7 +132,7 @@ export const unionBorrowerLabel = {
   name: '姓名',
   gender: '性别',
   idType: '证件类型',
-  idNumber: '证件号码',
+  idNumber: '身份证号',
   mobile: '手机号码',
   housingSituation: '现住房情况',
   graduatedSchool: '毕业院校',
@@ -721,7 +721,8 @@ export const mortgageSituations = [ // 抵押情况
   { key: '二抵', value: '二抵' },
   { key: '其它', value: '其它' },
 ];
-export const loanPurposes = [ // 借款用途
+
+export const loanPurposesGuoyu = [ // 借款用途
   { value: '消费品', key: '0' },
   { value: '支付货款', key: '1' },
   { value: '支付经营费用', key: '2' },
@@ -734,6 +735,11 @@ export const loanPurposes = [ // 借款用途
   { value: '装修', key: '9' },
   { value: '教育', key: '10' },
   { value: '其他', key: '11' },
+];
+
+export const loanPurposes = [ // 借款用途
+  { label: '转抵押垫资', value: '21' },
+  ...loanPurposesGuoyu
 ];
 
 export let houseCities = [
