@@ -20,6 +20,9 @@
     "test": "npm run lint && cross-env CI_ENV=/dev/ karma start test/unit/karma.conf.js --single-run",
     "test:watch": "karma start test/unit/karma.conf.js"
   },
+  "pre-commit": [
+    "build"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/niboac/blade-share-front.git"
@@ -43,6 +46,7 @@
     "karma-jasmine": "1.1.0",
     "karma-phantomjs-launcher": "1.0.4",
     "karma-webpack": "1.8.1",
+    "pre-commit": "^1.2.2",
     "uglify-es": "3.0.28",
     "webpack": "3.5.5"
   },

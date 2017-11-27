@@ -677,7 +677,7 @@ var loanPurposesGuoyu = exports.loanPurposesGuoyu = [// 借款用途
 { value: '消费品', key: '0' }, { value: '支付货款', key: '1' }, { value: '支付经营费用', key: '2' }, { value: '装修经营场所', key: '3' }, { value: '开新店', key: '4' }, { value: '购置类固定资产', key: '5' }, { value: '购车', key: '6' }, { value: '婚庆', key: '7' }, { value: '旅游', key: '8' }, { value: '装修', key: '9' }, { value: '教育', key: '10' }, { value: '其他', key: '11' }];
 
 var loanPurposes = exports.loanPurposes = [// 借款用途
-{ label: '转抵押垫资', value: '21' }].concat(loanPurposesGuoyu);
+{ value: '转抵押垫资', key: '21' }].concat(loanPurposesGuoyu);
 
 var houseCities = exports.houseCities = [{ key: '北京', value: '北京' }];
 
