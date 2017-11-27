@@ -738,7 +738,7 @@ export const loanPurposesGuoyu = [ // 借款用途
 ];
 
 export const loanPurposes = [ // 借款用途
-  { label: '转抵押垫资', value: '21' },
+  { value: '转抵押垫资', key: '21' },
   ...loanPurposesGuoyu
 ];
 
