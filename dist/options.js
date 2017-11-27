@@ -483,6 +483,8 @@ var houseDefault = {
   constructionArea: null,
   constructionTime: null,
   floor: '',
+  roomNumber: '',
+  buildingId: '',
   hasElevator: null,
   landUsageCertNumber: null,
   // nameOfOwner: null,
