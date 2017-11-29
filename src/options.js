@@ -53,11 +53,11 @@ export const applicantLabel = {
   spouseIndustry: '配偶从事行业',
   familyMonthlyIncome: '家庭月收入',
   emergencyContactName: '紧急联系人1', // 紧急联系人1
-  emergencyContactMobile: '紧急联系人1电话', // '紧急联系人电话'
+  emergencyContactMobile: '电话', // '紧急联系人电话'
   emergencyContactName2: '紧急联系人2', // 紧急联系人2
-  emergencyContactMobile2: '紧急联系人2电话', // 紧急联系人2电话
-  ec1RwBorrower: '紧急联系人1与借款人关系', // 紧急联系人1与借款人关系
-  ec2RwBorrower: '紧急联系人2与借款人关系', // 紧急联系人2与借款人关系
+  emergencyContactMobile2: '电话', // 紧急联系人2电话
+  ec1RwBorrower: '与借款人关系', // 紧急联系人1与借款人关系
+  ec2RwBorrower: '与借款人关系', // 紧急联系人2与借款人关系
   ec1RType: '紧急联系人1关系类型', // 关系类型
   ec2RType: '紧急联系人2关系类型',
   housingSituation: '现住房情况',
