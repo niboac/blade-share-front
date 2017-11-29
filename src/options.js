@@ -273,6 +273,7 @@ export const unionBorrowerDefault = {
   companyAddress: null
 
 };
+
 export const childrenLabel = {
   name: '姓名',
   birthdate: '出生年月日',
