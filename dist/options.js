@@ -98,7 +98,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var bankInfoLabel = exports.bankInfoLabel = {
   bankCode: '开户银行',
   branchBank: '支行名称',
-  bankCardNumber: '收款卡号',
+  bankCardNumber: '放款卡号',
   bankCardName: '开户人名字',
   bankName: '开户银行'
 };
