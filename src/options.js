@@ -4,10 +4,10 @@ import cities from './cities'
 export const bankInfoLabel = {
   bankCode: '开户银行',
   branchBank: '支行名称',
-  bankCardNumber: '收款卡号',
+  bankCardNumber: '放款卡号',
   bankCardName: '开户人名字',
   bankName: '开户银行',
-}
+};
 
 export const applicantLabel = {
   name: '客户姓名',
