@@ -1,5 +1,14 @@
 import industries from './industries'
 import cities from './cities'
+
+export const bankInfoLabel = {
+  bankCode: '开户银行',
+  branchBank: '支行名称',
+  bankCardNumber: '收款卡号',
+  bankCardName: '开户人名字',
+  bankName: '开户银行',
+}
+
 export const applicantLabel = {
   name: '客户姓名',
   gender: '性别',
@@ -9,11 +18,6 @@ export const applicantLabel = {
   phoneStatus: '手机状态',
   idType: '证件类型',
   idNumber: '身份证号',
-  bankCode: '开户银行',
-  branchBank: '支行名称',
-  bankCardNumber: '收款卡号',
-  bankCardName: '开户人名字',
-  bankName: '开户银行',
   householdNowProvince: '现住址所在省',
   householdNowCity: '现住址所在市',
   householdNowAddress: '居住地址', // 通讯地址
@@ -291,7 +295,14 @@ export const childrenDefault = {
   householdType: null,
   profession: null
 };
-const applicantDefault = {
+export const bankInfoDefault = {
+  bankCode: '',
+  branchBank: '',
+  bankCardNumber: '',
+  bankCardName: '',
+  bankName: '',
+}
+export const applicantDefault = {
   name: '',
   gender: '',
   homePhone: null,
@@ -300,11 +311,6 @@ const applicantDefault = {
   phoneStatus: null,
   idType: '0',
   idNumber: '',
-  bankCode: '',
-  branchBank: '',
-  bankCardNumber: '',
-  bankCardName: '',
-  bankName: '',
   householdNowProvince: null,
   householdNowCity: null,
   householdNowAddress: '', // 通讯地址
@@ -378,7 +384,7 @@ const applicantDefault = {
     professionCatType: null, // 职业类型
   }
 }
-const houseDefault = {
+export const houseDefault = {
   accountSituation: null,
   address: '',
   addressConsistentWithLicense: null,
@@ -754,8 +760,8 @@ export let houseCities = [
 export {
   educations, livingConditions, professionTypes,
   relationshipTypes, applicantRelationshipTypes, time,
-  maritalStatus, periods, businessTypes, applicantDefault,
+  maritalStatus, periods, businessTypes,
   rwApplicant, relationshipType, housingSituations,
-  houseDefault, allOrientations, houseTypes, taskTypeBtnShow,
+  allOrientations, houseTypes, taskTypeBtnShow,
   bankCodes, companyTypes, industries, cities
 }
