@@ -83,7 +83,7 @@ return /******/ (function(modules) { // webpackBootstrap
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.cities = exports.industries = exports.companyTypes = exports.bankCodes = exports.taskTypeBtnShow = exports.houseTypes = exports.allOrientations = exports.houseDefault = exports.housingSituations = exports.relationshipType = exports.rwApplicant = exports.applicantDefault = exports.businessTypes = exports.periods = exports.maritalStatus = exports.time = exports.applicantRelationshipTypes = exports.relationshipTypes = exports.professionTypes = exports.livingConditions = exports.educations = exports.houseCities = exports.loanPurposes = exports.loanPurposesGuoyu = exports.mortgageSituations = exports.companySizes = exports.officeOwnerTypes = exports.ownerTypes = exports.landGains = exports.planningPurposes = exports.buildingTypes = exports.professionalTitles = exports.titles = exports.propertyTypes = exports.professionCatTypes = exports.genders = exports.addressTypes = exports.commonResidents = exports.taskType2Submit = exports.clientWorkTypes = exports.childrenDefault = exports.childrenLabel = exports.unionBorrowerDefault = exports.hlMortgageDefault = exports.orderDefault = exports.orderLabel = exports.hlMortgageLabel = exports.unionBorrowerLabel = exports.houseLabel = exports.applicantLabel = undefined;
+exports.cities = exports.industries = exports.companyTypes = exports.bankCodes = exports.taskTypeBtnShow = exports.houseTypes = exports.allOrientations = exports.housingSituations = exports.relationshipType = exports.rwApplicant = exports.businessTypes = exports.periods = exports.maritalStatus = exports.time = exports.applicantRelationshipTypes = exports.relationshipTypes = exports.professionTypes = exports.livingConditions = exports.educations = exports.houseCities = exports.loanPurposes = exports.loanPurposesGuoyu = exports.mortgageSituations = exports.companySizes = exports.officeOwnerTypes = exports.ownerTypes = exports.landGains = exports.planningPurposes = exports.buildingTypes = exports.professionalTitles = exports.titles = exports.propertyTypes = exports.professionCatTypes = exports.genders = exports.addressTypes = exports.commonResidents = exports.taskType2Submit = exports.clientWorkTypes = exports.houseDefault = exports.applicantDefault = exports.bankInfoDefault = exports.childrenDefault = exports.childrenLabel = exports.unionBorrowerDefault = exports.hlMortgageDefault = exports.orderDefault = exports.orderLabel = exports.hlMortgageLabel = exports.unionBorrowerLabel = exports.houseLabel = exports.applicantLabel = exports.bankInfoLabel = undefined;
 
 var _industries = __webpack_require__(1);
 
@@ -95,6 +95,14 @@ var _cities2 = _interopRequireDefault(_cities);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var bankInfoLabel = exports.bankInfoLabel = {
+  bankCode: '开户银行',
+  branchBank: '支行名称',
+  bankCardNumber: '收款卡号',
+  bankCardName: '开户人名字',
+  bankName: '开户银行'
+};
+
 var applicantLabel = exports.applicantLabel = {
   name: '客户姓名',
   gender: '性别',
@@ -104,11 +112,6 @@ var applicantLabel = exports.applicantLabel = {
   phoneStatus: '手机状态',
   idType: '证件类型',
   idNumber: '身份证号',
-  bankCode: '开户银行',
-  branchBank: '支行名称',
-  bankCardNumber: '收款卡号',
-  bankCardName: '开户人名字',
-  bankName: '开户银行',
   householdNowProvince: '现住址所在省',
   householdNowCity: '现住址所在市',
   householdNowAddress: '居住地址', // 通讯地址
@@ -148,11 +151,11 @@ var applicantLabel = exports.applicantLabel = {
   spouseIndustry: '配偶从事行业',
   familyMonthlyIncome: '家庭月收入',
   emergencyContactName: '紧急联系人1', // 紧急联系人1
-  emergencyContactMobile: '紧急联系人1电话', // '紧急联系人电话'
+  emergencyContactMobile: '电话', // '紧急联系人电话'
   emergencyContactName2: '紧急联系人2', // 紧急联系人2
-  emergencyContactMobile2: '紧急联系人2电话', // 紧急联系人2电话
-  ec1RwBorrower: '紧急联系人1与借款人关系', // 紧急联系人1与借款人关系
-  ec2RwBorrower: '紧急联系人2与借款人关系', // 紧急联系人2与借款人关系
+  emergencyContactMobile2: '电话', // 紧急联系人2电话
+  ec1RwBorrower: '与借款人关系', // 紧急联系人1与借款人关系
+  ec2RwBorrower: '与借款人关系', // 紧急联系人2与借款人关系
   ec1RType: '紧急联系人1关系类型', // 关系类型
   ec2RType: '紧急联系人2关系类型',
   housingSituation: '现住房情况',
@@ -386,7 +389,14 @@ var childrenDefault = exports.childrenDefault = {
   householdType: null,
   profession: null
 };
-var applicantDefault = {
+var bankInfoDefault = exports.bankInfoDefault = {
+  bankCode: '',
+  branchBank: '',
+  bankCardNumber: '',
+  bankCardName: '',
+  bankName: ''
+};
+var applicantDefault = exports.applicantDefault = {
   name: '',
   gender: '',
   homePhone: null,
@@ -395,11 +405,6 @@ var applicantDefault = {
   phoneStatus: null,
   idType: '0',
   idNumber: '',
-  bankCode: '',
-  branchBank: '',
-  bankCardNumber: '',
-  bankCardName: '',
-  bankName: '',
   householdNowProvince: null,
   householdNowCity: null,
   householdNowAddress: '', // 通讯地址
@@ -473,7 +478,7 @@ var applicantDefault = {
     professionCatType: null // 职业类型
   }
 };
-var houseDefault = {
+var houseDefault = exports.houseDefault = {
   accountSituation: null,
   address: '',
   addressConsistentWithLicense: null,
@@ -692,11 +697,9 @@ exports.time = time;
 exports.maritalStatus = maritalStatus;
 exports.periods = periods;
 exports.businessTypes = businessTypes;
-exports.applicantDefault = applicantDefault;
 exports.rwApplicant = rwApplicant;
 exports.relationshipType = relationshipType;
 exports.housingSituations = housingSituations;
-exports.houseDefault = houseDefault;
 exports.allOrientations = allOrientations;
 exports.houseTypes = houseTypes;
 exports.taskTypeBtnShow = taskTypeBtnShow;
