@@ -90,7 +90,7 @@ export const houseLabel = {
   accountSituation: '房产内户口情况',
   address: '房屋地址',
   addressConsistentWithLicense: '实际地址和房产证地址是否一致',
-  buildTime: '修建年代',
+  buildTime: '建成年代',
   buildingType: '房屋类型',
   certNumber: '房产证号码',
   city: '城市',
