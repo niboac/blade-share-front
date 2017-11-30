@@ -219,6 +219,8 @@ var houseLabel = exports.houseLabel = {
   carInformation: '增信项：车辆信息',
   financialProduct: '增信项：理财产品信息',
   planningPurpose: '规划用途',
+  mortgageRemain: '抵押余额',
+  originalLoanType: '原贷款类型',
   extra: {
     houseUsedArea: '套内建筑面积', // 套内建筑面积
     landGain: '土地使用权取得方式', // 土地使用权取得方式
@@ -513,6 +515,8 @@ var houseDefault = exports.houseDefault = {
   carInformation: null,
   financialProduct: null,
   planningPurpose: null,
+  mortgageRemain: null,
+  originalLoanType: null,
   extra: {
     houseUsedArea: null, // 套内建筑面积
     landGain: '', // 土地使用权取得方式
