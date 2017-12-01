@@ -83,7 +83,7 @@ return /******/ (function(modules) { // webpackBootstrap
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.cities = exports.industries = exports.companyTypes = exports.bankCodes = exports.taskTypeBtnShow = exports.houseTypes = exports.allOrientations = exports.housingSituations = exports.relationshipType = exports.rwApplicant = exports.businessTypes = exports.periods = exports.maritalStatus = exports.time = exports.applicantRelationshipTypes = exports.relationshipTypes = exports.professionTypes = exports.livingConditions = exports.educations = exports.houseCities = exports.loanPurposes = exports.loanPurposesGuoyu = exports.mortgageSituations = exports.companySizes = exports.officeOwnerTypes = exports.ownerTypes = exports.landGains = exports.planningPurposes = exports.buildingTypes = exports.professionalTitles = exports.titles = exports.propertyTypes = exports.professionCatTypes = exports.genders = exports.addressTypes = exports.commonResidents = exports.taskType2Submit = exports.clientWorkTypes = exports.houseDefault = exports.applicantDefault = exports.bankInfoDefault = exports.childrenDefault = exports.childrenLabel = exports.unionBorrowerDefault = exports.hlMortgageDefault = exports.orderDefault = exports.hetongInfoDefault = exports.diyaInfoDefault = exports.diyaInfoLabel = exports.hetongInfoLabel = exports.orderLabel = exports.hlMortgageLabel = exports.unionBorrowerLabel = exports.houseLabel = exports.applicantLabel = exports.bankInfoLabel = undefined;
+exports.cities = exports.industries = exports.companyTypes = exports.bankCodes = exports.taskTypeBtnShow = exports.houseTypes = exports.allOrientations = exports.housingSituations = exports.relationshipType = exports.rwApplicant = exports.businessTypes = exports.periods = exports.maritalStatus = exports.time = exports.applicantRelationshipTypes = exports.relationshipTypes = exports.professionTypes = exports.livingConditions = exports.educations = exports.houseCities = exports.loanPurposes = exports.loanPurposesGuoyu = exports.mortgageSituations = exports.companySizes = exports.officeOwnerTypes = exports.ownerTypes = exports.landGains = exports.planningPurposes = exports.buildingTypes = exports.professionalTitles = exports.titles = exports.propertyTypes = exports.professionCatTypes = exports.genders = exports.addressTypes = exports.commonResidents = exports.taskType2Submit = exports.clientWorkTypes = exports.houseDefault = exports.applicantDefault = exports.bankInfoDefault = exports.childrenDefault = exports.unionBorrowerDefault = exports.hlMortgageDefault = exports.orderDefault = exports.hetongInfoDefault = exports.diyaInfoDefault = exports.diyaInfoLabel = exports.hetongInfoLabel = exports.childrenLabel = exports.orderLabel = exports.hlMortgageLabel = exports.unionBorrowerLabel = exports.houseLabel = exports.applicantLabel = exports.bankInfoLabel = undefined;
 
 var _industries = __webpack_require__(1);
 
@@ -219,8 +219,7 @@ var houseLabel = exports.houseLabel = {
   carInformation: '增信项：车辆信息',
   financialProduct: '增信项：理财产品信息',
   planningPurpose: '规划用途',
-  mortgageRemain: '抵押余额',
-  originalLoanType: '原贷款类型',
+
   extra: {
     houseUsedArea: '套内建筑面积', // 套内建筑面积
     landGain: '土地使用权取得方式', // 土地使用权取得方式
@@ -272,6 +271,8 @@ var hlMortgageLabel = exports.hlMortgageLabel = {
   fastBid2: '快出价2',
   houseOwner: '产权人',
   estateResearch: '产调情况',
+  mortgageRemain: '抵押余额',
+  originalLoanType: '原贷款类型',
   extra: {}
 };
 
@@ -299,7 +300,17 @@ var orderLabel = exports.orderLabel = {
   repayMode: '还款方式',
   serviceFee: '服务费'
 };
-
+var childrenLabel = exports.childrenLabel = {
+  name: '姓名',
+  birthdate: '出生年月日',
+  mobile: '手机号码',
+  company: '单位名称',
+  householdAddress: '户籍地址',
+  householdCity: '户籍所在城市',
+  householdProvince: '户籍所在省份',
+  householdType: '户籍类型',
+  profession: '职业'
+};
 var hetongInfoLabel = exports.hetongInfoLabel = {
   notarizeTime: '公证时间',
   operator: '经办人',
@@ -368,6 +379,8 @@ var hlMortgageDefault = exports.hlMortgageDefault = {
   fastBid2: null,
   houseOwner: null,
   estateResearch: null,
+  mortgageRemain: null,
+  originalLoanType: null,
   extra: {}
 };
 var unionBorrowerDefault = exports.unionBorrowerDefault = {
@@ -397,17 +410,7 @@ var unionBorrowerDefault = exports.unionBorrowerDefault = {
   companyAddress: null
 
 };
-var childrenLabel = exports.childrenLabel = {
-  name: '姓名',
-  birthdate: '出生年月日',
-  mobile: '手机号码',
-  company: '单位名称',
-  householdAddress: '户籍地址',
-  householdCity: '户籍所在城市',
-  householdProvince: '户籍所在省份',
-  householdType: '户籍类型',
-  profession: '职业'
-};
+
 var childrenDefault = exports.childrenDefault = {
   name: null,
   birthdate: null,
@@ -543,8 +546,7 @@ var houseDefault = exports.houseDefault = {
   carInformation: null,
   financialProduct: null,
   planningPurpose: null,
-  mortgageRemain: null,
-  originalLoanType: null,
+
   extra: {
     houseUsedArea: null, // 套内建筑面积
     landGain: '', // 土地使用权取得方式
