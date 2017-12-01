@@ -205,6 +205,34 @@ export const orderLabel = {
   repayMode: '还款方式',
   serviceFee: '服务费',
 };
+
+export const hetongInfoLabel = {
+  notarizeTime: '公证时间',
+  operator: '经办人',
+  receiveTime: '领取时间',
+  receiver: '领证人'
+}
+export const diyaInfoLabel = {
+  diyaTime: '抵押时间',
+  operator: '经办人',
+  receiveTime: '领取时间',
+  receiver: '领证人'
+}
+
+export const diyaInfoDefault = {
+  diyaTime: null,
+  operator: null,
+  receiveTime: null,
+  receiver: null
+}
+
+export const hetongInfoDefault = {
+  notarizeTime: null,
+  operator: null,
+  receiveTime: null,
+  receiver: null
+}
+
 export const orderDefault = {
   loanType: null,
   loanProduct: null,
