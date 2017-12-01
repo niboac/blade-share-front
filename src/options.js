@@ -125,8 +125,7 @@ export const houseLabel = {
   carInformation: '增信项：车辆信息',
   financialProduct: '增信项：理财产品信息',
   planningPurpose: '规划用途',
-  mortgageRemain: '抵押余额',
-  originalLoanType: '原贷款类型',
+
   extra: {
     houseUsedArea: '套内建筑面积', // 套内建筑面积
     landGain: '土地使用权取得方式', // 土地使用权取得方式
@@ -178,6 +177,8 @@ export const hlMortgageLabel = {
   fastBid2: '快出价2',
   houseOwner: '产权人',
   estateResearch: '产调情况',
+  mortgageRemain: '抵押余额',
+  originalLoanType: '原贷款类型',
   extra: {}
 };
 
@@ -205,7 +206,17 @@ export const orderLabel = {
   repayMode: '还款方式',
   serviceFee: '服务费',
 };
-
+export const childrenLabel = {
+  name: '姓名',
+  birthdate: '出生年月日',
+  mobile: '手机号码',
+  company: '单位名称',
+  householdAddress: '户籍地址',
+  householdCity: '户籍所在城市',
+  householdProvince: '户籍所在省份',
+  householdType: '户籍类型',
+  profession: '职业'
+};
 export const hetongInfoLabel = {
   notarizeTime: '公证时间',
   operator: '经办人',
@@ -274,6 +285,8 @@ export const hlMortgageDefault = {
   fastBid2: null,
   houseOwner: null,
   estateResearch: null,
+  mortgageRemain: null,
+  originalLoanType: null,
   extra: {}
 }
 export const unionBorrowerDefault = {
@@ -303,17 +316,7 @@ export const unionBorrowerDefault = {
   companyAddress: null
 
 };
-export const childrenLabel = {
-  name: '姓名',
-  birthdate: '出生年月日',
-  mobile: '手机号码',
-  company: '单位名称',
-  householdAddress: '户籍地址',
-  householdCity: '户籍所在城市',
-  householdProvince: '户籍所在省份',
-  householdType: '户籍类型',
-  profession: '职业'
-};
+
 export const childrenDefault = {
   name: null,
   birthdate: null,
@@ -449,8 +452,7 @@ export const houseDefault = {
   carInformation: null,
   financialProduct: null,
   planningPurpose: null,
-  mortgageRemain: null,
-  originalLoanType: null,
+
   extra: {
     houseUsedArea: null, // 套内建筑面积
     landGain: '', // 土地使用权取得方式
