@@ -179,7 +179,6 @@ export const hlMortgageLabel = {
   estateResearch: '产调情况',
   mortgageRemain: '抵押余额',
   originalLoanType: '原贷款类型',
-  extra: {}
 };
 
 export const orderLabel = {
@@ -287,7 +286,6 @@ export const hlMortgageDefault = {
   estateResearch: null,
   mortgageRemain: null,
   originalLoanType: null,
-  extra: {}
 }
 export const unionBorrowerDefault = {
   name: null,
