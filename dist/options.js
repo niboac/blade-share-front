@@ -83,7 +83,7 @@ return /******/ (function(modules) { // webpackBootstrap
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.cities = exports.industries = exports.companyTypes = exports.bankCodes = exports.taskTypeBtnShow = exports.houseTypes = exports.allOrientations = exports.housingSituations = exports.relationshipType = exports.rwApplicant = exports.businessTypes = exports.periods = exports.maritalStatus = exports.time = exports.applicantRelationshipTypes = exports.relationshipTypes = exports.professionTypes = exports.livingConditions = exports.educations = exports.houseCities = exports.loanPurposes = exports.loanPurposesGuoyu = exports.mortgageSituations = exports.companySizes = exports.officeOwnerTypes = exports.ownerTypes = exports.landGains = exports.planningPurposes = exports.buildingTypes = exports.professionalTitles = exports.titles = exports.propertyTypes = exports.professionCatTypes = exports.genders = exports.addressTypes = exports.commonResidents = exports.taskType2Submit = exports.clientWorkTypes = exports.houseDefault = exports.applicantDefault = exports.bankInfoDefault = exports.childrenDefault = exports.childrenLabel = exports.unionBorrowerDefault = exports.hlMortgageDefault = exports.orderDefault = exports.orderLabel = exports.hlMortgageLabel = exports.unionBorrowerLabel = exports.houseLabel = exports.applicantLabel = exports.bankInfoLabel = undefined;
+exports.cities = exports.industries = exports.companyTypes = exports.bankCodes = exports.taskTypeBtnShow = exports.houseTypes = exports.allOrientations = exports.housingSituations = exports.relationshipType = exports.rwApplicant = exports.businessTypes = exports.periods = exports.maritalStatus = exports.time = exports.applicantRelationshipTypes = exports.relationshipTypes = exports.professionTypes = exports.livingConditions = exports.educations = exports.houseCities = exports.loanPurposes = exports.loanPurposesGuoyu = exports.mortgageSituations = exports.companySizes = exports.officeOwnerTypes = exports.ownerTypes = exports.landGains = exports.planningPurposes = exports.buildingTypes = exports.professionalTitles = exports.titles = exports.propertyTypes = exports.professionCatTypes = exports.genders = exports.addressTypes = exports.commonResidents = exports.taskType2Submit = exports.clientWorkTypes = exports.houseDefault = exports.applicantDefault = exports.bankInfoDefault = exports.childrenDefault = exports.childrenLabel = exports.unionBorrowerDefault = exports.hlMortgageDefault = exports.orderDefault = exports.hetongInfoDefault = exports.diyaInfoDefault = exports.diyaInfoLabel = exports.hetongInfoLabel = exports.orderLabel = exports.hlMortgageLabel = exports.unionBorrowerLabel = exports.houseLabel = exports.applicantLabel = exports.bankInfoLabel = undefined;
 
 var _industries = __webpack_require__(1);
 
@@ -299,6 +299,34 @@ var orderLabel = exports.orderLabel = {
   repayMode: '还款方式',
   serviceFee: '服务费'
 };
+
+var hetongInfoLabel = exports.hetongInfoLabel = {
+  notarizeTime: '公证时间',
+  operator: '经办人',
+  receiveTime: '领取时间',
+  receiver: '领证人'
+};
+var diyaInfoLabel = exports.diyaInfoLabel = {
+  diyaTime: '抵押时间',
+  operator: '经办人',
+  receiveTime: '领取时间',
+  receiver: '领证人'
+};
+
+var diyaInfoDefault = exports.diyaInfoDefault = {
+  diyaTime: null,
+  operator: null,
+  receiveTime: null,
+  receiver: null
+};
+
+var hetongInfoDefault = exports.hetongInfoDefault = {
+  notarizeTime: null,
+  operator: null,
+  receiveTime: null,
+  receiver: null
+};
+
 var orderDefault = exports.orderDefault = {
   loanType: null,
   loanProduct: null,
