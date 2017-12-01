@@ -272,8 +272,7 @@ var hlMortgageLabel = exports.hlMortgageLabel = {
   houseOwner: '产权人',
   estateResearch: '产调情况',
   mortgageRemain: '抵押余额',
-  originalLoanType: '原贷款类型',
-  extra: {}
+  originalLoanType: '原贷款类型'
 };
 
 var orderLabel = exports.orderLabel = {
@@ -380,8 +379,7 @@ var hlMortgageDefault = exports.hlMortgageDefault = {
   houseOwner: null,
   estateResearch: null,
   mortgageRemain: null,
-  originalLoanType: null,
-  extra: {}
+  originalLoanType: null
 };
 var unionBorrowerDefault = exports.unionBorrowerDefault = {
   name: null,
