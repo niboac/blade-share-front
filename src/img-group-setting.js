@@ -98,31 +98,31 @@ const blockSetting = {
           { label: '户型图', group: '户型图', imageRequire: '接受网查截图或手绘草图' },
           { label: '合影', group: '合影' },
         ]
-      }
-    }),
-    资料清单: {
-      iconKey: '#icon-kehuziliao',
-      imgUrls: [
-        { label: '下户确认单', group: '下户确认单' },
-        { label: '房产查档单', group: '房产查档单' },
-        { label: '征信报告', group: '征信报告' },
-        { label: '户口本', group: '户口本' },
-        { label: '房产估价单', group: '房产估价单' },
-        { label: '贷款余额确认单', group: '贷款余额确认单' },
-        { label: '回款确认书', group: '回款确认书' },
-        { label: '法院查询结果', group: '法院查询结果' },
-      ]
-    },
-    合同声明: {
-      iconKey: '#icon-kehuziliao',
-      imgUrls: [
-        { label: '借款申请表', group: '借款申请表' },
-        { label: '承租人声明', group: '承租人声明' },
-        { label: '接受居住承诺书', group: '接受居住承诺书' },
-        { label: '未出租声明', group: '未出租声明' },
-        { label: '婚姻状况声明', group: '婚姻状况声明' },
-      ]
-    },
+      },
+      资料清单: {
+        iconKey: '#icon-kehuziliao',
+        imgUrls: [
+          { label: '下户确认单', group: '下户确认单' },
+          { label: '房产查档单', group: '房产查档单' },
+          { label: '征信报告', group: '征信报告' },
+          { label: '户口本', group: '户口本' },
+          { label: '房产估价单', group: '房产估价单' },
+          { label: '贷款余额确认单', group: '贷款余额确认单' },
+          { label: '回款确认书', group: '回款确认书' },
+          { label: '法院查询结果', group: '法院查询结果' },
+        ]
+      },
+      合同声明: {
+        iconKey: '#icon-kehuziliao',
+        imgUrls: [
+          { label: '借款申请表', group: '借款申请表' },
+          { label: '承租人声明', group: '承租人声明' },
+          { label: '接受居住承诺书', group: '接受居住承诺书' },
+          { label: '未出租声明', group: '未出租声明' },
+          { label: '婚姻状况声明', group: '婚姻状况声明' },
+        ]
+      },
+    })
   },
   核行: {
     核行资料: {
