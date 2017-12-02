@@ -799,7 +799,7 @@ var xiahuInCommon = {
   }
 };
 
-var blockSetting = exports.blockSetting = {
+var blockSetting = {
   // 补充贷款资料: {
   //   iconKey: '#icon-kehuziliao',
   //   routeName: '补充信息',
@@ -933,7 +933,7 @@ var blockSetting = exports.blockSetting = {
   }
 };
 
-var blockSettingWeb = exports.blockSettingWeb = {
+var blockSettingWeb = {
   FANG_DI_DAI: {
     下户: [].concat(_toConsumableArray(blockSetting.FANG_DI_DAI['下户']['上传下户照片'].imgUrls)),
     合同: [].concat(_toConsumableArray(blockSetting.FANG_DI_DAI['合同']['公证'].imgUrls)),
@@ -950,6 +950,8 @@ var blockSettingWeb = exports.blockSettingWeb = {
     归档结案: [].concat(_toConsumableArray(blockSetting.SHU_LOU_DAI['归档结案']['结案照片'].imgUrls))
   }
 };
+exports.blockSetting = blockSetting;
+exports.xiahuInCommon = xiahuInCommon;
 
 /***/ }),
 /* 2 */
