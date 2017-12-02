@@ -28,6 +28,31 @@ const xiahuInCommon = {
     objName: 'children',
   },
 }
+const xaihuSld = {
+  资料清单: {
+    iconKey: '#icon-kehuziliao',
+    imgUrls: [
+      { label: '下户确认单', group: '下户确认单' },
+      { label: '房产查档单', group: '房产查档单' },
+      { label: '征信报告', group: '征信报告' },
+      { label: '户口本', group: '户口本' },
+      { label: '房产估价单', group: '房产估价单' },
+      { label: '贷款余额确认单', group: '贷款余额确认单' },
+      { label: '回款确认书', group: '回款确认书' },
+      { label: '法院查询结果', group: '法院查询结果' },
+    ]
+  },
+  合同声明: {
+    iconKey: '#icon-kehuziliao',
+    imgUrls: [
+      { label: '借款申请表', group: '借款申请表' },
+      { label: '承租人声明', group: '承租人声明' },
+      { label: '接受居住承诺书', group: '接受居住承诺书' },
+      { label: '未出租声明', group: '未出租声明' },
+      { label: '婚姻状况声明', group: '婚姻状况声明' },
+    ]
+  },
+}
 
 
 const blockSetting = {
@@ -98,153 +123,131 @@ const blockSetting = {
           { label: '户型图', group: '户型图', imageRequire: '接受网查截图或手绘草图' },
           { label: '合影', group: '合影' },
         ]
-      },
-      资料清单: {
+      }
+    }, xaihuSld),
+    核行: {
+      核行资料: {
         iconKey: '#icon-kehuziliao',
         imgUrls: [
-          { label: '下户确认单', group: '下户确认单' },
-          { label: '房产查档单', group: '房产查档单' },
-          { label: '征信报告', group: '征信报告' },
-          { label: '户口本', group: '户口本' },
-          { label: '房产估价单', group: '房产估价单' },
-          { label: '贷款余额确认单', group: '贷款余额确认单' },
-          { label: '回款确认书', group: '回款确认书' },
-          { label: '法院查询结果', group: '法院查询结果' },
-        ]
+          { label: '核行定位截图', group: '核行定位截图' },
+          { label: '核行地合影', group: '核行地合影' },
+          { label: '问询记录名片', group: '问询记录名片' },
+          { label: '其他核行证明材料', group: '其他核行证明材料' },
+        ],
       },
-      合同声明: {
+      核行确认表: {
         iconKey: '#icon-kehuziliao',
         imgUrls: [
-          { label: '借款申请表', group: '借款申请表' },
-          { label: '承租人声明', group: '承租人声明' },
-          { label: '接受居住承诺书', group: '接受居住承诺书' },
-          { label: '未出租声明', group: '未出租声明' },
-          { label: '婚姻状况声明', group: '婚姻状况声明' },
-        ]
+          { label: '核行确认表', group: '核行确认表' },
+        ],
+        hideBtn: true
       },
-    })
-  },
-  核行: {
-    核行资料: {
-      iconKey: '#icon-kehuziliao',
-      imgUrls: [
-        { label: '核行定位截图', group: '核行定位截图' },
-        { label: '核行地合影', group: '核行地合影' },
-        { label: '问询记录名片', group: '问询记录名片' },
-        { label: '其他核行证明材料', group: '其他核行证明材料' },
-      ],
-    },
-    核行确认表: {
-      iconKey: '#icon-kehuziliao',
-      imgUrls: [
-        { label: '核行确认表', group: '核行确认表' },
-      ],
-      hideBtn: true
-    },
 
-  },
-  合同: {
-    借款合同: {
-      iconKey: '#icon-kehuziliao',
-      imgUrls: [
-        { label: '借款合同', group: '借款合同', imageRequire: '最多10张，单张不超过2MB' },
-      ],
     },
-    信用咨询及管理服务协议: {
-      iconKey: '#icon-kehuziliao',
-      imgUrls: [
-        { label: '信用咨询及管理服务协议', group: '信用咨询及管理服务协议', imageRequire: '最多10张，单张不超过2MB' },
-      ],
+    合同: {
+      借款合同: {
+        iconKey: '#icon-kehuziliao',
+        imgUrls: [
+          { label: '借款合同', group: '借款合同', imageRequire: '最多10张，单张不超过2MB' },
+        ],
+      },
+      信用咨询及管理服务协议: {
+        iconKey: '#icon-kehuziliao',
+        imgUrls: [
+          { label: '信用咨询及管理服务协议', group: '信用咨询及管理服务协议', imageRequire: '最多10张，单张不超过2MB' },
+        ],
+      },
+      划款委托及承诺书: {
+        iconKey: '#icon-kehuziliao',
+        imgUrls: [
+          { label: '划款委托及承诺书', group: '划款委托及承诺书', imageRequire: '最多10张，单张不超过2MB' },
+        ],
+      },
+      代还款委托书: {
+        iconKey: '#icon-kehuziliao',
+        imgUrls: [
+          { label: '代还款委托书', group: '代还款委托书', imageRequire: '最多10张，单张不超过2MB' },
+        ],
+      },
+      借据: {
+        iconKey: '#icon-kehuziliao',
+        imgUrls: [
+          { label: '借据', group: '借据', imageRequire: '最多10张，单张不超过2MB' },
+        ],
+      },
+      租赁合同: {
+        iconKey: '#icon-kehuziliao',
+        imgUrls: [
+          { label: '租赁合同', group: '租赁合同', imageRequire: '最多10张，单张不超过2MB' },
+        ],
+      },
+      购销合同: {
+        iconKey: '#icon-kehuziliao',
+        imgUrls: [
+          { label: '购销合同', group: '购销合同', imageRequire: '最多10张，单张不超过2MB' },
+        ],
+      },
+      同意借款声明书: {
+        iconKey: '#icon-kehuziliao',
+        imgUrls: [
+          { label: '同意借款声明书', group: '同意借款声明书', imageRequire: '最多10张，单张不超过2MB' },
+        ],
+      },
+      业务申请表: {
+        iconKey: '#icon-kehuziliao',
+        imgUrls: [
+          { label: '业务申请表', group: '业务申请表', imageRequire: '最多10张，单张不超过2MB' },
+        ],
+      },
+      面签拍照: {
+        iconKey: '#icon-kehuziliao',
+        imgUrls: [
+          { label: '面签拍照', group: '面签拍照', imageRequire: '最多10张，单张不超过2MB' },
+        ],
+      }
     },
-    划款委托及承诺书: {
-      iconKey: '#icon-kehuziliao',
-      imgUrls: [
-        { label: '划款委托及承诺书', group: '划款委托及承诺书', imageRequire: '最多10张，单张不超过2MB' },
-      ],
+    控件: {
+      控件照片: {
+        iconKey: '#icon-kehuziliao',
+        imgUrls: [
+          { label: '控件照片', group: '控件照片', imageRequire: '最多10张，单张不超过2MB' },
+        ],
+      },
     },
-    代还款委托书: {
-      iconKey: '#icon-kehuziliao',
-      imgUrls: [
-        { label: '代还款委托书', group: '代还款委托书', imageRequire: '最多10张，单张不超过2MB' },
-      ],
+    归档: {
+      归档照片: {
+        iconKey: '#icon-kehuziliao',
+        imgUrls: [
+          { label: '归档照片', group: '归档照片', imageRequire: '最多10张，单张不超过2MB' }
+        ]
+      }
     },
-    借据: {
-      iconKey: '#icon-kehuziliao',
-      imgUrls: [
-        { label: '借据', group: '借据', imageRequire: '最多10张，单张不超过2MB' },
-      ],
+    解抵押: {
+      '抵押权注销凭单、章': {
+        iconKey: '#icon-kehuziliao',
+        imgUrls: [
+          { label: '抵押权注销凭单、章', group: '抵押权注销凭单、章', imageRequire: '最多10张，单张不超过2MB' }
+        ],
+      },
     },
-    租赁合同: {
-      iconKey: '#icon-kehuziliao',
-      imgUrls: [
-        { label: '租赁合同', group: '租赁合同', imageRequire: '最多10张，单张不超过2MB' },
-      ],
+    进抵: {
+      抵押证照片: {
+        iconKey: '#icon-kehuziliao',
+        imgUrls: [
+          { label: '抵押证照片', group: '抵押证照片', imageRequire: '最多10张，单张不超过2MB' }
+        ],
+      }
     },
-    购销合同: {
-      iconKey: '#icon-kehuziliao',
-      imgUrls: [
-        { label: '购销合同', group: '购销合同', imageRequire: '最多10张，单张不超过2MB' },
-      ],
-    },
-    同意借款声明书: {
-      iconKey: '#icon-kehuziliao',
-      imgUrls: [
-        { label: '同意借款声明书', group: '同意借款声明书', imageRequire: '最多10张，单张不超过2MB' },
-      ],
-    },
-    业务申请表: {
-      iconKey: '#icon-kehuziliao',
-      imgUrls: [
-        { label: '业务申请表', group: '业务申请表', imageRequire: '最多10张，单张不超过2MB' },
-      ],
-    },
-    面签拍照: {
-      iconKey: '#icon-kehuziliao',
-      imgUrls: [
-        { label: '面签拍照', group: '面签拍照', imageRequire: '最多10张，单张不超过2MB' },
-      ],
+    归档结案: {
+      结案照片: {
+        iconKey: '#icon-kehuziliao',
+        imgUrls: [
+          { label: '结案照片', group: '结案照片', imageRequire: '最多10张，单张不超过2MB' }
+        ],
+      },
     }
   },
-  控件: {
-    控件照片: {
-      iconKey: '#icon-kehuziliao',
-      imgUrls: [
-        { label: '控件照片', group: '控件照片', imageRequire: '最多10张，单张不超过2MB' },
-      ],
-    },
-  },
-  归档: {
-    归档照片: {
-      iconKey: '#icon-kehuziliao',
-      imgUrls: [
-        { label: '归档照片', group: '归档照片', imageRequire: '最多10张，单张不超过2MB' }
-      ]
-    }
-  },
-  解抵押: {
-    '抵押权注销凭单、章': {
-      iconKey: '#icon-kehuziliao',
-      imgUrls: [
-        { label: '抵押权注销凭单、章', group: '抵押权注销凭单、章', imageRequire: '最多10张，单张不超过2MB' }
-      ],
-    },
-  },
-  进抵: {
-    抵押证照片: {
-      iconKey: '#icon-kehuziliao',
-      imgUrls: [
-        { label: '抵押证照片', group: '抵押证照片', imageRequire: '最多10张，单张不超过2MB' }
-      ],
-    }
-  },
-  归档结案: {
-    结案照片: {
-      iconKey: '#icon-kehuziliao',
-      imgUrls: [
-        { label: '结案照片', group: '结案照片', imageRequire: '最多10张，单张不超过2MB' }
-      ],
-    },
-  }
+
 }
 
 
