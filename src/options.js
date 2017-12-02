@@ -1,5 +1,6 @@
 import industries from './industries'
 import cities from './cities'
+export { blockSettingWeb, blockSetting } from './img-group-setting'
 
 export const bankInfoLabel = {
   bankCode: '开户银行',
