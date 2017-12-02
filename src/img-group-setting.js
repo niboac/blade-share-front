@@ -30,7 +30,7 @@ const xiahuInCommon = {
 }
 
 
-export const blockSetting = {
+const blockSetting = {
   // 补充贷款资料: {
   //   iconKey: '#icon-kehuziliao',
   //   routeName: '补充信息',
@@ -248,7 +248,7 @@ export const blockSetting = {
 }
 
 
-export const blockSettingWeb = {
+const blockSettingWeb = {
   FANG_DI_DAI: {
     下户: [
       ...blockSetting.FANG_DI_DAI['下户']['上传下户照片'].imgUrls
@@ -296,4 +296,7 @@ export const blockSettingWeb = {
       ...blockSetting.SHU_LOU_DAI['归档结案']['结案照片'].imgUrls,
     ]
   }
+}
+export{
+  blockSetting, xiahuInCommon
 }
