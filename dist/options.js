@@ -155,7 +155,7 @@ var applicantLabel = exports.applicantLabel = {
   spouseName: '配偶姓名',
   spouseMobile: '配偶手机号码',
   spouseIdType: '身份证',
-  spouseIdNumber: '配偶证件号码',
+  spouseIdNumber: '配偶身份证号',
   marriageTime: '结婚时间',
   spouseHouseholdType: '配偶户籍类型',
   spouseHouseholdProvince: '配偶户籍所在省',
