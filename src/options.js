@@ -443,7 +443,6 @@ export const houseDefault = {
   purchaseUnitPrice: null,
   purchaseWay: null,
   realEstateCertNumber: null,
-  roomsNumber: 2,
   // spouseName: null,
   surroundings: null,
   totalPrice: null,
