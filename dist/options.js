@@ -155,7 +155,7 @@ var applicantLabel = exports.applicantLabel = {
   spouseName: '配偶姓名',
   spouseMobile: '配偶手机号码',
   spouseIdType: '身份证',
-  spouseIdNumber: '配偶证件号码',
+  spouseIdNumber: '配偶身份证号',
   marriageTime: '结婚时间',
   spouseHouseholdType: '配偶户籍类型',
   spouseHouseholdProvince: '配偶户籍所在省',
@@ -768,13 +768,6 @@ Object.defineProperty(exports, "__esModule", {
 
 function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
-/**
- * Created by yangshan on 2017/12/2.
- */
-/**
- * Created by yangshan on 2017/9/13.
- */
-
 var xiahuInCommon = {
   补充客户资料: {
     iconKey: '#icon-kehuziliao',
@@ -954,7 +947,7 @@ var blockSettingWeb = {
   }
 };
 exports.blockSetting = blockSetting;
-exports.xiahuInCommon = xiahuInCommon;
+exports.blockSettingWeb = blockSettingWeb;
 
 /***/ }),
 /* 2 */

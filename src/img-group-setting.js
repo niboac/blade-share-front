@@ -1,9 +1,3 @@
-/**
- * Created by yangshan on 2017/12/2.
- */
-/**
- * Created by yangshan on 2017/9/13.
- */
 
 const xiahuInCommon = {
   补充客户资料: {
@@ -301,5 +295,5 @@ const blockSettingWeb = {
   }
 }
 export{
-  blockSetting, xiahuInCommon
+  blockSetting, blockSettingWeb
 }
