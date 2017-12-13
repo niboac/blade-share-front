@@ -126,7 +126,6 @@ export const houseLabel = {
   carInformation: '增信项：车辆信息',
   financialProduct: '增信项：理财产品信息',
   planningPurpose: '规划用途',
-
   extra: {
     houseUsedArea: '套内建筑面积', // 套内建筑面积
     landGain: '土地使用权取得方式', // 土地使用权取得方式
