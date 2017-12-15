@@ -282,12 +282,15 @@ var hlMortgageLabel = exports.hlMortgageLabel = {
   housingAgency2: '房屋中介名称2',
   agencyEvaluationPrice1: '中介评估价1',
   agencyEvaluationPrice2: '中介评估价2',
+  overallEvaluationPrice: '综合评估价',
   fastBid1: '快出价1',
   fastBid2: '快出价2',
   houseOwner: '产权人',
   estateResearch: '产调情况',
   mortgageRemain: '抵押余额',
-  originalLoanType: '原贷款类型'
+  originalLoanType: '原贷款类型',
+  firstMortgageRemain: '一抵余额',
+  secondMortgageRemain: '二抵余额'
 };
 
 var orderLabel = exports.orderLabel = {
