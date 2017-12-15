@@ -392,12 +392,15 @@ var hlMortgageDefault = exports.hlMortgageDefault = {
   housingAgency2: null,
   agencyEvaluationPrice1: null,
   agencyEvaluationPrice2: null,
+  overallEvaluationPrice: null,
   fastBid1: null,
   fastBid2: null,
   houseOwner: null,
   houseUid: null,
   estateResearch: null,
   mortgageRemain: null,
+  firstMortgageRemain: null,
+  secondMortgageRemain: null,
   originalLoanType: null
 };
 var unionBorrowerDefault = exports.unionBorrowerDefault = {
