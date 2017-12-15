@@ -284,6 +284,7 @@ var hlMortgageLabel = exports.hlMortgageLabel = {
   fastBid1: '快出价1',
   fastBid2: '快出价2',
   houseOwner: '产权人',
+  houseUid: '房产id',
   estateResearch: '产调情况',
   mortgageRemain: '抵押余额',
   originalLoanType: '原贷款类型'
@@ -391,6 +392,7 @@ var hlMortgageDefault = exports.hlMortgageDefault = {
   fastBid1: null,
   fastBid2: null,
   houseOwner: null,
+  houseUid: null,
   estateResearch: null,
   mortgageRemain: null,
   originalLoanType: null
