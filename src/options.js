@@ -186,7 +186,6 @@ export const hlMortgageLabel = {
   secondMortgageRemain: '二抵余额',
 };
 
-
 export const orderLabel = {
   loanType: '贷款类型',
   businessType: '业务种类',
