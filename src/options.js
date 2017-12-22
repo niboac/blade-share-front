@@ -606,6 +606,11 @@ const businessTypes = [{
   key: '3',
   value: '房抵贷'
 }]
+export const businessTypes2OrderType = {
+  1: ['SHU_LOU_DAI'],
+  2: ['SHU_LOU_DAI'],
+  3: ['FANG_DI_DAI'],
+}
 const IdInfos = [
   'idCardFaceUrl',
   'portraitUrl',
@@ -801,6 +806,7 @@ export let houseCities = [
   { key: '北京', value: '北京' },
   // { key: '上海', value: '上海' },
 ]
+
 
 export {
   educations, livingConditions, professionTypes,
