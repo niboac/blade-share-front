@@ -296,6 +296,7 @@ var hlMortgageLabel = exports.hlMortgageLabel = {
 
 var orderLabel = exports.orderLabel = {
   loanType: '贷款类型',
+  businessType: '业务种类',
   loanProduct: '贷款产品',
   accompaniesName: '陪同人员姓名',
   accompaniesNumber: '陪同人数',
@@ -314,6 +315,7 @@ var orderLabel = exports.orderLabel = {
   mortgageInfo: null,
   priceEvaluation: '内部评房值',
   priceEvaluationCustom: '客户评房值',
+  productId: '贷款产品',
   repaySource: '还款来源',
   repayMode: '还款方式',
   serviceFee: '服务费'
@@ -358,6 +360,7 @@ var hetongInfoDefault = exports.hetongInfoDefault = {
 
 var orderDefault = exports.orderDefault = {
   loanType: null,
+  businessType: null,
   loanProduct: null,
   accompaniesName: null,
   accompaniesNumber: null,
@@ -376,6 +379,7 @@ var orderDefault = exports.orderDefault = {
   mortgageInfo: null,
   priceEvaluation: null,
   priceEvaluationCustom: null,
+  productId: null,
   repaySource: null,
   repayMode: null,
   serviceFee: null,
