@@ -81,10 +81,12 @@ const blockSetting = {
         routeName: '补充复合信息',
         objName: 'house,hlMortgage',
       },
-      资料信息: {
+      上传图片: {
         iconKey: '#icon-kehuziliao',
-        imgUrls:[
-          { label: '婚姻证明', group: 'hunyinzhengming' },
+        imgUrls: [
+          { label: '婚姻证明', group: '婚姻证明' },
+          { label: '户口本', group: '户口本' },
+          { label: '征信报告', group: '征信报告' },
         ]
       },
     },

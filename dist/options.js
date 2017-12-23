@@ -360,7 +360,7 @@ var hetongInfoDefault = exports.hetongInfoDefault = {
 
 var orderDefault = exports.orderDefault = {
   loanType: null,
-  businessType: null,
+  businessType: '3',
   loanProduct: null,
   accompaniesName: null,
   accompaniesNumber: null,
