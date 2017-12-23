@@ -1,4 +1,3 @@
-
 const xiahuInCommon = {
   补充客户资料: {
     iconKey: '#icon-kehuziliao',
@@ -56,6 +55,39 @@ const blockSetting = {
   //   objName: 'order',
   // },
   FANG_DI_DAI: {
+    进件: {
+      借款信息: {
+        iconKey: '#icon-kehuziliao',
+        routeName: '补充信息',
+        objName: 'order',
+      },
+      借款人信息: {
+        iconKey: '#icon-kehuziliao',
+        routeName: '补充信息',
+        objName: 'applicant',
+      },
+      职业信息: {
+        iconKey: '#icon-kehuziliao',
+        routeName: '补充信息',
+        objName: 'applicant',
+      },
+      共借人信息: {
+        iconKey: '#icon-kehuziliao',
+        routeName: '补充附加信息',
+        objName: 'unionBorrower',
+      },
+      抵押物信息: {
+        iconKey: '#icon-kehuziliao',
+        routeName: '补充复合信息',
+        objName: 'house,hlMortgage',
+      },
+      资料信息: {
+        iconKey: '#icon-kehuziliao',
+        imgUrls:[
+          { label: '婚姻证明', group: 'hunyinzhengming' },
+        ]
+      },
+    },
     下户: Object.assign(xiahuInCommon, {
       补充抵押资料: {
         iconKey: '#icon-kehuziliao',
