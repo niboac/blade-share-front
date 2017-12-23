@@ -252,7 +252,7 @@ export const hetongInfoDefault = {
 
 export const orderDefault = {
   loanType: null,
-  businessType: null,
+  businessType: '3',
   loanProduct: null,
   accompaniesName: null,
   accompaniesNumber: null,
