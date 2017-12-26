@@ -850,7 +850,7 @@ var blockSetting = {
       抵押物信息: {
         iconKey: '#icon-kehuziliao',
         routeName: '补充复合信息',
-        objName: 'house,hlMortgage'
+        objName: 'house_hlMortgage'
       },
       上传图片: {
         iconKey: '#icon-kehuziliao',
