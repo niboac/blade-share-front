@@ -1,0 +1,88 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn
+
+PATH: 
+  /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/yangshan/Documents/repo/blade-share-front/node_modules/.bin:/usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/yangshan/Documents/repo/blade-share-front/node_modules/.bin:/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Applications/Wireshark.app/Contents/MacOS:/Users/yangshan/Library/Android/sdk/tools:/Users/yangshan/Library/Android/sdk/platform-tools:/Users/yangshan/Library/Android/sdk/build-tools:.:/Library/Frameworks/Mono.framework/Versions/5.4.1/bin
+
+Yarn version: 
+  1.2.1
+
+Node version: 
+  6.11.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "blade-share-front",
+    "version": "0.0.2",
+    "description": "blade share files",
+    "main": "index.js",
+    "scripts": {
+      "bootstrap": "yarn || npm i",
+      "build": "babel src -d lib && node_modules/.bin/webpack lib/options.js dist/options.js --output-library-target umd && node_modules/.bin/uglifyjs dist/options.js -o ./dist/options.min.js",
+      "clean": "rimraf lib && rimraf packages/*/lib && rimraf test/**/coverage && lerna clean --yes",
+      "deploy": "npm run deploy:build && gh-pages -d examples/element-ui --remote eleme && del examples/element-ui",
+      "deploy:build": "npm run build:file && cooking build -c build/cooking.demo.js -p && echo element.eleme.io>>examples/element-ui/CNAME",
+      "dev": "npm run bootstrap && npm run build:file && cooking watch -c build/cooking.demo.js -p",
+      "dev:play": "npm run build:file && cross-env PLAY_ENV=true cooking watch -c build/cooking.demo.js -p",
+      "dist": "npm run clean && npm run build:file && npm run lint && cooking build -c build/cooking.conf.js,build/cooking.common.js,build/cooking.component.js -p && npm run build:utils && npm run build:umd && npm run build:theme",
+      "dist:all": "node build/bin/build-all.js && npm run build:theme",
+      "i18n": "node build/bin/i18n.js",
+      "lint": "eslint src/**/* test/**/* packages/**/*.{js,vue} build/**/* --quiet",
+      "pub": "npm run bootstrap && sh build/git-release.sh && sh build/release.sh",
+      "pub:all": "npm run dist:all && lerna publish --skip-git && git commit -am 'publish independent packages' && git push eleme dev",
+      "test": "npm run lint && cross-env CI_ENV=/dev/ karma start test/unit/karma.conf.js --single-run",
+      "test:watch": "karma start test/unit/karma.conf.js"
+    },
+    "pre-commit": [
+      "build"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/niboac/blade-share-front.git"
+    },
+    "keywords": [
+      "blade"
+    ],
+    "devDependencies": {
+      "accounting": "^0.4.1",
+      "babel-cli": "^6.26.0",
+      "babel-core": "^6.14.0",
+      "babel-loader": "^6.4.1",
+      "babel-plugin-add-module-exports": "^0.2.1",
+      "babel-plugin-module-resolver": "^2.2.0",
+      "babel-plugin-syntax-jsx": "^6.8.0",
+      "babel-plugin-transform-vue-jsx": "^3.3.0",
+      "babel-preset-env": "1.6.0",
+      "babel-preset-es2015": "^6.14.0",
+      "jasmine": "2.8.0",
+      "karma": "1.7.1",
+      "karma-jasmine": "1.1.0",
+      "karma-phantomjs-launcher": "1.0.4",
+      "karma-webpack": "1.8.1",
+      "pre-commit": "^1.2.2",
+      "uglify-es": "3.0.28",
+      "webpack": "3.5.5"
+    },
+    "author": "caobin",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/niboac/blade-share-front/issues"
+    },
+    "homepage": "https://github.com/niboac/blade-share-front#readme"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: https://registry.npmjs.org/accounting: ETIMEDOUT
+      at Timeout._onTimeout (/usr/local/lib/node_modules/yarn/lib/cli.js:123675:19)
+      at ontimeout (timers.js:386:14)
+      at tryOnTimeout (timers.js:250:5)
+      at Timer.listOnTimeout (timers.js:214:5)

@@ -55,7 +55,7 @@ const blockSetting = {
   //   objName: 'order',
   // },
   FANG_DI_DAI: {
-    jinjian: {
+    进件: {
       借款信息: {
         iconKey: '#icon-kehuziliao',
         routeName: '补充信息',
