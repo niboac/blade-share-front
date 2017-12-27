@@ -829,13 +829,13 @@ var blockSetting = {
     进件: {
       借款信息: {
         iconKey: '#icon-kehuziliao',
-        routeName: '补充信息',
+        routeName: '补充进件信息',
         objName: 'order'
       },
       借款人信息: {
         iconKey: '#icon-kehuziliao',
         routeName: '补充信息',
-        objName: 'applicant'
+        objName: 'applicantPerson'
       },
       职业信息: {
         iconKey: '#icon-kehuziliao',
@@ -853,7 +853,7 @@ var blockSetting = {
         objName: 'house_hlMortgage'
       },
       上传图片: {
-        iconKey: '#icon-kehuziliao',
+        iconKey: '#icon-hetongshengming-',
         imgUrls: [{ label: '婚姻证明', group: '婚姻证明' }, { label: '户口本', group: '户口本' }, { label: '征信报告', group: '征信报告' }]
       }
     },
