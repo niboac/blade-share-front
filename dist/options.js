@@ -840,7 +840,7 @@ var blockSetting = {
       职业信息: {
         iconKey: '#icon-kehuziliao',
         routeName: '补充信息',
-        objName: 'applicant'
+        objName: 'applicantJob'
       },
       共借人信息: {
         iconKey: '#icon-kehuziliao',
@@ -854,7 +854,7 @@ var blockSetting = {
       },
       上传图片: {
         iconKey: '#icon-hetongshengming-',
-        imgUrls: [{ label: '婚姻证明', group: '婚姻证明' }, { label: '户口本', group: '户口本' }, { label: '征信报告', group: '征信报告' }]
+        imgUrls: [{ label: '婚姻证明', group: '婚姻证明' }, { label: '户口本', group: '户口本' }, { label: '征信报告', group: '征信报告' }, { label: '其他资料', group: '其他资料' }]
       }
     },
     下户: Object.assign(xiahuInCommon, {
