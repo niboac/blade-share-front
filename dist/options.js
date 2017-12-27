@@ -829,7 +829,7 @@ var blockSetting = {
     进件: {
       借款信息: {
         iconKey: '#icon-kehuziliao',
-        routeName: '补充进件信息',
+        routeName: '补充信息',
         objName: 'order'
       },
       借款人信息: {
