@@ -652,6 +652,23 @@ export const taskType2Submit = {
 let taskTypeBtnShow = {
   产调核房征信补件: '下户'
 }
+
+
+export const flowKey2ImgTasktype = {
+  进件: 'jinjian',
+  下户: '下户',
+  合同: '合同',
+  抵押: '抵押',
+  归档: '归档',
+
+  核行: '核行',
+  控件: '控件',
+  解抵押: '解抵押',
+  进抵: '进抵',
+  归档结案: '归档结案',
+}
+
+
 const bankCodes = [
   { value: '工商银行', key: '102' },
   { value: '农业银行', key: '103' },
