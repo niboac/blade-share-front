@@ -83,7 +83,7 @@ return /******/ (function(modules) { // webpackBootstrap
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.cities = exports.industries = exports.companyTypes = exports.bankCodes = exports.taskTypeBtnShow = exports.houseTypes = exports.allOrientations = exports.housingSituations = exports.relationshipType = exports.rwApplicant = exports.businessTypes = exports.periods = exports.maritalStatus = exports.time = exports.applicantRelationshipTypes = exports.relationshipTypes = exports.professionTypes = exports.livingConditions = exports.educations = exports.houseCities = exports.loanPurposes = exports.loanPurposesGuoyu = exports.mortgageSituations = exports.companySizes = exports.officeOwnerTypes = exports.ownerTypes = exports.landGains = exports.planningPurposes = exports.buildingTypes = exports.professionalTitles = exports.titles = exports.propertyTypes = exports.professionCatTypes = exports.genders = exports.addressTypes = exports.commonResidents = exports.taskType2Submit = exports.businessTypes2OrderType = exports.clientWorkTypes = exports.houseDefault = exports.applicantDefault = exports.bankInfoDefault = exports.childrenDefault = exports.unionBorrowerDefault = exports.hlMortgageDefault = exports.orderDefault = exports.hetongInfoDefault = exports.diyaInfoDefault = exports.diyaInfoLabel = exports.hetongInfoLabel = exports.childrenLabel = exports.orderLabel = exports.hlMortgageLabel = exports.unionBorrowerLabel = exports.houseLabel = exports.applicantLabel = exports.bankInfoLabel = exports.blockSetting = exports.blockSettingWeb = undefined;
+exports.cities = exports.industries = exports.companyTypes = exports.bankCodes = exports.taskTypeBtnShow = exports.houseTypes = exports.allOrientations = exports.housingSituations = exports.relationshipType = exports.rwApplicant = exports.businessTypes = exports.periods = exports.maritalStatus = exports.time = exports.applicantRelationshipTypes = exports.relationshipTypes = exports.professionTypes = exports.livingConditions = exports.educations = exports.houseCities = exports.loanPurposes = exports.loanPurposesGuoyu = exports.mortgageSituations = exports.companySizes = exports.officeOwnerTypes = exports.ownerTypes = exports.landGains = exports.planningPurposes = exports.buildingTypes = exports.professionalTitles = exports.titles = exports.propertyTypes = exports.professionCatTypes = exports.genders = exports.addressTypes = exports.commonResidents = exports.flowKey2ImgTasktype = exports.taskType2Submit = exports.businessTypes2OrderType = exports.clientWorkTypes = exports.houseDefault = exports.applicantDefault = exports.bankInfoDefault = exports.childrenDefault = exports.unionBorrowerDefault = exports.hlMortgageDefault = exports.orderDefault = exports.hetongInfoDefault = exports.diyaInfoDefault = exports.diyaInfoLabel = exports.hetongInfoLabel = exports.childrenLabel = exports.orderLabel = exports.hlMortgageLabel = exports.unionBorrowerLabel = exports.houseLabel = exports.applicantLabel = exports.bankInfoLabel = exports.blockSetting = exports.blockSettingWeb = undefined;
 
 var _imgGroupSetting = __webpack_require__(1);
 
@@ -718,6 +718,21 @@ var taskType2Submit = exports.taskType2Submit = {
 var taskTypeBtnShow = {
   产调核房征信补件: '下户'
 };
+
+var flowKey2ImgTasktype = exports.flowKey2ImgTasktype = {
+  进件: 'jinjian',
+  下户: '下户',
+  合同: '合同',
+  抵押: '抵押',
+  归档: '归档',
+
+  核行: '核行',
+  控件: '控件',
+  解抵押: '解抵押',
+  进抵: '进抵',
+  归档结案: '归档结案'
+};
+
 var bankCodes = [{ value: '工商银行', key: '102' }, { value: '农业银行', key: '103' }, { value: '中国银行', key: '104' }, { value: '建设银行', key: '105' }, { value: '交通银行', key: '301' }, { value: '中信银行', key: '302' }, { value: '平安银行', key: '307' }, { value: '广发银行', key: '306' }, { value: '兴业银行', key: '309' }, { value: '光大银行', key: '303' }, { value: '浦发银行', key: '310' }, { value: '民生银行', key: '305' }, { value: '上海银行', key: '401' }, { value: '华夏银行', key: '304' }, { value: '邮储银行', key: '100' }];
 
 var companyTypes = [{ key: '100', value: '党政机关' }, { key: '200', value: '事业单位' }, { key: '300', value: '军队' }, { key: '400', value: '社会团体' }, { key: '500', value: '内资企业' }, { key: '510', value: '国有企业' }, { key: '520', value: '集体企业' }, { key: '530', value: '股份合作企业' }, { key: '540', value: '联营企业' }, { key: '550', value: '有限责任公司' }, { key: '560', value: '股份有限公司' }, { key: '570', value: '私营企业' }, { key: '600', value: '外商投资企业(含港、澳、台)' }, { key: '610', value: '中外合资经营企业(含港、澳、台)' }, { key: '620', value: '中外合作经营企业(含港、澳、台)' }, { key: '630', value: '外资企业(含港、澳、台)' }, { key: '640', value: '外商投资股份有限公司(含港、澳、台)' }, { key: '700', value: '个体经营' }, { key: '800', value: '其他' }, { key: '900', value: '未知' }];
