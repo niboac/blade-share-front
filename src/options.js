@@ -1,7 +1,29 @@
 import industries from './industries'
 import cities from './cities'
 export { blockSettingWeb, blockSetting } from './img-group-setting'
-
+function clone(obj) {
+  if (typeof obj !== 'object') {
+    return obj
+  } else if (!obj) { // null
+    return obj
+  } else {
+    let newobj = null
+    if (obj instanceof Set) {
+      newobj = new Set([...obj])
+    } else if (obj instanceof Map) {
+      newobj = new Map()
+      obj.forEach((i, key) => {
+        newobj.set(key, clone(i))
+      })
+    } else {
+      newobj = obj instanceof Array ? [] : {};
+      for (let i in obj) {
+        newobj[i] = typeof obj[i] === 'object' ? clone(obj[i]) : obj[i];
+      }
+    }
+    return newobj;
+  }
+}
 export const bankInfoLabel = {
   bankCode: '开户银行',
   branchBank: '支行名称',
@@ -207,7 +229,7 @@ export const orderLabel = {
   mortgageInfo: null,
   priceEvaluation: '内部评房值',
   priceEvaluationCustom: '客户评房值',
-  productId:'贷款产品',
+  productId: '贷款产品',
   repaySource: '还款来源',
   repayMode: '还款方式',
   serviceFee: '服务费',
@@ -271,7 +293,7 @@ export const orderDefault = {
   mortgageInfo: null,
   priceEvaluation: null,
   priceEvaluationCustom: null,
-  productId:null,
+  productId: null,
   repaySource: null,
   repayMode: null,
   serviceFee: null,
@@ -471,6 +493,14 @@ export const houseDefault = {
     ownerType: '', // 房屋所有情况
   }
 }
+
+
+export const house_hlMortgageLabel = clone(houseLabel)
+house_hlMortgageLabel.hlMortgage = [clone(hlMortgageLabel)]
+export const house_hlMortgageDefault = clone(houseDefault)
+house_hlMortgageDefault.hlMortgage = [clone(hlMortgageDefault)]
+
+
 const allOrientations = [
   { value: '朝南', key: '朝南' },
   { value: '朝北', key: '朝北' },
