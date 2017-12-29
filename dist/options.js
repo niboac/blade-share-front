@@ -83,7 +83,9 @@ return /******/ (function(modules) { // webpackBootstrap
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.cities = exports.industries = exports.companyTypes = exports.bankCodes = exports.taskTypeBtnShow = exports.houseTypes = exports.allOrientations = exports.housingSituations = exports.relationshipType = exports.rwApplicant = exports.businessTypes = exports.periods = exports.maritalStatus = exports.time = exports.applicantRelationshipTypes = exports.relationshipTypes = exports.professionTypes = exports.livingConditions = exports.educations = exports.houseCities = exports.loanPurposes = exports.loanPurposesGuoyu = exports.mortgageSituations = exports.companySizes = exports.officeOwnerTypes = exports.ownerTypes = exports.landGains = exports.planningPurposes = exports.buildingTypes = exports.professionalTitles = exports.titles = exports.propertyTypes = exports.professionCatTypes = exports.genders = exports.addressTypes = exports.commonResidents = exports.flowKey2ImgTasktype = exports.taskType2Submit = exports.businessTypes2OrderType = exports.clientWorkTypes = exports.houseDefault = exports.applicantDefault = exports.bankInfoDefault = exports.childrenDefault = exports.unionBorrowerDefault = exports.hlMortgageDefault = exports.orderDefault = exports.hetongInfoDefault = exports.diyaInfoDefault = exports.diyaInfoLabel = exports.hetongInfoLabel = exports.childrenLabel = exports.orderLabel = exports.hlMortgageLabel = exports.unionBorrowerLabel = exports.houseLabel = exports.applicantLabel = exports.bankInfoLabel = exports.blockSetting = exports.blockSettingWeb = undefined;
+exports.cities = exports.industries = exports.companyTypes = exports.bankCodes = exports.taskTypeBtnShow = exports.houseTypes = exports.allOrientations = exports.housingSituations = exports.relationshipType = exports.rwApplicant = exports.businessTypes = exports.periods = exports.maritalStatus = exports.time = exports.applicantRelationshipTypes = exports.relationshipTypes = exports.professionTypes = exports.livingConditions = exports.educations = exports.houseCities = exports.loanPurposes = exports.loanPurposesGuoyu = exports.mortgageSituations = exports.companySizes = exports.officeOwnerTypes = exports.ownerTypes = exports.landGains = exports.planningPurposes = exports.buildingTypes = exports.professionalTitles = exports.titles = exports.propertyTypes = exports.professionCatTypes = exports.genders = exports.addressTypes = exports.commonResidents = exports.flowKey2ImgTasktype = exports.taskType2Submit = exports.businessTypes2OrderType = exports.clientWorkTypes = exports.house_hlMortgageDefault = exports.house_hlMortgageLabel = exports.houseDefault = exports.applicantDefault = exports.bankInfoDefault = exports.childrenDefault = exports.unionBorrowerDefault = exports.hlMortgageDefault = exports.orderDefault = exports.hetongInfoDefault = exports.diyaInfoDefault = exports.diyaInfoLabel = exports.hetongInfoLabel = exports.childrenLabel = exports.orderLabel = exports.hlMortgageLabel = exports.unionBorrowerLabel = exports.houseLabel = exports.applicantLabel = exports.bankInfoLabel = exports.blockSetting = exports.blockSettingWeb = undefined;
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _imgGroupSetting = __webpack_require__(1);
 
@@ -110,6 +112,32 @@ var _cities2 = _interopRequireDefault(_cities);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
+function clone(obj) {
+  if ((typeof obj === 'undefined' ? 'undefined' : _typeof(obj)) !== 'object') {
+    return obj;
+  } else if (!obj) {
+    // null
+    return obj;
+  } else {
+    var newobj = null;
+    if (obj instanceof Set) {
+      newobj = new Set([].concat(_toConsumableArray(obj)));
+    } else if (obj instanceof Map) {
+      newobj = new Map();
+      obj.forEach(function (i, key) {
+        newobj.set(key, clone(i));
+      });
+    } else {
+      newobj = obj instanceof Array ? [] : {};
+      for (var i in obj) {
+        newobj[i] = _typeof(obj[i]) === 'object' ? clone(obj[i]) : obj[i];
+      }
+    }
+    return newobj;
+  }
+}
 var bankInfoLabel = exports.bankInfoLabel = {
   bankCode: '开户银行',
   branchBank: '支行名称',
@@ -579,6 +607,12 @@ var houseDefault = exports.houseDefault = {
     ownerType: '' // 房屋所有情况
   }
 };
+
+var house_hlMortgageLabel = exports.house_hlMortgageLabel = clone(houseLabel);
+house_hlMortgageLabel.hlMortgage = [clone(hlMortgageLabel)];
+var house_hlMortgageDefault = exports.house_hlMortgageDefault = clone(houseDefault);
+house_hlMortgageDefault.hlMortgage = [clone(hlMortgageDefault)];
+
 var allOrientations = [{ value: '朝南', key: '朝南' }, { value: '朝北', key: '朝北' }, { value: '朝东', key: '朝东' }, { value: '朝西', key: '朝西' }, { value: '南北', key: '南北' }, { value: '其它', key: '其它' }];
 var houseTypes = [{ key: '0', value: '普通住宅' }, { key: '1', value: '别墅' }, { key: '2', value: '其它' }];
 var educations = [{
