@@ -500,6 +500,9 @@ house_hlMortgageLabel.hlMortgage = [clone(hlMortgageLabel)]
 export const house_hlMortgageDefault = clone(houseDefault)
 house_hlMortgageDefault.hlMortgage = [clone(hlMortgageDefault)]
 
+export const person_bankLabel = Object.assign(clone(applicantLabel), clone(bankInfoLabel))
+export const person_bankDefault = Object.assign(clone(applicantDefault), ...clone(bankInfoDefault))
+
 
 const allOrientations = [
   { value: '朝南', key: '朝南' },
