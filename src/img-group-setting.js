@@ -64,7 +64,7 @@ const blockSetting = {
       借款人信息: {
         iconKey: '#icon-kehuziliao',
         routeName: '补充信息',
-        objName: 'applicantPerson',
+        objName: 'person_bank',
       },
       职业信息: {
         iconKey: '#icon-kehuziliao',
