@@ -74,7 +74,7 @@ const blockSetting = {
       共借人信息: {
         iconKey: '#icon-kehuziliao',
         routeName: '补充附加信息',
-        objName: 'unionBorrower',
+        objName: 'unionBorrowerNoReq',
       },
       抵押物信息: {
         iconKey: '#icon-kehuziliao',
