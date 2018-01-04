@@ -59,26 +59,31 @@ const blockSetting = {
         iconKey: 'icon-ziliao',
         routeName: '补充信息',
         objName: 'order',
+        backRoutePath:'/nd/buchong'
       },
       借款人信息: {
         iconKey: 'icon-jiekuanren-',
         routeName: '补充信息',
         objName: 'person_bank',
+        backRoutePath:'/nd/buchong'
       },
       职业信息: {
         iconKey: 'icon-zhiyexinxi',
         routeName: '补充信息',
         objName: 'applicantJob',
+        backRoutePath:'/nd/buchong'
       },
       共借人信息: {
         iconKey: 'icon-gongjieren',
         routeName: '补充附加信息',
         objName: 'unionBorrowerNoReq',
+        backRoutePath:'/nd/buchong'
       },
       抵押物信息: {
         iconKey: 'icon-diyawu',
         routeName: '补充复合信息',
         objName: 'house_hlMortgage',
+        backRoutePath:'/nd/buchong'
       },
       上传图片: {
         iconKey: 'icon-zhaopian',
@@ -89,7 +94,8 @@ const blockSetting = {
           { label: '房产证其他照片', group: '房产证其他照片' },
           // { label: '征信报告', group: '征信报告' },
           // { label: '其他资料', group: '其他资料' },
-        ]
+        ],
+        backRoutePath:'/nd/buchong'
       },
     },
     下户: Object.assign(xiahuInCommon, {
