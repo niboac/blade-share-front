@@ -47,7 +47,6 @@ const xaihuSld = {
   },
 }
 
-
 const blockSetting = {
   // 补充贷款资料: {
   //   iconKey: '#icon-kehuziliao',
