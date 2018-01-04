@@ -880,32 +880,32 @@ var blockSetting = {
   FANG_DI_DAI: {
     进件: {
       借款信息: {
-        iconKey: '#icon-kehuziliao',
+        iconKey: 'icon-kehuziliao',
         routeName: '补充信息',
         objName: 'order'
       },
       借款人信息: {
-        iconKey: '#icon-jiekuanren-',
+        iconKey: 'icon-jiekuanren-',
         routeName: '补充信息',
         objName: 'person_bank'
       },
       职业信息: {
-        iconKey: '#icon-zhiyexinxi',
+        iconKey: 'icon-zhiyexinxi',
         routeName: '补充信息',
         objName: 'applicantJob'
       },
       共借人信息: {
-        iconKey: '#icon-gongjieren',
+        iconKey: 'icon-gongjieren',
         routeName: '补充附加信息',
         objName: 'unionBorrowerNoReq'
       },
       抵押物信息: {
-        iconKey: '#icon-diyawu',
+        iconKey: 'icon-diyawu',
         routeName: '补充复合信息',
         objName: 'house_hlMortgage'
       },
       上传图片: {
-        iconKey: '#icon-zhaopian',
+        iconKey: 'icon-zhaopian',
         imgUrls: [{ label: '婚姻证明', group: '婚姻证明' }, { label: '户口本', group: '户口本' },
         // { label: '户口本', group: '户口本' },
         { label: '房产证其他照片', group: '房产证其他照片' }]
