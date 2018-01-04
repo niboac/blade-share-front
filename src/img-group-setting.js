@@ -56,7 +56,7 @@ const blockSetting = {
   FANG_DI_DAI: {
     进件: {
       借款信息: {
-        iconKey: 'icon-kehuziliao',
+        iconKey: 'icon-ziliao',
         routeName: '补充信息',
         objName: 'order',
       },
