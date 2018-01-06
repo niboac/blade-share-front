@@ -927,7 +927,7 @@ var blockSetting = {
         objName: 'hlMortgage'
       },
       上传下户照片: {
-        iconKey: '#icon-kehuziliao',
+        iconKey: 'icon-xiahuzhaopian-',
         imgUrls: [{ label: '小区', group: 'xiaoqu' }, { label: '房屋外立面', group: 'wailimian' }, { label: '入户口', group: 'ruhukou' }, { label: '客厅', group: 'keting' }, { label: '厨房', group: 'chufang' }, { label: '卧室', group: 'woshi' }, { label: '卫生间', group: 'weishengjian', imageRequire: '每室不少于一张' }, { label: '餐厅', group: 'canting' }, { label: '电梯', group: 'dianti' }]
       }
     }),
