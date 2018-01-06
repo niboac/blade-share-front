@@ -90,12 +90,18 @@ const blockSetting = {
         imgUrls: [
           { label: '婚姻证明', group: '婚姻证明' },
           { label: '户口本', group: '户口本' },
-          // { label: '户口本', group: '户口本' },
           { label: '房产证其他照片', group: '房产证其他照片' },
-          // { label: '征信报告', group: '征信报告' },
-          // { label: '其他资料', group: '其他资料' },
         ],
         backRoutePath:'/nd/buchong'
+      },
+      进件上传图片: {
+        iconKey: 'icon-zhaopian',
+        imgUrls: [
+          { label: '婚姻证明', group: '婚姻证明' },
+          { label: '户口本', group: '户口本' },
+          { label: '房产证其他照片', group: '房产证其他照片' },
+        ],
+        backRoutePath:'/nd/index'
       },
     },
     下户: Object.assign(xiahuInCommon, {
