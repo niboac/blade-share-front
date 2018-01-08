@@ -896,33 +896,42 @@ var blockSetting = {
       借款信息: {
         iconKey: 'icon-ziliao',
         routeName: '补充信息',
-        objName: 'order'
+        objName: 'order',
+        backRoutePath: '/nd/buchong'
       },
       借款人信息: {
         iconKey: 'icon-jiekuanren-',
         routeName: '补充信息',
-        objName: 'person_bank'
+        objName: 'person_bank',
+        backRoutePath: '/nd/buchong'
       },
       职业信息: {
         iconKey: 'icon-zhiyexinxi',
         routeName: '补充信息',
-        objName: 'applicantJob'
+        objName: 'applicantJob',
+        backRoutePath: '/nd/buchong'
       },
       共借人信息: {
         iconKey: 'icon-gongjieren',
         routeName: '补充附加信息',
-        objName: 'unionBorrowerNoReq'
+        objName: 'unionBorrowerNoReq',
+        backRoutePath: '/nd/buchong'
       },
       抵押物信息: {
         iconKey: 'icon-diyawu',
         routeName: '补充复合信息',
-        objName: 'house_hlMortgage'
+        objName: 'house_hlMortgage',
+        backRoutePath: '/nd/buchong'
       },
       上传图片: {
         iconKey: 'icon-zhaopian',
-        imgUrls: [{ label: '婚姻证明', group: '婚姻证明' }, { label: '户口本', group: '户口本' },
-        // { label: '户口本', group: '户口本' },
-        { label: '房产证其他照片', group: '房产证其他照片' }]
+        imgUrls: [{ label: '婚姻证明', group: '婚姻证明' }, { label: '户口本', group: '户口本' }, { label: '房产证其他照片', group: '房产证其他照片' }],
+        backRoutePath: '/nd/buchong'
+      },
+      进件上传图片: {
+        iconKey: 'icon-zhaopian',
+        imgUrls: [{ label: '婚姻证明', group: '婚姻证明' }, { label: '户口本', group: '户口本' }, { label: '房产证其他照片', group: '房产证其他照片' }],
+        backRoutePath: '/nd/index'
       }
     },
     下户: Object.assign(xiahuInCommon, {
@@ -932,7 +941,7 @@ var blockSetting = {
         objName: 'hlMortgage'
       },
       上传下户照片: {
-        iconKey: '#icon-kehuziliao',
+        iconKey: 'icon-xiahuzhaopian-',
         imgUrls: [{ label: '小区', group: 'xiaoqu' }, { label: '房屋外立面', group: 'wailimian' }, { label: '入户口', group: 'ruhukou' }, { label: '客厅', group: 'keting' }, { label: '厨房', group: 'chufang' }, { label: '卧室', group: 'woshi' }, { label: '卫生间', group: 'weishengjian', imageRequire: '每室不少于一张' }, { label: '餐厅', group: 'canting' }, { label: '电梯', group: 'dianti' }]
       }
     }),
