@@ -1,7 +1,29 @@
 import industries from './industries'
 import cities from './cities'
 export { blockSettingWeb, blockSetting } from './img-group-setting'
-
+function clone(obj) {
+  if (typeof obj !== 'object') {
+    return obj
+  } else if (!obj) { // null
+    return obj
+  } else {
+    let newobj = null
+    if (obj instanceof Set) {
+      newobj = new Set([...obj])
+    } else if (obj instanceof Map) {
+      newobj = new Map()
+      obj.forEach((i, key) => {
+        newobj.set(key, clone(i))
+      })
+    } else {
+      newobj = obj instanceof Array ? [] : {};
+      for (let i in obj) {
+        newobj[i] = typeof obj[i] === 'object' ? clone(obj[i]) : obj[i];
+      }
+    }
+    return newobj;
+  }
+}
 export const bankInfoLabel = {
   bankCode: '开户银行',
   branchBank: '支行名称',
@@ -107,6 +129,7 @@ export const houseLabel = {
   roomNumber: '房号',
   buildingId: '楼号',
   hasElevator: '是否有电梯',
+  hlMortgage: '',
   landUsageCertNumber: '土地使用编号',
   // nameOfOwner: null,
   orientation: '朝向',
@@ -177,7 +200,7 @@ export const hlMortgageLabel = {
   fastBid1: '快出价1',
   fastBid2: '快出价2',
   houseOwner: '产权人',
-  houseUid:'房产id',
+  houseUid: '房产id',
   estateResearch: '产调情况',
   mortgageRemain: '抵押余额',
   originalLoanType: '原贷款类型',
@@ -185,9 +208,9 @@ export const hlMortgageLabel = {
   secondMortgageRemain: '二抵余额',
 };
 
-
 export const orderLabel = {
   loanType: '贷款类型',
+  businessType: '业务种类',
   loanProduct: '贷款产品',
   accompaniesName: '陪同人员姓名',
   accompaniesNumber: '陪同人数',
@@ -206,6 +229,7 @@ export const orderLabel = {
   mortgageInfo: null,
   priceEvaluation: '内部评房值',
   priceEvaluationCustom: '客户评房值',
+  productId: '贷款产品',
   repaySource: '还款来源',
   repayMode: '还款方式',
   serviceFee: '服务费',
@@ -250,6 +274,7 @@ export const hetongInfoDefault = {
 
 export const orderDefault = {
   loanType: null,
+  businessType: '3',
   loanProduct: null,
   accompaniesName: null,
   accompaniesNumber: null,
@@ -268,6 +293,7 @@ export const orderDefault = {
   mortgageInfo: null,
   priceEvaluation: null,
   priceEvaluationCustom: null,
+  productId: null,
   repaySource: null,
   repayMode: null,
   serviceFee: null,
@@ -289,7 +315,7 @@ export const hlMortgageDefault = {
   fastBid1: null,
   fastBid2: null,
   houseOwner: null,
-  houseUid:null,
+  houseUid: null,
   estateResearch: null,
   mortgageRemain: null,
   firstMortgageRemain: null,
@@ -439,6 +465,7 @@ export const houseDefault = {
   roomNumber: '',
   buildingId: '',
   hasElevator: null,
+  hlMortgage: [],
   landUsageCertNumber: null,
   // nameOfOwner: null,
   orientation: '',
@@ -466,6 +493,17 @@ export const houseDefault = {
     ownerType: '', // 房屋所有情况
   }
 }
+
+
+export const house_hlMortgageLabel = clone(houseLabel)
+house_hlMortgageLabel.hlMortgage = [clone(hlMortgageLabel)]
+export const house_hlMortgageDefault = clone(houseDefault)
+house_hlMortgageDefault.hlMortgage = [clone(hlMortgageDefault)]
+
+export const person_bankLabel = Object.assign(clone(applicantLabel), clone(bankInfoLabel))
+export const person_bankDefault = Object.assign(clone(applicantDefault), ...clone(bankInfoDefault))
+
+
 const allOrientations = [
   { value: '朝南', key: '朝南' },
   { value: '朝北', key: '朝北' },
@@ -601,6 +639,11 @@ const businessTypes = [{
   key: '3',
   value: '房抵贷'
 }]
+export const businessTypes2OrderType = {
+  1: ['SHU_LOU_DAI'],
+  2: ['SHU_LOU_DAI'],
+  3: ['FANG_DI_DAI'],
+}
 const IdInfos = [
   'idCardFaceUrl',
   'portraitUrl',
@@ -642,6 +685,23 @@ export const taskType2Submit = {
 let taskTypeBtnShow = {
   产调核房征信补件: '下户'
 }
+
+
+export const flowKey2ImgTasktype = {
+  进件: 'jinjian',
+  下户: '下户',
+  合同: '合同',
+  抵押: '抵押',
+  归档: '归档',
+
+  核行: '核行',
+  控件: '控件',
+  解抵押: '解抵押',
+  进抵: '进抵',
+  归档结案: '归档结案',
+}
+
+
 const bankCodes = [
   { value: '工商银行', key: '102' },
   { value: '农业银行', key: '103' },
@@ -796,6 +856,7 @@ export let houseCities = [
   { key: '北京', value: '北京' },
   // { key: '上海', value: '上海' },
 ]
+
 
 export {
   educations, livingConditions, professionTypes,

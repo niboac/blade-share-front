@@ -83,7 +83,9 @@ return /******/ (function(modules) { // webpackBootstrap
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.cities = exports.industries = exports.companyTypes = exports.bankCodes = exports.taskTypeBtnShow = exports.houseTypes = exports.allOrientations = exports.housingSituations = exports.relationshipType = exports.rwApplicant = exports.businessTypes = exports.periods = exports.maritalStatus = exports.time = exports.applicantRelationshipTypes = exports.relationshipTypes = exports.professionTypes = exports.livingConditions = exports.educations = exports.houseCities = exports.loanPurposes = exports.loanPurposesGuoyu = exports.mortgageSituations = exports.companySizes = exports.officeOwnerTypes = exports.ownerTypes = exports.landGains = exports.planningPurposes = exports.buildingTypes = exports.professionalTitles = exports.titles = exports.propertyTypes = exports.professionCatTypes = exports.genders = exports.addressTypes = exports.commonResidents = exports.taskType2Submit = exports.clientWorkTypes = exports.houseDefault = exports.applicantDefault = exports.bankInfoDefault = exports.childrenDefault = exports.unionBorrowerDefault = exports.hlMortgageDefault = exports.orderDefault = exports.hetongInfoDefault = exports.diyaInfoDefault = exports.diyaInfoLabel = exports.hetongInfoLabel = exports.childrenLabel = exports.orderLabel = exports.hlMortgageLabel = exports.unionBorrowerLabel = exports.houseLabel = exports.applicantLabel = exports.bankInfoLabel = exports.blockSetting = exports.blockSettingWeb = undefined;
+exports.cities = exports.industries = exports.companyTypes = exports.bankCodes = exports.taskTypeBtnShow = exports.houseTypes = exports.allOrientations = exports.housingSituations = exports.relationshipType = exports.rwApplicant = exports.businessTypes = exports.periods = exports.maritalStatus = exports.time = exports.applicantRelationshipTypes = exports.relationshipTypes = exports.professionTypes = exports.livingConditions = exports.educations = exports.houseCities = exports.loanPurposes = exports.loanPurposesGuoyu = exports.mortgageSituations = exports.companySizes = exports.officeOwnerTypes = exports.ownerTypes = exports.landGains = exports.planningPurposes = exports.buildingTypes = exports.professionalTitles = exports.titles = exports.propertyTypes = exports.professionCatTypes = exports.genders = exports.addressTypes = exports.commonResidents = exports.flowKey2ImgTasktype = exports.taskType2Submit = exports.businessTypes2OrderType = exports.clientWorkTypes = exports.person_bankDefault = exports.person_bankLabel = exports.house_hlMortgageDefault = exports.house_hlMortgageLabel = exports.houseDefault = exports.applicantDefault = exports.bankInfoDefault = exports.childrenDefault = exports.unionBorrowerDefault = exports.hlMortgageDefault = exports.orderDefault = exports.hetongInfoDefault = exports.diyaInfoDefault = exports.diyaInfoLabel = exports.hetongInfoLabel = exports.childrenLabel = exports.orderLabel = exports.hlMortgageLabel = exports.unionBorrowerLabel = exports.houseLabel = exports.applicantLabel = exports.bankInfoLabel = exports.blockSetting = exports.blockSettingWeb = undefined;
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _imgGroupSetting = __webpack_require__(1);
 
@@ -110,6 +112,32 @@ var _cities2 = _interopRequireDefault(_cities);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
+function clone(obj) {
+  if ((typeof obj === 'undefined' ? 'undefined' : _typeof(obj)) !== 'object') {
+    return obj;
+  } else if (!obj) {
+    // null
+    return obj;
+  } else {
+    var newobj = null;
+    if (obj instanceof Set) {
+      newobj = new Set([].concat(_toConsumableArray(obj)));
+    } else if (obj instanceof Map) {
+      newobj = new Map();
+      obj.forEach(function (i, key) {
+        newobj.set(key, clone(i));
+      });
+    } else {
+      newobj = obj instanceof Array ? [] : {};
+      for (var i in obj) {
+        newobj[i] = _typeof(obj[i]) === 'object' ? clone(obj[i]) : obj[i];
+      }
+    }
+    return newobj;
+  }
+}
 var bankInfoLabel = exports.bankInfoLabel = {
   bankCode: '开户银行',
   branchBank: '支行名称',
@@ -215,6 +243,7 @@ var houseLabel = exports.houseLabel = {
   roomNumber: '房号',
   buildingId: '楼号',
   hasElevator: '是否有电梯',
+  hlMortgage: '',
   landUsageCertNumber: '土地使用编号',
   // nameOfOwner: null,
   orientation: '朝向',
@@ -295,6 +324,7 @@ var hlMortgageLabel = exports.hlMortgageLabel = {
 
 var orderLabel = exports.orderLabel = {
   loanType: '贷款类型',
+  businessType: '业务种类',
   loanProduct: '贷款产品',
   accompaniesName: '陪同人员姓名',
   accompaniesNumber: '陪同人数',
@@ -313,6 +343,7 @@ var orderLabel = exports.orderLabel = {
   mortgageInfo: null,
   priceEvaluation: '内部评房值',
   priceEvaluationCustom: '客户评房值',
+  productId: '贷款产品',
   repaySource: '还款来源',
   repayMode: '还款方式',
   serviceFee: '服务费'
@@ -357,6 +388,7 @@ var hetongInfoDefault = exports.hetongInfoDefault = {
 
 var orderDefault = exports.orderDefault = {
   loanType: null,
+  businessType: '3',
   loanProduct: null,
   accompaniesName: null,
   accompaniesNumber: null,
@@ -375,6 +407,7 @@ var orderDefault = exports.orderDefault = {
   mortgageInfo: null,
   priceEvaluation: null,
   priceEvaluationCustom: null,
+  productId: null,
   repaySource: null,
   repayMode: null,
   serviceFee: null,
@@ -546,6 +579,7 @@ var houseDefault = exports.houseDefault = {
   roomNumber: '',
   buildingId: '',
   hasElevator: null,
+  hlMortgage: [],
   landUsageCertNumber: null,
   // nameOfOwner: null,
   orientation: '',
@@ -573,6 +607,15 @@ var houseDefault = exports.houseDefault = {
     ownerType: '' // 房屋所有情况
   }
 };
+
+var house_hlMortgageLabel = exports.house_hlMortgageLabel = clone(houseLabel);
+house_hlMortgageLabel.hlMortgage = [clone(hlMortgageLabel)];
+var house_hlMortgageDefault = exports.house_hlMortgageDefault = clone(houseDefault);
+house_hlMortgageDefault.hlMortgage = [clone(hlMortgageDefault)];
+
+var person_bankLabel = exports.person_bankLabel = Object.assign(clone(applicantLabel), clone(bankInfoLabel));
+var person_bankDefault = exports.person_bankDefault = Object.assign.apply(Object, [clone(applicantDefault)].concat(_toConsumableArray(clone(bankInfoDefault))));
+
 var allOrientations = [{ value: '朝南', key: '朝南' }, { value: '朝北', key: '朝北' }, { value: '朝东', key: '朝东' }, { value: '朝西', key: '朝西' }, { value: '南北', key: '南北' }, { value: '其它', key: '其它' }];
 var houseTypes = [{ key: '0', value: '普通住宅' }, { key: '1', value: '别墅' }, { key: '2', value: '其它' }];
 var educations = [{
@@ -692,6 +735,11 @@ var businessTypes = [{
   key: '3',
   value: '房抵贷'
 }];
+var businessTypes2OrderType = exports.businessTypes2OrderType = {
+  1: ['SHU_LOU_DAI'],
+  2: ['SHU_LOU_DAI'],
+  3: ['FANG_DI_DAI']
+};
 var IdInfos = ['idCardFaceUrl', 'portraitUrl', 'idNumber', 'name', 'gender', 'birthday', 'address', 'nationality', 'cardIssuer'];
 var rwApplicant = [// 与申请人的关系
 { value: '父母', key: '1' }, { value: '配偶', key: '2' }, { value: '子女', key: '3' }, { value: '兄弟姐妹', key: '4' }, { value: '朋友', key: '5' }, { value: '同事', key: '6' }, { value: '合伙人', key: '7' }, { value: '其他', key: '8' }];
@@ -707,6 +755,21 @@ var taskType2Submit = exports.taskType2Submit = {
 var taskTypeBtnShow = {
   产调核房征信补件: '下户'
 };
+
+var flowKey2ImgTasktype = exports.flowKey2ImgTasktype = {
+  进件: 'jinjian',
+  下户: '下户',
+  合同: '合同',
+  抵押: '抵押',
+  归档: '归档',
+
+  核行: '核行',
+  控件: '控件',
+  解抵押: '解抵押',
+  进抵: '进抵',
+  归档结案: '归档结案'
+};
+
 var bankCodes = [{ value: '工商银行', key: '102' }, { value: '农业银行', key: '103' }, { value: '中国银行', key: '104' }, { value: '建设银行', key: '105' }, { value: '交通银行', key: '301' }, { value: '中信银行', key: '302' }, { value: '平安银行', key: '307' }, { value: '广发银行', key: '306' }, { value: '兴业银行', key: '309' }, { value: '光大银行', key: '303' }, { value: '浦发银行', key: '310' }, { value: '民生银行', key: '305' }, { value: '上海银行', key: '401' }, { value: '华夏银行', key: '304' }, { value: '邮储银行', key: '100' }];
 
 var companyTypes = [{ key: '100', value: '党政机关' }, { key: '200', value: '事业单位' }, { key: '300', value: '军队' }, { key: '400', value: '社会团体' }, { key: '500', value: '内资企业' }, { key: '510', value: '国有企业' }, { key: '520', value: '集体企业' }, { key: '530', value: '股份合作企业' }, { key: '540', value: '联营企业' }, { key: '550', value: '有限责任公司' }, { key: '560', value: '股份有限公司' }, { key: '570', value: '私营企业' }, { key: '600', value: '外商投资企业(含港、澳、台)' }, { key: '610', value: '中外合资经营企业(含港、澳、台)' }, { key: '620', value: '中外合作经营企业(含港、澳、台)' }, { key: '630', value: '外资企业(含港、澳、台)' }, { key: '640', value: '外商投资股份有限公司(含港、澳、台)' }, { key: '700', value: '个体经营' }, { key: '800', value: '其他' }, { key: '900', value: '未知' }];
@@ -815,6 +878,45 @@ var blockSetting = {
   //   objName: 'order',
   // },
   FANG_DI_DAI: {
+    进件: {
+      借款信息: {
+        iconKey: 'icon-ziliao',
+        routeName: '补充信息',
+        objName: 'order',
+        backRoutePath: '/nd/buchong'
+      },
+      借款人信息: {
+        iconKey: 'icon-jiekuanren-',
+        routeName: '补充信息',
+        objName: 'person_bank',
+        backRoutePath: '/nd/buchong'
+      },
+      职业信息: {
+        iconKey: 'icon-zhiyexinxi',
+        routeName: '补充信息',
+        objName: 'applicantJob',
+        backRoutePath: '/nd/buchong'
+      },
+      共借人信息: {
+        iconKey: 'icon-gongjieren',
+        routeName: '补充附加信息',
+        objName: 'unionBorrowerNoReq',
+        backRoutePath: '/nd/buchong'
+      },
+      抵押物信息: {
+        iconKey: 'icon-diyawu',
+        routeName: '补充复合信息',
+        objName: 'house_hlMortgage',
+        backRoutePath: '/nd/buchong'
+      },
+      上传图片: {
+        iconKey: 'icon-zhaopian',
+        imgUrls: [{ label: '婚姻证明', group: '婚姻证明' }, { label: '户口本', group: '户口本' },
+        // { label: '户口本', group: '户口本' },
+        { label: '房产证其他照片', group: '房产证其他照片' }],
+        backRoutePath: '/nd/buchong'
+      }
+    },
     下户: Object.assign(xiahuInCommon, {
       补充抵押资料: {
         iconKey: '#icon-kehuziliao',
