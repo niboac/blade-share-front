@@ -138,6 +138,7 @@ function clone(obj) {
     return newobj;
   }
 }
+
 var bankInfoLabel = exports.bankInfoLabel = {
   bankCode: '开户银行',
   branchBank: '支行名称',
@@ -179,6 +180,7 @@ var applicantLabel = exports.applicantLabel = {
   annualIncomeRemarks: null,
   graduatedSchool: '毕业学校',
   educationLevel: '最高学历',
+  familySize: '家庭人数',
   maritalStatus: '婚姻状况',
   spouseName: '配偶姓名',
   spouseMobile: '配偶手机号码',
@@ -214,6 +216,10 @@ var applicantLabel = exports.applicantLabel = {
   email: '电子邮件',
   birthdate: '出生日期',
   // clientWorkType: null,
+  officeRent: '经营场所租金',
+  officeArea: '经营场所面积',
+  EnterpriseMonthlyIncome: '企业月收入',
+  PersonalMonthlyIncome: '个人月收入',
   extra: {
     clientLoanType: null,
     clientWorkType: '客户类型',
@@ -346,7 +352,9 @@ var orderLabel = exports.orderLabel = {
   productId: '贷款产品',
   repaySource: '还款来源',
   repayMode: '还款方式',
-  serviceFee: '服务费'
+  serviceFee: '服务费',
+  expectedRepayTime: '预计还款时间',
+  incomingPlatform: '进件来源'
 };
 var childrenLabel = exports.childrenLabel = {
   name: '姓名',
@@ -411,7 +419,9 @@ var orderDefault = exports.orderDefault = {
   repaySource: null,
   repayMode: null,
   serviceFee: null,
-  extra: {}
+  extra: {},
+  expectedRepayTime: null,
+  incomingPlatform: null
 };
 var hlMortgageDefault = exports.hlMortgageDefault = {
   isUniqueHouse: null,
@@ -515,6 +525,7 @@ var applicantDefault = exports.applicantDefault = {
   annualIncome: null,
   annualIncomeRemarks: null,
   graduatedSchool: null,
+  familySize: null,
   educationLevel: null,
   maritalStatus: null,
   spouseName: null,
@@ -545,11 +556,14 @@ var applicantDefault = exports.applicantDefault = {
   companySize: null,
   companyAddress: '',
   companyPhone: '',
-
-  increaseCreditItems: null,
   email: '',
   birthdate: '',
   // clientWorkType: null,
+  officeRent: null,
+  officeArea: null,
+  EnterpriseMonthlyIncome: null,
+  PersonalMonthlyIncome: null,
+  increaseCreditItems: null,
   extra: {
     clientLoanType: null,
     clientWorkType: '',
