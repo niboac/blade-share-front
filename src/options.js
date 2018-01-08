@@ -1,6 +1,8 @@
 import industries from './industries'
 import cities from './cities'
+
 export { blockSettingWeb, blockSetting } from './img-group-setting'
+
 function clone(obj) {
   if (typeof obj !== 'object') {
     return obj
@@ -24,6 +26,7 @@ function clone(obj) {
     return newobj;
   }
 }
+
 export const bankInfoLabel = {
   bankCode: '开户银行',
   branchBank: '支行名称',
@@ -65,6 +68,7 @@ export const applicantLabel = {
   annualIncomeRemarks: null,
   graduatedSchool: '毕业学校',
   educationLevel: '最高学历',
+  familySize: '家庭人数',
   maritalStatus: '婚姻状况',
   spouseName: '配偶姓名',
   spouseMobile: '配偶手机号码',
@@ -100,6 +104,10 @@ export const applicantLabel = {
   email: '电子邮件',
   birthdate: '出生日期',
   // clientWorkType: null,
+  officeRent: '经营场所租金',
+  officeArea: '经营场所面积',
+  EnterpriseMonthlyIncome: '企业月收入',
+  PersonalMonthlyIncome: '个人月收入',
   extra: {
     clientLoanType: null,
     clientWorkType: '客户类型',
@@ -233,6 +241,8 @@ export const orderLabel = {
   repaySource: '还款来源',
   repayMode: '还款方式',
   serviceFee: '服务费',
+  expectedRepayTime: '预计还款时间',
+  incomingPlatform: '进件来源',
 };
 export const childrenLabel = {
   name: '姓名',
@@ -298,6 +308,8 @@ export const orderDefault = {
   repayMode: null,
   serviceFee: null,
   extra: {},
+  expectedRepayTime: null,
+  incomingPlatform: null,
 }
 export const hlMortgageDefault = {
   isUniqueHouse: null,
@@ -401,6 +413,7 @@ export const applicantDefault = {
   annualIncome: null,
   annualIncomeRemarks: null,
   graduatedSchool: null,
+  familySize: null,
   educationLevel: null,
   maritalStatus: null,
   spouseName: null,
@@ -431,11 +444,14 @@ export const applicantDefault = {
   companySize: null,
   companyAddress: '',
   companyPhone: '',
-
-  increaseCreditItems: null,
   email: '',
   birthdate: '',
   // clientWorkType: null,
+  officeRent: null,
+  officeArea: null,
+  EnterpriseMonthlyIncome: null,
+  PersonalMonthlyIncome: null,
+  increaseCreditItems: null,
   extra: {
     clientLoanType: null,
     clientWorkType: '',
