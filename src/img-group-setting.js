@@ -88,20 +88,20 @@ const blockSetting = {
       上传图片: {
         iconKey: 'icon-zhaopian',
         imgUrls: [
-          { label: '婚姻证明', group: '婚姻证明' },
-          { label: '户口本', group: '户口本' },
+          { label: '婚姻证明', group: 'marriage' },
+          { label: '户口本', group: 'household' },
           { label: '房产证', group: '房产证' },
-          { label: '其他资料', group: '其他资料' },
+          { label: '其他资料', group: 'other' },
         ],
         backRoutePath: '/nd/buchong'
       },
       进件上传图片: {
         iconKey: 'icon-zhaopian',
         imgUrls: [
-          { label: '婚姻证明', group: '婚姻证明' },
-          { label: '户口本', group: '户口本' },
+          { label: '婚姻证明', group: 'marriage' },
+          { label: '户口本', group: 'household' },
           { label: '房产证', group: '房产证' },
-          { label: '其他资料', group: '其他资料' },
+          { label: '其他资料', group: 'other' },
         ],
         backRoutePath: '/nd/index'
       },
@@ -297,6 +297,9 @@ const blockSetting = {
 
 const blockSettingWeb = {
   FANG_DI_DAI: {
+    进件:[
+      ...blockSetting.FANG_DI_DAI['下户']['上传图片'].imgUrls
+    ],
     下户: [
       ...blockSetting.FANG_DI_DAI['下户']['上传下户照片'].imgUrls
     ],
