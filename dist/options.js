@@ -925,12 +925,12 @@ var blockSetting = {
       },
       上传图片: {
         iconKey: 'icon-zhaopian',
-        imgUrls: [{ label: '婚姻证明', group: 'marriage', limit: 10, uploadType: 'multiPic' }, { label: '户口本', group: 'household', limit: 10, uploadType: 'multiPic' }, { label: '房产证', group: '房产证', limit: 10, uploadType: 'multiPic' }, { label: '其他资料', group: 'other', limit: 10, uploadType: 'multiPic' }],
+        imgUrls: [{ label: '婚姻证明', group: 'marriage', limit: 10, uploadType: 'multiPic' }, { label: '户口本', group: 'household', limit: 10, uploadType: 'multiPic' }, { label: '房产证', group: '房产证', limit: 10, uploadType: 'multiPic' }, { label: '其他资料', group: 'other', limit: 20, uploadType: 'multiPic' }, { label: '附件', group: 'file', limit: 20, uploadType: 'multiFile' }],
         backRoutePath: '/nd/buchong'
       },
       进件上传图片: {
         iconKey: 'icon-zhaopian',
-        imgUrls: [{ label: '婚姻证明', group: 'marriage', limit: 10, uploadType: 'multiPic' }, { label: '户口本', group: 'household', limit: 10, uploadType: 'multiPic' }, { label: '房产证', group: '房产证', limit: 10, uploadType: 'multiPic' }, { label: '其他资料', group: 'other', limit: 10, uploadType: 'multiPic' }],
+        imgUrls: [{ label: '婚姻证明', group: 'marriage', limit: 10, uploadType: 'multiPic' }, { label: '户口本', group: 'household', limit: 10, uploadType: 'multiPic' }, { label: '房产证', group: '房产证', limit: 10, uploadType: 'multiPic' }, { label: '其他资料', group: 'other', limit: 10, uploadType: 'multiPic' }, { label: '附件', group: 'file', limit: 20, uploadType: 'multiFile' }],
         backRoutePath: '/nd/index'
       }
     },
