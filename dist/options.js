@@ -925,12 +925,12 @@ var blockSetting = {
       },
       上传图片: {
         iconKey: 'icon-zhaopian',
-        imgUrls: [{ label: '婚姻证明', group: 'marriage', limit: 10, uploadType: 'multiPic' }, { label: '户口本', group: 'household', limit: 10, uploadType: 'multiPic' }, { label: '房产证', group: '房产证', limit: 10, uploadType: 'multiPic' }, { label: '其他资料', group: 'other', limit: 20, uploadType: 'multiPic' }, { label: '附件', group: 'file', limit: 20, uploadType: 'multiFile' }],
+        imgUrls: [{ label: '婚姻证明', group: 'marriage', limit: 10, uploadType: 'multiPic' }, { label: '户口本', group: 'household', limit: 10, uploadType: 'multiPic' }, { label: '房产证', group: '房产证', limit: 10, uploadType: 'multiPic' }, { label: '其他资料', group: 'other', limit: 20, uploadType: 'multiPic' }],
         backRoutePath: '/nd/buchong'
       },
       进件上传图片: {
         iconKey: 'icon-zhaopian',
-        imgUrls: [{ label: '婚姻证明', group: 'marriage', limit: 10, uploadType: 'multiPic' }, { label: '户口本', group: 'household', limit: 10, uploadType: 'multiPic' }, { label: '房产证', group: '房产证', limit: 10, uploadType: 'multiPic' }, { label: '其他资料', group: 'other', limit: 10, uploadType: 'multiPic' }, { label: '附件', group: 'file', limit: 20, uploadType: 'multiFile' }],
+        imgUrls: [{ label: '婚姻证明', group: 'marriage', limit: 10, uploadType: 'multiPic' }, { label: '户口本', group: 'household', limit: 10, uploadType: 'multiPic' }, { label: '房产证', group: '房产证', limit: 10, uploadType: 'multiPic' }, { label: '其他资料', group: 'other', limit: 10, uploadType: 'multiPic' }],
         backRoutePath: '/nd/index'
       }
     },
@@ -1056,7 +1056,7 @@ var blockSetting = {
 
 var blockSettingWeb = {
   FANG_DI_DAI: {
-    进件: [].concat(_toConsumableArray(blockSetting.FANG_DI_DAI['进件']['上传图片'].imgUrls)),
+    进件: [].concat(_toConsumableArray(blockSetting.FANG_DI_DAI['进件']['上传图片'].imgUrls), [{ label: '附件', group: 'file', limit: 20, uploadType: 'multiFile' }]),
     下户: [].concat(_toConsumableArray(blockSetting.FANG_DI_DAI['下户']['上传下户照片'].imgUrls)),
     合同: [].concat(_toConsumableArray(blockSetting.FANG_DI_DAI['合同']['公证'].imgUrls)),
     抵押: [].concat(_toConsumableArray(blockSetting.FANG_DI_DAI['抵押']['抵押'].imgUrls))
