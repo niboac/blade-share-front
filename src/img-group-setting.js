@@ -106,7 +106,7 @@ const blockSetting = {
     },
     下户: Object.assign(xiahuInCommon, {
       补充抵押资料: {
-        iconKey: 'icon-zhaopian',
+        iconKey: '#icon-kehuziliao',
         routeName: '补充信息',
         objName: 'hlMortgage',
       },
