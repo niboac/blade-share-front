@@ -925,12 +925,12 @@ var blockSetting = {
       },
       上传图片: {
         iconKey: 'icon-zhaopian',
-        imgUrls: [{ label: '婚姻证明', group: '婚姻证明' }, { label: '户口本', group: '户口本' }, { label: '房产证', group: '房产证' }, { label: '其他资料', group: '其他资料' }],
+        imgUrls: [{ label: '婚姻证明', group: 'marriage' }, { label: '户口本', group: 'household' }, { label: '房产证', group: '房产证' }, { label: '其他资料', group: 'other' }],
         backRoutePath: '/nd/buchong'
       },
       进件上传图片: {
         iconKey: 'icon-zhaopian',
-        imgUrls: [{ label: '婚姻证明', group: '婚姻证明' }, { label: '户口本', group: '户口本' }, { label: '房产证', group: '房产证' }, { label: '其他资料', group: '其他资料' }],
+        imgUrls: [{ label: '婚姻证明', group: 'marriage' }, { label: '户口本', group: 'household' }, { label: '房产证', group: '房产证' }, { label: '其他资料', group: 'other' }],
         backRoutePath: '/nd/index'
       }
     },
@@ -1056,6 +1056,7 @@ var blockSetting = {
 
 var blockSettingWeb = {
   FANG_DI_DAI: {
+    进件: [].concat(_toConsumableArray(blockSetting.FANG_DI_DAI['下户']['上传图片'].imgUrls)),
     下户: [].concat(_toConsumableArray(blockSetting.FANG_DI_DAI['下户']['上传下户照片'].imgUrls)),
     合同: [].concat(_toConsumableArray(blockSetting.FANG_DI_DAI['合同']['公证'].imgUrls)),
     抵押: [].concat(_toConsumableArray(blockSetting.FANG_DI_DAI['抵押']['抵押'].imgUrls))
