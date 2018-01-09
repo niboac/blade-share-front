@@ -298,7 +298,7 @@ const blockSetting = {
 const blockSettingWeb = {
   FANG_DI_DAI: {
     进件:[
-      ...blockSetting.FANG_DI_DAI['下户']['上传图片'].imgUrls
+      ...blockSetting.FANG_DI_DAI['进件']['上传图片'].imgUrls
     ],
     下户: [
       ...blockSetting.FANG_DI_DAI['下户']['上传下户照片'].imgUrls
