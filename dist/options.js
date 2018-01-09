@@ -1056,7 +1056,7 @@ var blockSetting = {
 
 var blockSettingWeb = {
   FANG_DI_DAI: {
-    进件: [].concat(_toConsumableArray(blockSetting.FANG_DI_DAI['下户']['上传图片'].imgUrls)),
+    进件: [].concat(_toConsumableArray(blockSetting.FANG_DI_DAI['进件']['上传图片'].imgUrls)),
     下户: [].concat(_toConsumableArray(blockSetting.FANG_DI_DAI['下户']['上传下户照片'].imgUrls)),
     合同: [].concat(_toConsumableArray(blockSetting.FANG_DI_DAI['合同']['公证'].imgUrls)),
     抵押: [].concat(_toConsumableArray(blockSetting.FANG_DI_DAI['抵押']['抵押'].imgUrls))
