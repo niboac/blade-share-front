@@ -92,7 +92,6 @@ const blockSetting = {
           { label: '户口本', group: 'household' , limit: 10, uploadType: 'multiPic'},
           { label: '房产证', group: '房产证' , limit: 10, uploadType: 'multiPic'},
           { label: '其他资料', group: 'other' , limit: 20, uploadType: 'multiPic'},
-          { label: '附件', group: 'file' , limit: 20, uploadType: 'multiFile'},
         ],
         backRoutePath: '/nd/buchong'
       },
@@ -103,7 +102,6 @@ const blockSetting = {
           { label: '户口本', group: 'household', limit: 10, uploadType: 'multiPic' },
           { label: '房产证', group: '房产证' , limit: 10, uploadType: 'multiPic'},
           { label: '其他资料', group: 'other' , limit: 10, uploadType: 'multiPic'},
-          { label: '附件', group: 'file' , limit: 20, uploadType: 'multiFile'},
         ],
         backRoutePath: '/nd/index'
       },
@@ -300,7 +298,8 @@ const blockSetting = {
 const blockSettingWeb = {
   FANG_DI_DAI: {
     进件:[
-      ...blockSetting.FANG_DI_DAI['进件']['上传图片'].imgUrls
+      ...blockSetting.FANG_DI_DAI['进件']['上传图片'].imgUrls,
+      { label: '附件', group: 'file' , limit: 20, uploadType: 'multiFile'},
     ],
     下户: [
       ...blockSetting.FANG_DI_DAI['下户']['上传下户照片'].imgUrls
