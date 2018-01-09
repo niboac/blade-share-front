@@ -76,7 +76,7 @@ const blockSetting = {
       共借人信息: {
         iconKey: 'icon-gongjieren',
         routeName: '补充附加信息',
-        objName: 'unionBorrowerNoReq',
+        objName: 'unionBorrowerWithIdFace',
         backRoutePath: '/nd/buchong'
       },
       抵押物信息: {
