@@ -117,11 +117,11 @@ const blockSetting = {
         imgUrls: [
           { label: '小区', group: 'xiaoqu' },
           { label: '房屋外立面', group: 'wailimian' },
-          { label: '入户口', group: 'ruhukou' },
+          { label: '门牌号', group: 'ruhukou' },
           { label: '客厅', group: 'keting' },
-          { label: '厨房', group: 'chufang' },
+          { label: '厨房', group: 'chufang' , imageRequire: '每室不少于一张'},
           { label: '卧室', group: 'woshi' },
-          { label: '卫生间', group: 'weishengjian', imageRequire: '每室不少于一张' },
+          { label: '卫生间', group: 'weishengjian' },
           { label: '餐厅', group: 'canting' },
           { label: '电梯', group: 'dianti' },
         ]
