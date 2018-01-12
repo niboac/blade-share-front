@@ -789,6 +789,7 @@ var flowKey2ImgTasktype = exports.flowKey2ImgTasktype = {
 var bankCodes = [{ value: '工商银行', key: '102' }, { value: '农业银行', key: '103' }, { value: '中国银行', key: '104' }, { value: '建设银行', key: '105' }, { value: '交通银行', key: '301' }, { value: '中信银行', key: '302' }, { value: '平安银行', key: '307' }, { value: '广发银行', key: '306' }, { value: '兴业银行', key: '309' }, { value: '光大银行', key: '303' }, { value: '浦发银行', key: '310' }, { value: '民生银行', key: '305' }, { value: '上海银行', key: '401' }, { value: '华夏银行', key: '304' }, { value: '邮储银行', key: '100' }];
 
 var companyTypes = [{ key: '100', value: '党政机关' }, { key: '200', value: '事业单位' }, { key: '300', value: '军队' }, { key: '400', value: '社会团体' }, { key: '500', value: '内资企业' }, { key: '510', value: '国有企业' }, { key: '520', value: '集体企业' }, { key: '530', value: '股份合作企业' }, { key: '540', value: '联营企业' }, { key: '550', value: '有限责任公司' }, { key: '560', value: '股份有限公司' }, { key: '570', value: '私营企业' }, { key: '600', value: '外商投资企业(含港、澳、台)' }, { key: '610', value: '中外合资经营企业(含港、澳、台)' }, { key: '620', value: '中外合作经营企业(含港、澳、台)' }, { key: '630', value: '外资企业(含港、澳、台)' }, { key: '640', value: '外商投资股份有限公司(含港、澳、台)' }, { key: '700', value: '个体经营' }, { key: '800', value: '其他' }, { key: '900', value: '未知' }];
+
 var commonResidents = exports.commonResidents = [{ key: '父母', value: '父母' }, { key: '配偶及子女', value: '配偶及子女' }, { key: '朋友', value: '朋友' }, { key: '独居', value: '独居' }, { key: '其他', value: '其他' }];
 var addressTypes = exports.addressTypes = [{ key: '0', value: '住宅' }, { key: '1', value: '单位' }];
 var genders = exports.genders = [{ key: '0', value: '女' }, { key: '1', value: '男' }];
@@ -800,7 +801,6 @@ var professionalTitles = exports.professionalTitles = [// 职称
 
 var buildingTypes = exports.buildingTypes = [{ key: '0', value: '普通住宅' }, { key: '1', value: '别墅' }, { key: '2', value: '其它' }];
 var planningPurposes = exports.planningPurposes = [{ key: '0', value: '商业' }, { key: '1', value: '住宅' }, { key: '2', value: '商住' }];
-
 var landGains = exports.landGains = [// 土地使用权取得方式
 { key: '出让', value: '出让' }, { key: '划拨', value: '划拨' },
 // { key: '70年产权', value: '70年产权' },
