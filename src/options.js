@@ -243,6 +243,7 @@ export const orderLabel = {
   serviceFee: '服务费',
   expectedRepayTime: '预计还款时间',
   incomingPlatform: '进件来源',
+  applyTime: '申请时间',
 };
 export const childrenLabel = {
   name: '姓名',
@@ -310,6 +311,7 @@ export const orderDefault = {
   extra: {},
   expectedRepayTime: null,
   incomingPlatform: null,
+  applyTime: null,
 }
 export const hlMortgageDefault = {
   isUniqueHouse: null,
