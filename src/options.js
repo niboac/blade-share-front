@@ -760,6 +760,7 @@ const companyTypes = [
   { key: '800', value: '其他' },
   { key: '900', value: '未知' },
 ];
+
 export const commonResidents = [
   { key: '父母', value: '父母' },
   { key: '配偶及子女', value: '配偶及子女' },
@@ -819,7 +820,6 @@ export const planningPurposes = [
   { key: '1', value: '住宅' },
   { key: '2', value: '商住' }
 ]
-
 export const landGains = [ // 土地使用权取得方式
   { key: '出让', value: '出让' },
   { key: '划拨', value: '划拨' },
