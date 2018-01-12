@@ -176,7 +176,7 @@ export const unionBorrowerLabel = {
   commonResident: '共同居住人',
   educationLevel: '最高学历',
   maritalStatus: '婚姻状况',
-  relationshipWithCustomer: '与主贷人关系',
+  relationshipWithCustomer: '与主借人关系',
   householdAddress: '户籍地址',
   householdNowAddress: '居住地址',
   company: '工作单位',
