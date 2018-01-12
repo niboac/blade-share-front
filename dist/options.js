@@ -800,7 +800,9 @@ var buildingTypes = exports.buildingTypes = [{ key: '0', value: '普通住宅' }
 var planningPurposes = exports.planningPurposes = [{ key: '0', value: '商业' }, { key: '1', value: '住宅' }, { key: '2', value: '商住' }];
 
 var landGains = exports.landGains = [// 土地使用权取得方式
-{ key: '出让', value: '出让' }, { key: '划拨', value: '划拨' }, { key: '70年产权', value: '70年产权' }, { key: '其它', value: '其它' }];
+{ key: '出让', value: '出让' }, { key: '划拨', value: '划拨' },
+// { key: '70年产权', value: '70年产权' },
+{ key: '其它', value: '其它' }];
 var ownerTypes = exports.ownerTypes = [// 房屋所有情况
 { key: '单独所有', value: '单独所有' }, { key: '共同所有', value: '共同所有' }];
 
