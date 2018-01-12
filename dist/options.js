@@ -354,7 +354,8 @@ var orderLabel = exports.orderLabel = {
   repayMode: '还款方式',
   serviceFee: '服务费',
   expectedRepayTime: '预计还款时间',
-  incomingPlatform: '进件来源'
+  incomingPlatform: '进件来源',
+  applyTime: '申请时间'
 };
 var childrenLabel = exports.childrenLabel = {
   name: '姓名',
@@ -421,7 +422,8 @@ var orderDefault = exports.orderDefault = {
   serviceFee: null,
   extra: {},
   expectedRepayTime: null,
-  incomingPlatform: null
+  incomingPlatform: null,
+  applyTime: null
 };
 var hlMortgageDefault = exports.hlMortgageDefault = {
   isUniqueHouse: null,
