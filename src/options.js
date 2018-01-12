@@ -821,7 +821,7 @@ export const planningPurposes = [
 export const landGains = [ // 土地使用权取得方式
   { key: '出让', value: '出让' },
   { key: '划拨', value: '划拨' },
-  { key: '70年产权', value: '70年产权' },
+  // { key: '70年产权', value: '70年产权' },
   { key: '其它', value: '其它' },
 ]
 export const ownerTypes = [ // 房屋所有情况
