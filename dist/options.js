@@ -83,7 +83,7 @@ return /******/ (function(modules) { // webpackBootstrap
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.cities = exports.industries = exports.companyTypes = exports.bankCodes = exports.taskTypeBtnShow = exports.houseTypes = exports.allOrientations = exports.housingSituations = exports.relationshipType = exports.rwApplicant = exports.businessTypes = exports.periods = exports.maritalStatus = exports.time = exports.applicantRelationshipTypes = exports.relationshipTypes = exports.professionTypes = exports.livingConditions = exports.educations = exports.houseCities = exports.loanPurposes = exports.loanPurposesGuoyu = exports.mortgageSituations = exports.companySizes = exports.officeOwnerTypes = exports.ownerTypes = exports.landGains = exports.planningPurposes = exports.buildingTypes = exports.professionalTitles = exports.titles = exports.propertyTypes = exports.professionCatTypes = exports.genders = exports.addressTypes = exports.commonResidents = exports.flowKey2ImgTasktype = exports.taskType2Submit = exports.businessTypes2OrderType = exports.clientWorkTypes = exports.orderDetailDefault = exports.orderDetailLabel = exports.person_bankDefault = exports.person_bankLabel = exports.house_hlMortgageDefault = exports.house_hlMortgageLabel = exports.houseDefault = exports.applicantDefault = exports.bankInfoDefault = exports.childrenDefault = exports.unionBorrowerDefault = exports.hlMortgageDefault = exports.orderDefault = exports.hetongInfoDefault = exports.diyaInfoDefault = exports.diyaInfoLabel = exports.hetongInfoLabel = exports.childrenLabel = exports.orderLabel = exports.hlMortgageLabel = exports.unionBorrowerLabel = exports.houseLabel = exports.applicantLabel = exports.bankInfoLabel = exports.blockSetting = exports.blockSettingWeb = undefined;
+exports.cities = exports.industries = exports.companyTypes = exports.bankCodes = exports.taskTypeBtnShow = exports.houseTypes = exports.allOrientations = exports.housingSituations = exports.relationshipType = exports.rwApplicant = exports.businessTypes = exports.periods = exports.maritalStatus = exports.time = exports.applicantRelationshipTypes = exports.relationshipTypes = exports.professionTypes = exports.livingConditions = exports.educations = exports.houseCities = exports.loanPurposes = exports.loanPurposesGuoyu = exports.mortgageSituations = exports.companySizes = exports.officeOwnerTypes = exports.ownerTypes = exports.landGains = exports.planningPurposes = exports.buildingTypes = exports.professionalTitles = exports.titles = exports.propertyTypes = exports.professionCatTypes = exports.genders = exports.addressTypes = exports.commonResidents = exports.flowKey2ImgTasktype = exports.taskType2Submit = exports.orderType2BusinessTypes = exports.businessTypes2OrderType = exports.clientWorkTypes = exports.orderDetailDefault = exports.orderDetailLabel = exports.person_bankDefault = exports.person_bankLabel = exports.house_hlMortgageDefault = exports.house_hlMortgageLabel = exports.houseDefault = exports.applicantDefault = exports.bankInfoDefault = exports.childrenDefault = exports.unionBorrowerDefault = exports.hlMortgageDefault = exports.orderDefault = exports.hetongInfoDefault = exports.diyaInfoDefault = exports.diyaInfoLabel = exports.hetongInfoLabel = exports.childrenLabel = exports.orderLabel = exports.hlMortgageLabel = exports.unionBorrowerLabel = exports.houseLabel = exports.applicantLabel = exports.bankInfoLabel = exports.blockSetting = exports.blockSettingWeb = undefined;
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -759,6 +759,10 @@ var businessTypes2OrderType = exports.businessTypes2OrderType = {
   2: ['SHU_LOU_DAI'],
   3: ['FANG_DI_DAI']
 };
+var orderType2BusinessTypes = exports.orderType2BusinessTypes = {
+  SHU_LOU_DAI: 1,
+  FANG_DI_DAI: 3
+};
 var IdInfos = ['idCardFaceUrl', 'portraitUrl', 'idNumber', 'name', 'gender', 'birthday', 'address', 'nationality', 'cardIssuer'];
 var rwApplicant = [// 与申请人的关系
 { value: '父母', key: '1' }, { value: '配偶', key: '2' }, { value: '子女', key: '3' }, { value: '兄弟姐妹', key: '4' }, { value: '朋友', key: '5' }, { value: '同事', key: '6' }, { value: '合伙人', key: '7' }, { value: '其他', key: '8' }];
@@ -860,17 +864,17 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 
 var xiahuInCommon = {
   补充客户资料: {
-    iconKey: '#icon-kehuziliao',
+    iconKey: '#icon-jiekuanren-',
     routeName: '补充信息',
     objName: 'applicant'
   },
   补充房产资料: {
-    iconKey: '#icon-kehuziliao',
+    iconKey: '#icon-fangchanxinxi-',
     routeName: '补充信息',
     objName: 'house'
   },
   补充共借人信息: {
-    iconKey: '#icon-kehuziliao',
+    iconKey: '#icon-gongjieren',
     routeName: '补充附加信息',
     objName: 'unionBorrower'
   },
@@ -943,7 +947,7 @@ var blockSetting = {
     },
     下户: Object.assign(xiahuInCommon, {
       补充抵押资料: {
-        iconKey: '#icon-kehuziliao',
+        iconKey: '#icon-diyawu',
         routeName: '补充信息',
         objName: 'hlMortgage'
       },
