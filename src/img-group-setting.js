@@ -16,7 +16,7 @@ const xiahuInCommon = {
   },
 
   补充子女信息: {
-    iconKey: 'icon-zinvxinxi',
+    iconKey: 'icon-zinvxinxi-',
     routeName: '补充附加信息',
     objName: 'children',
   },
@@ -89,9 +89,9 @@ const blockSetting = {
         iconKey: 'icon-zhaopian',
         imgUrls: [
           { label: '婚姻证明', group: 'marriage', limit: 10, uploadType: 'multiPic' },
-          { label: '户口本', group: 'household' , limit: 10, uploadType: 'multiPic'},
-          { label: '房产证', group: '房产证' , limit: 10, uploadType: 'multiPic'},
-          { label: '其他资料', group: 'other' , limit: 20, uploadType: 'multiPic'},
+          { label: '户口本', group: 'household', limit: 10, uploadType: 'multiPic' },
+          { label: '房产证', group: '房产证', limit: 10, uploadType: 'multiPic' },
+          { label: '其他资料', group: 'other', limit: 20, uploadType: 'multiPic' },
         ],
         backRoutePath: '/nd/buchong'
       },
@@ -100,8 +100,8 @@ const blockSetting = {
         imgUrls: [
           { label: '婚姻证明', group: 'marriage', limit: 10, uploadType: 'multiPic' },
           { label: '户口本', group: 'household', limit: 10, uploadType: 'multiPic' },
-          { label: '房产证', group: '房产证' , limit: 10, uploadType: 'multiPic'},
-          { label: '其他资料', group: 'other' , limit: 10, uploadType: 'multiPic'},
+          { label: '房产证', group: '房产证', limit: 10, uploadType: 'multiPic' },
+          { label: '其他资料', group: 'other', limit: 10, uploadType: 'multiPic' },
         ],
         backRoutePath: '/nd/index'
       },
@@ -112,8 +112,14 @@ const blockSetting = {
         routeName: '补充信息',
         objName: 'hlMortgage',
       },
+      补充图片资料: {
+        iconKey: 'icon-zhaopian',
+        imgUrls: [
+          { label: '补充图片资料', group: '补充图片资料' }
+        ],
+      },
       上传下户照片: {
-        iconKey: 'icon-xiahuzhaopian-',
+        iconKey: 'icon-shijing-',
         imgUrls: [
           { label: '小区', group: 'xiaoqu' },
           { label: '房屋外立面', group: 'wailimian' },
@@ -297,9 +303,9 @@ const blockSetting = {
 
 const blockSettingWeb = {
   FANG_DI_DAI: {
-    进件:[
+    进件: [
       ...blockSetting.FANG_DI_DAI['进件']['上传图片'].imgUrls,
-      { label: '附件', group: 'file' , limit: 20, uploadType: 'multiFile'},
+      { label: '附件', group: 'file', limit: 20, uploadType: 'multiFile' },
     ],
     下户: [
       ...blockSetting.FANG_DI_DAI['下户']['上传下户照片'].imgUrls
