@@ -1,29 +1,29 @@
 const xiahuInCommon = {
   补充客户资料: {
-    iconKey: '#icon-jiekuanren-',
+    iconKey: 'icon-jiekuanren-',
     routeName: '补充信息',
     objName: 'applicant',
   },
   补充房产资料: {
-    iconKey: '#icon-fangchanxinxi-',
+    iconKey: 'icon-fangchanxinxi-',
     routeName: '补充信息',
     objName: 'house',
   },
   补充共借人信息: {
-    iconKey: '#icon-gongjieren',
+    iconKey: 'icon-gongjieren',
     routeName: '补充附加信息',
     objName: 'unionBorrower',
   },
 
   补充子女信息: {
-    iconKey: '#icon-kehuziliao',
+    iconKey: 'icon-kehuziliao',
     routeName: '补充附加信息',
     objName: 'children',
   },
 }
 const xaihuSld = {
   资料清单: {
-    iconKey: '#icon-kehuziliao',
+    iconKey: 'icon-kehuziliao',
     imgUrls: [
       { label: '下户确认单', group: '下户确认单' },
       { label: '房产查档单', group: '房产查档单' },
@@ -36,7 +36,7 @@ const xaihuSld = {
     ]
   },
   合同声明: {
-    iconKey: '#icon-kehuziliao',
+    iconKey: 'icon-kehuziliao',
     imgUrls: [
       { label: '借款申请表', group: '借款申请表' },
       { label: '承租人声明', group: '承租人声明' },
@@ -108,7 +108,7 @@ const blockSetting = {
     },
     下户: Object.assign(xiahuInCommon, {
       补充抵押资料: {
-        iconKey: '#icon-diyawu',
+        iconKey: 'icon-diyawu',
         routeName: '补充信息',
         objName: 'hlMortgage',
       },
