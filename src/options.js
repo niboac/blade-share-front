@@ -522,6 +522,10 @@ export const person_bankLabel = Object.assign(clone(applicantLabel), clone(bankI
 export const person_bankDefault = Object.assign(clone(applicantDefault), ...clone(bankInfoDefault))
 
 
+export const orderDetailLabel = Object.assign(clone(applicantLabel), clone(orderLabel))
+export const orderDetailDefault = Object.assign(clone(applicantDefault), ...clone(orderLabel))
+
+
 const allOrientations = [
   { value: '朝南', key: '朝南' },
   { value: '朝北', key: '朝北' },
