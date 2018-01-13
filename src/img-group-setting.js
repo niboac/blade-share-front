@@ -16,7 +16,7 @@ const xiahuInCommon = {
   },
 
   补充子女信息: {
-    iconKey: 'icon-kehuziliao',
+    iconKey: 'icon-zinvxinxi',
     routeName: '补充附加信息',
     objName: 'children',
   },
