@@ -1,16 +1,16 @@
 const xiahuInCommon = {
   补充客户资料: {
-    iconKey: '#icon-kehuziliao',
+    iconKey: '#icon-jiekuanren-',
     routeName: '补充信息',
     objName: 'applicant',
   },
   补充房产资料: {
-    iconKey: '#icon-kehuziliao',
+    iconKey: '#icon-fangchanxinxi-',
     routeName: '补充信息',
     objName: 'house',
   },
   补充共借人信息: {
-    iconKey: '#icon-kehuziliao',
+    iconKey: '#icon-gongjieren',
     routeName: '补充附加信息',
     objName: 'unionBorrower',
   },
@@ -108,7 +108,7 @@ const blockSetting = {
     },
     下户: Object.assign(xiahuInCommon, {
       补充抵押资料: {
-        iconKey: '#icon-kehuziliao',
+        iconKey: '#icon-diyawu',
         routeName: '补充信息',
         objName: 'hlMortgage',
       },

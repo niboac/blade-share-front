@@ -666,6 +666,10 @@ export const businessTypes2OrderType = {
   2: ['SHU_LOU_DAI'],
   3: ['FANG_DI_DAI'],
 }
+export const orderType2BusinessTypes = {
+  SHU_LOU_DAI: 1,
+  FANG_DI_DAI: 3,
+}
 const IdInfos = [
   'idCardFaceUrl',
   'portraitUrl',
