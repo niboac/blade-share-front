@@ -880,7 +880,7 @@ var xiahuInCommon = {
   },
 
   补充子女信息: {
-    iconKey: 'icon-zinvxinxi',
+    iconKey: 'icon-zinvxinxi-',
     routeName: '补充附加信息',
     objName: 'children'
   }
@@ -951,8 +951,12 @@ var blockSetting = {
         routeName: '补充信息',
         objName: 'hlMortgage'
       },
+      补充图片资料: {
+        iconKey: 'icon-zhaopian',
+        imgUrls: [{ label: '补充图片资料', group: '补充图片资料' }]
+      },
       上传下户照片: {
-        iconKey: 'icon-xiahuzhaopian-',
+        iconKey: 'icon-shijing-',
         imgUrls: [{ label: '小区', group: 'xiaoqu' }, { label: '房屋外立面', group: 'wailimian' }, { label: '门牌号', group: 'ruhukou' }, { label: '客厅', group: 'keting' }, { label: '厨房', group: 'chufang' }, { label: '卧室', group: 'woshi', imageRequire: '每室不少于一张' }, { label: '卫生间', group: 'weishengjian' }, { label: '餐厅', group: 'canting' }, { label: '电梯', group: 'dianti' }]
       }
     }),
