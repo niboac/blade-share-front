@@ -875,6 +875,15 @@ export let houseCities = [
   // { key: '上海', value: '上海' },
 ]
 
+export const appointmentLabel = {
+  appointmentTime: null,
+  contactMobile: null,
+  contactName: null,
+  contactType: 0,
+  orderUid: null,
+  taskType: null,
+}
+
 
 export {
   educations, livingConditions, professionTypes,
