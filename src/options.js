@@ -275,6 +275,15 @@ export const diyaInfoDefault = {
   receiveTime: null,
   receiver: null
 }
+export const xiahuAcompanyInfoLabel = {
+  xiahuTime: '下户时间',
+  followerName: '陪同人',
+}
+
+export const xiahuAcompanyInfoDefault = {
+  xiahuTime: null,
+  followerName: null,
+}
 
 export const hetongInfoDefault = {
   notarizeTime: null,
