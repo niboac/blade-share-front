@@ -522,6 +522,10 @@ export const person_bankLabel = Object.assign(clone(applicantLabel), clone(bankI
 export const person_bankDefault = Object.assign(clone(applicantDefault), ...clone(bankInfoDefault))
 
 
+export const orderDetailLabel = Object.assign(clone(applicantLabel), clone(orderLabel))
+export const orderDetailDefault = Object.assign(clone(applicantDefault), ...clone(orderLabel))
+
+
 const allOrientations = [
   { value: '朝南', key: '朝南' },
   { value: '朝北', key: '朝北' },
@@ -662,6 +666,10 @@ export const businessTypes2OrderType = {
   2: ['SHU_LOU_DAI'],
   3: ['FANG_DI_DAI'],
 }
+export const orderType2BusinessTypes = {
+  SHU_LOU_DAI: 1,
+  FANG_DI_DAI: 3,
+}
 const IdInfos = [
   'idCardFaceUrl',
   'portraitUrl',
@@ -760,6 +768,7 @@ const companyTypes = [
   { key: '800', value: '其他' },
   { key: '900', value: '未知' },
 ];
+
 export const commonResidents = [
   { key: '父母', value: '父母' },
   { key: '配偶及子女', value: '配偶及子女' },
@@ -819,11 +828,10 @@ export const planningPurposes = [
   { key: '1', value: '住宅' },
   { key: '2', value: '商住' }
 ]
-
 export const landGains = [ // 土地使用权取得方式
   { key: '出让', value: '出让' },
   { key: '划拨', value: '划拨' },
-  { key: '70年产权', value: '70年产权' },
+  // { key: '70年产权', value: '70年产权' },
   { key: '其它', value: '其它' },
 ]
 export const ownerTypes = [ // 房屋所有情况

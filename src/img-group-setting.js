@@ -1,29 +1,29 @@
 const xiahuInCommon = {
   补充客户资料: {
-    iconKey: '#icon-kehuziliao',
+    iconKey: 'icon-jiekuanren-',
     routeName: '补充信息',
     objName: 'applicant',
   },
   补充房产资料: {
-    iconKey: '#icon-kehuziliao',
+    iconKey: 'icon-fangchanxinxi-',
     routeName: '补充信息',
     objName: 'house',
   },
   补充共借人信息: {
-    iconKey: '#icon-kehuziliao',
+    iconKey: 'icon-gongjieren',
     routeName: '补充附加信息',
     objName: 'unionBorrower',
   },
 
   补充子女信息: {
-    iconKey: '#icon-kehuziliao',
+    iconKey: 'icon-zinvxinxi-',
     routeName: '补充附加信息',
     objName: 'children',
   },
 }
 const xaihuSld = {
   资料清单: {
-    iconKey: '#icon-kehuziliao',
+    iconKey: 'icon-kehuziliao',
     imgUrls: [
       { label: '下户确认单', group: '下户确认单' },
       { label: '房产查档单', group: '房产查档单' },
@@ -36,7 +36,7 @@ const xaihuSld = {
     ]
   },
   合同声明: {
-    iconKey: '#icon-kehuziliao',
+    iconKey: 'icon-kehuziliao',
     imgUrls: [
       { label: '借款申请表', group: '借款申请表' },
       { label: '承租人声明', group: '承租人声明' },
@@ -89,9 +89,9 @@ const blockSetting = {
         iconKey: 'icon-zhaopian',
         imgUrls: [
           { label: '婚姻证明', group: 'marriage', limit: 10, uploadType: 'multiPic' },
-          { label: '户口本', group: 'household' , limit: 10, uploadType: 'multiPic'},
-          { label: '房产证', group: '房产证' , limit: 10, uploadType: 'multiPic'},
-          { label: '其他资料', group: 'other' , limit: 20, uploadType: 'multiPic'},
+          { label: '户口本', group: 'household', limit: 10, uploadType: 'multiPic' },
+          { label: '房产证', group: '房产证', limit: 10, uploadType: 'multiPic' },
+          { label: '其他资料', group: 'other', limit: 20, uploadType: 'multiPic' },
         ],
         backRoutePath: '/nd/buchong'
       },
@@ -100,20 +100,26 @@ const blockSetting = {
         imgUrls: [
           { label: '婚姻证明', group: 'marriage', limit: 10, uploadType: 'multiPic' },
           { label: '户口本', group: 'household', limit: 10, uploadType: 'multiPic' },
-          { label: '房产证', group: '房产证' , limit: 10, uploadType: 'multiPic'},
-          { label: '其他资料', group: 'other' , limit: 10, uploadType: 'multiPic'},
+          { label: '房产证', group: '房产证', limit: 10, uploadType: 'multiPic' },
+          { label: '其他资料', group: 'other', limit: 10, uploadType: 'multiPic' },
         ],
         backRoutePath: '/nd/index'
       },
     },
     下户: Object.assign(xiahuInCommon, {
       补充抵押资料: {
-        iconKey: '#icon-kehuziliao',
+        iconKey: 'icon-diyawu',
         routeName: '补充信息',
         objName: 'hlMortgage',
       },
+      补充图片资料: {
+        iconKey: 'icon-zhaopian',
+        imgUrls: [
+          { label: '补充图片资料', group: '补充图片资料' }
+        ],
+      },
       上传下户照片: {
-        iconKey: 'icon-xiahuzhaopian-',
+        iconKey: 'icon-shijing-',
         imgUrls: [
           { label: '小区', group: 'xiaoqu' },
           { label: '房屋外立面', group: 'wailimian' },
@@ -297,9 +303,9 @@ const blockSetting = {
 
 const blockSettingWeb = {
   FANG_DI_DAI: {
-    进件:[
+    进件: [
       ...blockSetting.FANG_DI_DAI['进件']['上传图片'].imgUrls,
-      { label: '附件', group: 'file' , limit: 20, uploadType: 'multiFile'},
+      { label: '附件', group: 'file', limit: 20, uploadType: 'multiFile' },
     ],
     下户: [
       ...blockSetting.FANG_DI_DAI['下户']['上传下户照片'].imgUrls
