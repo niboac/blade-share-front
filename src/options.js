@@ -883,7 +883,7 @@ export let houseCities = [
   // { key: '上海', value: '上海' },
 ]
 
-export const appointmentLabel = {
+export const appointLabel = {
   appointmentTime: null,
   contactMobile: null,
   contactName: null,
