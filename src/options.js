@@ -68,7 +68,6 @@ export const applicantLabel = {
   annualIncomeRemarks: null,
   graduatedSchool: '毕业学校',
   educationLevel: '最高学历',
-  familySize: '家庭人数',
   maritalStatus: '婚姻状况',
   spouseName: '配偶姓名',
   spouseMobile: '配偶手机号码',
@@ -104,10 +103,6 @@ export const applicantLabel = {
   email: '电子邮件',
   birthdate: '出生日期',
   // clientWorkType: null,
-  officeRent: '经营场所租金',
-  officeArea: '经营场所面积',
-  EnterpriseMonthlyIncome: '企业月收入',
-  PersonalMonthlyIncome: '个人月收入',
   extra: {
     clientLoanType: null,
     clientWorkType: '客户类型',
@@ -120,6 +115,11 @@ export const applicantLabel = {
     mainJob: '岗位',
     companyName: '经营实体名称', // 经营实体名称
     professionCatType: '职业类型', // 职业类型
+    householdSize: '家庭人数',
+    companyRental: '经营场所租金',
+    companyArea: '经营场所面积',
+    companyMonthlyIncome: '企业月收入',
+    personalMonthlyIncome: '个人月收入',
   }
 }
 export const houseLabel = {
@@ -242,8 +242,7 @@ export const orderLabel = {
   repayMode: '还款方式',
   serviceFee: '服务费',
   expectedRepayTime: '预计还款时间',
-  incomingPlatform: '进件来源',
-  applyTime: '申请时间',
+  platform: '进件来源',
 };
 export const childrenLabel = {
   name: '姓名',
@@ -332,8 +331,7 @@ export const orderDefault = {
   serviceFee: null,
   extra: {},
   expectedRepayTime: null,
-  incomingPlatform: null,
-  applyTime: null,
+  platform: null,
 }
 export const hlMortgageDefault = {
   isUniqueHouse: null,
