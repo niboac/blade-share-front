@@ -267,7 +267,8 @@ export const diyaInfoLabel = {
   diyaTime: '抵押时间',
   operator: '经办人',
   receiveTime: '领取时间',
-  receiver: '领证人'
+  receiver: '领证人',
+  failReason:'失败原因'
 }
 export const xiahuAcompanyInfoLabel = {
   xiahuTime: '下户时间',
@@ -288,7 +289,8 @@ export const diyaInfoDefault = {
   diyaTime: null,
   operator: null,
   receiveTime: null,
-  receiver: null
+  receiver: null,
+  failReason: null
 }
 
 export const xiahuAcompanyInfoDefault = {
