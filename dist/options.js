@@ -379,7 +379,8 @@ var diyaInfoLabel = exports.diyaInfoLabel = {
   diyaTime: '抵押时间',
   operator: '经办人',
   receiveTime: '领取时间',
-  receiver: '领证人'
+  receiver: '领证人',
+  failReason: '失败原因'
 };
 var xiahuAcompanyInfoLabel = exports.xiahuAcompanyInfoLabel = {
   xiahuTime: '下户时间',
@@ -400,7 +401,8 @@ var diyaInfoDefault = exports.diyaInfoDefault = {
   diyaTime: null,
   operator: null,
   receiveTime: null,
-  receiver: null
+  receiver: null,
+  failReason: null
 };
 
 var xiahuAcompanyInfoDefault = exports.xiahuAcompanyInfoDefault = {
