@@ -326,7 +326,8 @@ const blockSettingWeb = {
       ...blockSetting.FANG_DI_DAI['合同']['公证'].imgUrls
     ],
     抵押: [
-      ...blockSetting.FANG_DI_DAI['抵押']['抵押'].imgUrls
+      ...blockSetting.FANG_DI_DAI['抵押']['抵押证'].imgUrls,
+      ...blockSetting.FANG_DI_DAI['抵押']['抵押受理通知单/收据'].imgUrls
     ]
   },
   SHU_LOU_DAI: {
