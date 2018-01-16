@@ -268,16 +268,25 @@ export const diyaInfoLabel = {
   receiveTime: '领取时间',
   receiver: '领证人'
 }
+export const xiahuAcompanyInfoLabel = {
+  xiahuTime: '下户时间',
+  followerName: '陪同人',
+}
+
+export const appointLabel = {
+  appointmentTime: '预约时间',
+  contactMobile: '预约联系电话',
+  contactName: '预约人姓名',
+  contactType: '预约人类型',
+  orderUid: '订单Uid',
+  taskType: '节点类型',
+}
 
 export const diyaInfoDefault = {
   diyaTime: null,
   operator: null,
   receiveTime: null,
   receiver: null
-}
-export const xiahuAcompanyInfoLabel = {
-  xiahuTime: '下户时间',
-  followerName: '陪同人',
 }
 
 export const xiahuAcompanyInfoDefault = {
@@ -520,7 +529,14 @@ export const houseDefault = {
     ownerType: '', // 房屋所有情况
   }
 }
-
+export const appointDefault = {
+  appointmentTime: null,
+  contactMobile: null,
+  contactName: null,
+  contactType: null,
+  orderUid: null,
+  taskType: null,
+}
 
 export const house_hlMortgageLabel = clone(houseLabel)
 house_hlMortgageLabel.hlMortgage = [clone(hlMortgageLabel)]
@@ -891,15 +907,6 @@ export let houseCities = [
   { key: '北京', value: '北京' },
   // { key: '上海', value: '上海' },
 ]
-
-export const appointLabel = {
-  appointmentTime: null,
-  contactMobile: null,
-  contactName: null,
-  contactType: 0,
-  orderUid: null,
-  taskType: null,
-}
 
 
 export {
