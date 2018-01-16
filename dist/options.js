@@ -985,9 +985,20 @@ var blockSetting = {
       }
     },
     抵押: {
-      抵押: {
+      // 抵押: {
+      //   iconKey: 'icon-zhaopian',
+      //   imgUrls: [
+      //     { label: '抵押证', group: 'diya' },
+      //     { label: '抵押受理通知单/收据', group: 'shouju' },
+      //   ]
+      // },
+      抵押证: {
         iconKey: 'icon-zhaopian',
-        imgUrls: [{ label: '抵押证', group: 'diya' }, { label: '抵押受理通知单/收据', group: 'shouju' }]
+        imgUrls: [{ label: '抵押证', group: 'diya' }]
+      },
+      '抵押受理通知单/收据': {
+        iconKey: 'icon-zhaopian',
+        imgUrls: [{ label: '抵押受理通知单/收据', group: 'shouju' }]
       }
     }
 
