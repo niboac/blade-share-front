@@ -142,11 +142,23 @@ const blockSetting = {
       }
     },
     抵押: {
-      抵押: {
+      // 抵押: {
+      //   iconKey: 'icon-zhaopian',
+      //   imgUrls: [
+      //     { label: '抵押证', group: 'diya' },
+      //     { label: '抵押受理通知单/收据', group: 'shouju' },
+      //   ]
+      // },
+      抵押证: {
         iconKey: 'icon-zhaopian',
         imgUrls: [
-          { label: '抵押证', group: 'diya' },
-          { label: '抵押受理通知单/收据', group: 'shouju' },
+          { label: '抵押证', group: 'diya' }
+        ]
+      },
+      '抵押受理通知单/收据': {
+        iconKey: 'icon-zhaopian',
+        imgUrls: [
+          { label: '抵押受理通知单/收据', group: 'shouju' }
         ]
       },
     },
@@ -314,7 +326,8 @@ const blockSettingWeb = {
       ...blockSetting.FANG_DI_DAI['合同']['公证'].imgUrls
     ],
     抵押: [
-      ...blockSetting.FANG_DI_DAI['抵押']['抵押'].imgUrls
+      ...blockSetting.FANG_DI_DAI['抵押']['抵押证'].imgUrls,
+      ...blockSetting.FANG_DI_DAI['抵押']['抵押受理通知单/收据'].imgUrls
     ]
   },
   SHU_LOU_DAI: {

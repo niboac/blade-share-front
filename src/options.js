@@ -262,6 +262,7 @@ export const hetongInfoLabel = {
   receiver: '领证人'
 }
 export const diyaInfoLabel = {
+  diyaResult: '抵押结果',
   diyaTime: '抵押时间',
   operator: '经办人',
   receiveTime: '领取时间',
@@ -282,6 +283,7 @@ export const appointLabel = {
 }
 
 export const diyaInfoDefault = {
+  diyaResult: null,
   diyaTime: null,
   operator: null,
   receiveTime: null,
@@ -548,6 +550,10 @@ export const person_bankDefault = Object.assign(clone(applicantDefault), ...clon
 export const orderDetailLabel = Object.assign(clone(applicantLabel), clone(orderLabel))
 export const orderDetailDefault = Object.assign(clone(applicantDefault), ...clone(orderLabel))
 
+export const diyaResults = [
+  { value: '抵押成功', key: '1' },
+  { value: '抵押失败', key: '0' },
+]
 
 const allOrientations = [
   { value: '朝南', key: '朝南' },
