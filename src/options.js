@@ -337,7 +337,7 @@ export const orderDefault = {
   serviceFee: null,
   extra: {},
   expectedRepayTime: null,
-  platform: null,
+  platform: '1',
 }
 export const hlMortgageDefault = {
   isUniqueHouse: null,
