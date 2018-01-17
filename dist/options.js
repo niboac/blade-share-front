@@ -654,10 +654,10 @@ var house_hlMortgageDefault = exports.house_hlMortgageDefault = clone(houseDefau
 house_hlMortgageDefault.hlMortgage = [clone(hlMortgageDefault)];
 
 var person_bankLabel = exports.person_bankLabel = Object.assign(clone(applicantLabel), clone(bankInfoLabel));
-var person_bankDefault = exports.person_bankDefault = Object.assign.apply(Object, [clone(applicantDefault)].concat(_toConsumableArray(clone(bankInfoDefault))));
+var person_bankDefault = exports.person_bankDefault = Object.assign(clone(applicantDefault), clone(bankInfoDefault));
 
 var orderDetailLabel = exports.orderDetailLabel = Object.assign(clone(applicantLabel), clone(orderLabel));
-var orderDetailDefault = exports.orderDetailDefault = Object.assign.apply(Object, [clone(applicantDefault)].concat(_toConsumableArray(clone(orderLabel))));
+var orderDetailDefault = exports.orderDetailDefault = Object.assign(clone(applicantDefault), clone(orderDefault));
 
 var diyaResults = exports.diyaResults = [{ value: '抵押成功', key: '1' }, { value: '抵押失败', key: '0' }];
 
