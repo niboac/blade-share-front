@@ -542,11 +542,11 @@ export const house_hlMortgageDefault = clone(houseDefault)
 house_hlMortgageDefault.hlMortgage = [clone(hlMortgageDefault)]
 
 export const person_bankLabel = Object.assign(clone(applicantLabel), clone(bankInfoLabel))
-export const person_bankDefault = Object.assign(clone(applicantDefault), ...clone(bankInfoDefault))
+export const person_bankDefault = Object.assign(clone(applicantDefault), clone(bankInfoDefault))
 
 
 export const orderDetailLabel = Object.assign(clone(applicantLabel), clone(orderLabel))
-export const orderDetailDefault = Object.assign(clone(applicantDefault), ...clone(orderLabel))
+export const orderDetailDefault = Object.assign(clone(applicantDefault), clone(orderDefault))
 
 export const diyaResults = [
   { value: '抵押成功', key: '1' },
