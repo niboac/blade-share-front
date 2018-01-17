@@ -415,14 +415,9 @@ var hetongInfoDefault = exports.hetongInfoDefault = {
 };
 
 var orderDefault = exports.orderDefault = {
-  loanType: null,
+  loanType: 'fdd',
   businessType: '3',
   loanProduct: null,
-  accompaniesName: null,
-  accompaniesNumber: null,
-  alternativeHouseAddress: null,
-  alternativeHouseArea: null,
-  alternativeHouseCertNumber: null,
   applyDate: null,
   applyLimit: null,
   approvalAmount: null,
@@ -435,10 +430,12 @@ var orderDefault = exports.orderDefault = {
   mortgageInfo: null,
   priceEvaluation: null,
   priceEvaluationCustom: null,
-  productId: null,
   repaySource: null,
   repayMode: null,
   serviceFee: null,
+  accompaniesName: null,
+  accompaniesNumber: null,
+  productId: null,
   extra: {},
   expectedRepayTime: null,
   platform: null
@@ -506,40 +503,42 @@ var childrenDefault = exports.childrenDefault = {
   profession: null
 };
 var bankInfoDefault = exports.bankInfoDefault = {
-  bankCode: '',
-  branchBank: '',
-  bankCardNumber: '',
-  bankCardName: '',
-  bankName: ''
+  bankName: null,
+  bankCode: null,
+  bankCardNumber: null,
+  bankCardName: null,
+  branchBank: null
 };
 var applicantDefault = exports.applicantDefault = {
-  name: '',
-  gender: '',
+  name: null,
+  gender: null,
   homePhone: null,
-  mobile: '',
+  birthdate: null,
+  mobile: null,
+  email: null,
   phoneBrand: null,
   phoneStatus: null,
-  idType: '0',
-  idNumber: '',
+  idType: '身份证',
+  idNumber: null,
   householdNowProvince: null,
   householdNowCity: null,
-  householdNowAddress: '', // 通讯地址
+  householdNowAddress: null, // 通讯地址
   householdType: null,
   householdProvince: null,
   householdCity: null,
-  householdAddress: '',
+  householdAddress: null,
   payPeriod: 1,
-  addressCity: '',
-  addressCityCodes: '',
-  officeCity: '',
-  officeCityCodes: '',
-  company: '',
-  companyType: '',
-  industryName: '',
-  industryCodes: '',
+  addressCity: null,
+  addressCityCodes: null,
+  officeCity: null,
+  officeCityCodes: null,
+  company: null,
+  companyType: null,
+  industryName: null,
+  industryCodes: [],
   // industryCode: null,
-  profession: '',
-  professionalTitle: '',
+  profession: null,
+  professionalTitle: null,
   title: null,
   yearOfWork: null,
   annualIncome: null,
@@ -550,7 +549,7 @@ var applicantDefault = exports.applicantDefault = {
   maritalStatus: null,
   spouseName: null,
   spouseMobile: null,
-  spouseIdType: '0',
+  spouseIdType: '身份证',
   spouseIdNumber: null,
   marriageTime: null,
   spouseHouseholdType: null,
@@ -561,62 +560,59 @@ var applicantDefault = exports.applicantDefault = {
   spouseCompanyType: null,
   spouseIndustry: null,
   familyMonthlyIncome: null,
-  emergencyContactName: '', // 紧急联系人1
-  emergencyContactMobile: '', // '紧急联系人电话'
+  emergencyContactName: null, // 紧急联系人1
+  emergencyContactMobile: null, // '紧急联系人电话'
   emergencyContactName2: null, // 紧急联系人2
   emergencyContactMobile2: null, // 紧急联系人2电话
+  housingSituation: null,
+  commonResident: null,
+  professionType: null,
+  companySize: null,
+  companyAddress: null,
+  companyPhone: null,
   ec1RwBorrower: null, // 紧急联系人1与借款人关系
   ec2RwBorrower: null, // 紧急联系人2与借款人关系
   ec1RType: null, // 关系类型
   ec2RType: null,
-  housingSituation: '',
-  commonResident: '',
-  professionType: null,
-
-  companySize: null,
-  companyAddress: '',
-  companyPhone: '',
-  email: '',
-  birthdate: '',
   // clientWorkType: null,
-  officeRent: null,
-  officeArea: null,
-  EnterpriseMonthlyIncome: null,
-  PersonalMonthlyIncome: null,
-  increaseCreditItems: null,
   extra: {
     clientLoanType: null,
-    clientWorkType: '',
+    clientWorkType: null,
     addressType: null,
     registerNumber: null,
     officeOwner: null,
     businessTerm: null,
-    companyAnnualIncome: '',
+    companyAnnualIncome: null,
     employeeCount: null,
     mainJob: null,
     companyName: null, // 经营实体名称
-    professionCatType: null // 职业类型
+    professionCatType: null, // 职业类型
+    householdSize: null,
+    companyRental: null,
+    companyArea: null,
+    companyMonthlyIncome: null,
+    personalMonthlyIncome: null
   }
 };
 var houseDefault = exports.houseDefault = {
   accountSituation: null,
-  address: '',
+  address: null,
   addressConsistentWithLicense: null,
-  buildTime: '',
+  buildTime: null,
   buildingType: null,
-  certNumber: '',
-  city: '',
-  communityName: '',
+  certNumber: null,
+  city: null,
+  communityName: null,
   constructionArea: null,
   constructionTime: null,
-  floor: '',
-  roomNumber: '',
-  buildingId: '',
+  floor: null,
+  roomNumber: null,
+  buildingId: null,
   hasElevator: null,
   hlMortgage: [],
   landUsageCertNumber: null,
   // nameOfOwner: null,
-  orientation: '',
+  orientation: null,
   parkingSituation: null,
   plannedLandUsage: null,
   propertyType: '',
@@ -636,9 +632,9 @@ var houseDefault = exports.houseDefault = {
 
   extra: {
     houseUsedArea: null, // 套内建筑面积
-    landGain: '', // 土地使用权取得方式
-    houseRegisterDate: '', // 房屋登记时间
-    ownerType: '' // 房屋所有情况
+    landGain: null, // 土地使用权取得方式
+    houseRegisterDate: null, // 房屋登记时间
+    ownerType: null // 房屋所有情况
   }
 };
 var appointDefault = exports.appointDefault = {
