@@ -362,7 +362,7 @@ export const hlMortgageDefault = {
 export const unionBorrowerDefault = {
   name: null,
   gender: null,
-  idType: '身份证',
+  idType: '0',
   idNumber: null,
   mobile: null,
   housingSituation: null,
@@ -408,7 +408,7 @@ export const applicantDefault = {
   email: null,
   phoneBrand: null,
   phoneStatus: null,
-  idType: '身份证',
+  idType: '0',
   idNumber: null,
   householdNowProvince: null,
   householdNowCity: null,
