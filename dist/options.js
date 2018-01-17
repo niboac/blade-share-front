@@ -449,7 +449,7 @@ var orderDefault = exports.orderDefault = {
   serviceFee: null,
   extra: {},
   expectedRepayTime: null,
-  platform: null
+  platform: '1'
 };
 var hlMortgageDefault = exports.hlMortgageDefault = {
   isUniqueHouse: null,
