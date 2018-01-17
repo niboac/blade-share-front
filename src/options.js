@@ -317,7 +317,7 @@ export const orderDefault = {
   applyDate: null,
   applyLimit: null,
   approvalAmount: null,
-  expectedLoanTime: null,
+  expectedLoanTime: '2018-01-08T21:02:49.000Z',
   hlMortgageUid: null,
   loanAmount: null,
   loanPurpose: null,
@@ -333,7 +333,7 @@ export const orderDefault = {
   accompaniesNumber: null,
   productId: null,
   extra: {},
-  expectedRepayTime: null,
+  expectedRepayTime: '2018-01-08T21:02:49.000Z',
   platform: '1',
 }
 export const hlMortgageDefault = {
