@@ -446,7 +446,7 @@ var orderDefault = exports.orderDefault = {
   productId: null,
   extra: {},
   expectedRepayTime: '2018-01-08T21:02:49.000Z',
-  platform: '1'
+  platform: 1
 };
 var hlMortgageDefault = exports.hlMortgageDefault = {
   isUniqueHouse: null,
