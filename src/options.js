@@ -255,18 +255,19 @@ export const childrenLabel = {
   householdType: '户籍类型',
   profession: '职业'
 };
-export const hetongInfoLabel = {
+export const hetongInfoLabel = Object.assign({
   notarizeTime: '公证时间',
   operator: '经办人',
   receiveTime: '领取时间',
-  receiver: '领证人'
-}
+  receiver: '领证人',
+}, bankInfoLabel)
 export const diyaInfoLabel = {
   diyaResult: '抵押结果',
   diyaTime: '抵押时间',
   operator: '经办人',
   receiveTime: '领取时间',
-  receiver: '领证人'
+  receiver: '领证人',
+  failReason: '失败原因'
 }
 export const xiahuAcompanyInfoLabel = {
   xiahuTime: '下户时间',
@@ -287,20 +288,27 @@ export const diyaInfoDefault = {
   diyaTime: null,
   operator: null,
   receiveTime: null,
-  receiver: null
+  receiver: null,
+  failReason: null
 }
 
 export const xiahuAcompanyInfoDefault = {
   xiahuTime: null,
   followerName: null,
 }
-
-export const hetongInfoDefault = {
+export const bankInfoDefault = {
+  bankName: null,
+  bankCode: null,
+  bankCardNumber: null,
+  bankCardName: null,
+  branchBank: null,
+}
+export const hetongInfoDefault = Object.assign({
   notarizeTime: null,
   operator: null,
   receiveTime: null,
-  receiver: null
-}
+  receiver: null,
+}, bankInfoDefault)
 
 export const orderDefault = {
   loanType: 'fdd',
@@ -326,7 +334,7 @@ export const orderDefault = {
   productId: null,
   extra: {},
   expectedRepayTime: null,
-  platform: null,
+  platform: '1',
 }
 export const hlMortgageDefault = {
   isUniqueHouse: null,
@@ -390,13 +398,7 @@ export const childrenDefault = {
   householdType: null,
   profession: null
 };
-export const bankInfoDefault = {
-  bankName: null,
-  bankCode: null,
-  bankCardNumber: null,
-  bankCardName: null,
-  branchBank: null,
-}
+
 export const applicantDefault = {
   name: null,
   gender: null,
@@ -549,6 +551,12 @@ export const orderDetailDefault = Object.assign(clone(applicantDefault), ...clon
 export const diyaResults = [
   { value: '抵押成功', key: '1' },
   { value: '抵押失败', key: '0' },
+]
+
+export const diyaFailedReasons = [
+  '抵押人临时缺席', '抵押债权额偏离审批值', '抵押人到场不合规', '房本网签中', '未过解压归档期',
+  '无抵押号源', '当日号源过晚未办结', '系统字段冲突、如字体错误', '合同版本未通过房管局审核', '有土地证',
+  '用户放弃', '房本查封中', '房本抵押、上市时间或条件未达到',
 ]
 
 const allOrientations = [

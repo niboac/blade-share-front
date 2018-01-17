@@ -83,7 +83,7 @@ return /******/ (function(modules) { // webpackBootstrap
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.cities = exports.industries = exports.companyTypes = exports.bankCodes = exports.taskTypeBtnShow = exports.houseTypes = exports.allOrientations = exports.housingSituations = exports.relationshipType = exports.rwApplicant = exports.businessTypes = exports.periods = exports.maritalStatus = exports.time = exports.applicantRelationshipTypes = exports.relationshipTypes = exports.professionTypes = exports.livingConditions = exports.educations = exports.houseCities = exports.loanPurposes = exports.loanPurposesGuoyu = exports.mortgageSituations = exports.companySizes = exports.officeOwnerTypes = exports.ownerTypes = exports.landGains = exports.planningPurposes = exports.buildingTypes = exports.professionalTitles = exports.titles = exports.propertyTypes = exports.professionCatTypes = exports.genders = exports.addressTypes = exports.commonResidents = exports.flowKey2ImgTasktype = exports.taskType2Submit = exports.orderType2BusinessTypes = exports.businessTypes2OrderType = exports.clientWorkTypes = exports.diyaResults = exports.orderDetailDefault = exports.orderDetailLabel = exports.person_bankDefault = exports.person_bankLabel = exports.house_hlMortgageDefault = exports.house_hlMortgageLabel = exports.appointDefault = exports.houseDefault = exports.applicantDefault = exports.bankInfoDefault = exports.childrenDefault = exports.unionBorrowerDefault = exports.hlMortgageDefault = exports.orderDefault = exports.hetongInfoDefault = exports.xiahuAcompanyInfoDefault = exports.diyaInfoDefault = exports.appointLabel = exports.xiahuAcompanyInfoLabel = exports.diyaInfoLabel = exports.hetongInfoLabel = exports.childrenLabel = exports.orderLabel = exports.hlMortgageLabel = exports.unionBorrowerLabel = exports.houseLabel = exports.applicantLabel = exports.bankInfoLabel = exports.blockSetting = exports.blockSettingWeb = undefined;
+exports.cities = exports.industries = exports.companyTypes = exports.bankCodes = exports.taskTypeBtnShow = exports.houseTypes = exports.allOrientations = exports.housingSituations = exports.relationshipType = exports.rwApplicant = exports.businessTypes = exports.periods = exports.maritalStatus = exports.time = exports.applicantRelationshipTypes = exports.relationshipTypes = exports.professionTypes = exports.livingConditions = exports.educations = exports.houseCities = exports.loanPurposes = exports.loanPurposesGuoyu = exports.mortgageSituations = exports.companySizes = exports.officeOwnerTypes = exports.ownerTypes = exports.landGains = exports.planningPurposes = exports.buildingTypes = exports.professionalTitles = exports.titles = exports.propertyTypes = exports.professionCatTypes = exports.genders = exports.addressTypes = exports.commonResidents = exports.flowKey2ImgTasktype = exports.taskType2Submit = exports.orderType2BusinessTypes = exports.businessTypes2OrderType = exports.clientWorkTypes = exports.diyaFailedReasons = exports.diyaResults = exports.orderDetailDefault = exports.orderDetailLabel = exports.person_bankDefault = exports.person_bankLabel = exports.house_hlMortgageDefault = exports.house_hlMortgageLabel = exports.appointDefault = exports.houseDefault = exports.applicantDefault = exports.childrenDefault = exports.unionBorrowerDefault = exports.hlMortgageDefault = exports.orderDefault = exports.hetongInfoDefault = exports.bankInfoDefault = exports.xiahuAcompanyInfoDefault = exports.diyaInfoDefault = exports.appointLabel = exports.xiahuAcompanyInfoLabel = exports.diyaInfoLabel = exports.hetongInfoLabel = exports.childrenLabel = exports.orderLabel = exports.hlMortgageLabel = exports.unionBorrowerLabel = exports.houseLabel = exports.applicantLabel = exports.bankInfoLabel = exports.blockSetting = exports.blockSettingWeb = undefined;
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -367,18 +367,19 @@ var childrenLabel = exports.childrenLabel = {
   householdType: '户籍类型',
   profession: '职业'
 };
-var hetongInfoLabel = exports.hetongInfoLabel = {
+var hetongInfoLabel = exports.hetongInfoLabel = Object.assign({
   notarizeTime: '公证时间',
   operator: '经办人',
   receiveTime: '领取时间',
   receiver: '领证人'
-};
+}, bankInfoLabel);
 var diyaInfoLabel = exports.diyaInfoLabel = {
   diyaResult: '抵押结果',
   diyaTime: '抵押时间',
   operator: '经办人',
   receiveTime: '领取时间',
-  receiver: '领证人'
+  receiver: '领证人',
+  failReason: '失败原因'
 };
 var xiahuAcompanyInfoLabel = exports.xiahuAcompanyInfoLabel = {
   xiahuTime: '下户时间',
@@ -399,20 +400,27 @@ var diyaInfoDefault = exports.diyaInfoDefault = {
   diyaTime: null,
   operator: null,
   receiveTime: null,
-  receiver: null
+  receiver: null,
+  failReason: null
 };
 
 var xiahuAcompanyInfoDefault = exports.xiahuAcompanyInfoDefault = {
   xiahuTime: null,
   followerName: null
 };
-
-var hetongInfoDefault = exports.hetongInfoDefault = {
+var bankInfoDefault = exports.bankInfoDefault = {
+  bankName: null,
+  bankCode: null,
+  bankCardNumber: null,
+  bankCardName: null,
+  branchBank: null
+};
+var hetongInfoDefault = exports.hetongInfoDefault = Object.assign({
   notarizeTime: null,
   operator: null,
   receiveTime: null,
   receiver: null
-};
+}, bankInfoDefault);
 
 var orderDefault = exports.orderDefault = {
   loanType: 'fdd',
@@ -438,7 +446,7 @@ var orderDefault = exports.orderDefault = {
   productId: null,
   extra: {},
   expectedRepayTime: null,
-  platform: null
+  platform: '1'
 };
 var hlMortgageDefault = exports.hlMortgageDefault = {
   isUniqueHouse: null,
@@ -502,13 +510,7 @@ var childrenDefault = exports.childrenDefault = {
   householdType: null,
   profession: null
 };
-var bankInfoDefault = exports.bankInfoDefault = {
-  bankName: null,
-  bankCode: null,
-  bankCardNumber: null,
-  bankCardName: null,
-  branchBank: null
-};
+
 var applicantDefault = exports.applicantDefault = {
   name: null,
   gender: null,
@@ -658,6 +660,8 @@ var orderDetailLabel = exports.orderDetailLabel = Object.assign(clone(applicantL
 var orderDetailDefault = exports.orderDetailDefault = Object.assign.apply(Object, [clone(applicantDefault)].concat(_toConsumableArray(clone(orderLabel))));
 
 var diyaResults = exports.diyaResults = [{ value: '抵押成功', key: '1' }, { value: '抵押失败', key: '0' }];
+
+var diyaFailedReasons = exports.diyaFailedReasons = ['抵押人临时缺席', '抵押债权额偏离审批值', '抵押人到场不合规', '房本网签中', '未过解压归档期', '无抵押号源', '当日号源过晚未办结', '系统字段冲突、如字体错误', '合同版本未通过房管局审核', '有土地证', '用户放弃', '房本查封中', '房本抵押、上市时间或条件未达到'];
 
 var allOrientations = [{ value: '朝南', key: '朝南' }, { value: '朝北', key: '朝北' }, { value: '朝东', key: '朝东' }, { value: '朝西', key: '朝西' }, { value: '南北', key: '南北' }, { value: '其它', key: '其它' }];
 var houseTypes = [{ key: '0', value: '普通住宅' }, { key: '1', value: '别墅' }, { key: '2', value: '其它' }];
