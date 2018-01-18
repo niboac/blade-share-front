@@ -432,7 +432,7 @@ export const applicantDefault = {
   professionalTitle: null,
   title: null,
   yearOfWork: null,
-  annualIncome: null,
+
   annualIncomeRemarks: null,
   graduatedSchool: null,
   familySize: null,
@@ -467,6 +467,7 @@ export const applicantDefault = {
   ec2RType: null,
   // clientWorkType: null,
   extra: {
+    annualIncome: null,
     clientLoanType: null,
     clientWorkType: null,
     addressType: null,
