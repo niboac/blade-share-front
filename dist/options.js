@@ -544,7 +544,7 @@ var applicantDefault = exports.applicantDefault = {
   professionalTitle: null,
   title: null,
   yearOfWork: null,
-  annualIncome: null,
+
   annualIncomeRemarks: null,
   graduatedSchool: null,
   familySize: null,
@@ -579,6 +579,7 @@ var applicantDefault = exports.applicantDefault = {
   ec2RType: null,
   // clientWorkType: null,
   extra: {
+    annualIncome: null,
     clientLoanType: null,
     clientWorkType: null,
     addressType: null,
