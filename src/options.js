@@ -64,7 +64,7 @@ export const applicantLabel = {
   professionalTitle: '职称',
   title: '职务',
   yearOfWork: '工作年限',
-
+  annualIncome: '个人年收入',
   annualIncomeRemarks: null,
   graduatedSchool: '毕业学校',
   educationLevel: '最高学历',
@@ -104,7 +104,6 @@ export const applicantLabel = {
   birthdate: '出生日期',
   // clientWorkType: null,
   extra: {
-    annualIncome: '个人年收入',
     clientLoanType: null,
     clientWorkType: '客户类型',
     addressType: '通讯地址类型',
@@ -432,7 +431,7 @@ export const applicantDefault = {
   professionalTitle: null,
   title: null,
   yearOfWork: null,
-
+  annualIncome: null,
   annualIncomeRemarks: null,
   graduatedSchool: null,
   familySize: null,
@@ -467,7 +466,7 @@ export const applicantDefault = {
   ec2RType: null,
   // clientWorkType: null,
   extra: {
-    annualIncome: null,
+
     clientLoanType: null,
     clientWorkType: null,
     addressType: null,
