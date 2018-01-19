@@ -434,7 +434,6 @@ export const applicantDefault = {
   annualIncome: null,
   annualIncomeRemarks: null,
   graduatedSchool: null,
-  familySize: null,
   educationLevel: null,
   maritalStatus: null,
   spouseName: null,
