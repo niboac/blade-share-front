@@ -553,10 +553,12 @@ export const diyaResults = [
   { value: '抵押失败', key: '0' },
 ]
 
+export const diyaRejectReasons = ['用户放弃', '房本查封中', '房本抵押、上市时间或条件未达到']
+
 export const diyaFailedReasons = [
   '抵押人临时缺席', '抵押债权额偏离审批值', '抵押人到场不合规', '房本网签中', '未过解压归档期',
   '无抵押号源', '当日号源过晚未办结', '系统字段冲突、如字体错误', '合同版本未通过房管局审核', '有土地证',
-  '用户放弃', '房本查封中', '房本抵押、上市时间或条件未达到',
+  ...diyaRejectReasons
 ]
 
 const allOrientations = [
