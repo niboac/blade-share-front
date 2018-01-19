@@ -577,6 +577,7 @@ var applicantDefault = exports.applicantDefault = {
   ec2RType: null,
   // clientWorkType: null,
   extra: {
+
     clientLoanType: null,
     clientWorkType: null,
     addressType: null,

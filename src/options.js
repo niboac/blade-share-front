@@ -465,6 +465,7 @@ export const applicantDefault = {
   ec2RType: null,
   // clientWorkType: null,
   extra: {
+
     clientLoanType: null,
     clientWorkType: null,
     addressType: null,
