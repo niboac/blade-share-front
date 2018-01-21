@@ -546,18 +546,25 @@ export const person_bankLabel = Object.assign(clone(applicantLabel), clone(bankI
 export const person_bankDefault = Object.assign(clone(applicantDefault), clone(bankInfoDefault))
 
 
-export const orderDetailLabel = Object.assign(clone(applicantLabel), clone(orderLabel))
-export const orderDetailDefault = Object.assign(clone(applicantDefault), clone(orderDefault))
+export const orderDetailLabel = Object.assign(clone(orderLabel), clone(applicantLabel))
+export const orderDetailDefault = Object.assign(clone(orderDefault), clone(applicantDefault))
+
+// export const fastOrderLabel = Object.assign(clone(orderLabel), clone(applicantLabel))
+export const fastOrderLabel = clone(orderLabel)
+fastOrderLabel.applicant = clone(applicantLabel)
+export const fastOrderDefault = clone(orderDefault)
+fastOrderDefault.applicant = clone(applicantDefault)
 
 export const diyaResults = [
   { value: '抵押成功', key: '1' },
   { value: '抵押失败', key: '0' },
 ]
 
+export const diyaRejectReasons = ['用户放弃', '房本查封中', '房本抵押、上市时间或条件未达到']
 export const diyaFailedReasons = [
   '抵押人临时缺席', '抵押债权额偏离审批值', '抵押人到场不合规', '房本网签中', '未过解压归档期',
   '无抵押号源', '当日号源过晚未办结', '系统字段冲突、如字体错误', '合同版本未通过房管局审核', '有土地证',
-  '用户放弃', '房本查封中', '房本抵押、上市时间或条件未达到',
+  ...diyaRejectReasons
 ]
 
 const allOrientations = [
