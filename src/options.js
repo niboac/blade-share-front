@@ -528,10 +528,10 @@ export const houseDefault = {
   }
 }
 export const appointDefault = {
-  appointmentTime: null,
+  appointmentTime: '2018-01-08T21:02:49.000Z',
   contactMobile: null,
   contactName: null,
-  contactType: null,
+  contactType: 1,
   orderUid: null,
   taskType: null,
 }
