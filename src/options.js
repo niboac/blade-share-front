@@ -545,8 +545,14 @@ export const person_bankLabel = Object.assign(clone(applicantLabel), clone(bankI
 export const person_bankDefault = Object.assign(clone(applicantDefault), clone(bankInfoDefault))
 
 
-export const orderDetailLabel = Object.assign(clone(applicantLabel), clone(orderLabel))
-export const orderDetailDefault = Object.assign(clone(applicantDefault), clone(orderDefault))
+export const orderDetailLabel = Object.assign(clone(orderLabel), clone(applicantLabel))
+export const orderDetailDefault = Object.assign(clone(orderDefault), clone(applicantDefault))
+
+// export const fastOrderLabel = Object.assign(clone(orderLabel), clone(applicantLabel))
+export const fastOrderLabel = clone(orderLabel)
+fastOrderLabel.applicant = clone(applicantLabel)
+export const fastOrderDefault = clone(orderDefault)
+fastOrderDefault.applicant = clone(applicantDefault)
 
 export const diyaResults = [
   { value: '抵押成功', key: '1' },
