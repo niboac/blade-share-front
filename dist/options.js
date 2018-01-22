@@ -640,10 +640,10 @@ var houseDefault = exports.houseDefault = {
   }
 };
 var appointDefault = exports.appointDefault = {
-  appointmentTime: '2018-01-08T21:02:49.000Z',
+  appointmentTime: null,
   contactMobile: null,
   contactName: null,
-  contactType: 1,
+  contactType: null,
   orderUid: null,
   taskType: null
 };
