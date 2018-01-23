@@ -105,6 +105,24 @@ const blockSetting = {
         ],
         backRoutePath: '/nd/index'
       },
+      房产证其他照片: {
+        iconKey: 'icon-zhaopian',
+        imgUrls: [
+          { label: '房产证其他照片', group: '房产证其他照片' }
+        ],
+      },
+      房屋照片: {
+        iconKey: 'icon-zhaopian',
+        imgUrls: [
+          { label: '房屋照片', group: '房屋照片' }
+        ],
+      },
+      备用房: {
+        iconKey: 'icon-zhaopian',
+        imgUrls: [
+          { label: '备用房', group: '备用房' }
+        ],
+      }
     },
     下户: Object.assign(xiahuInCommon, {
       补充抵押资料: {
