@@ -980,6 +980,18 @@ var blockSetting = {
         iconKey: 'icon-zhaopian',
         imgUrls: [{ label: '婚姻证明', group: 'marriage', limit: 10, uploadType: 'multiPic' }, { label: '户口本', group: 'household', limit: 10, uploadType: 'multiPic' }, { label: '房产证', group: '房产证', limit: 10, uploadType: 'multiPic' }, { label: '其他资料', group: 'other', limit: 10, uploadType: 'multiPic' }],
         backRoutePath: '/nd/index'
+      },
+      房产证其他照片: {
+        iconKey: 'icon-zhaopian',
+        imgUrls: [{ label: '房产证其他照片', group: '房产证其他照片' }]
+      },
+      房屋照片: {
+        iconKey: 'icon-zhaopian',
+        imgUrls: [{ label: '房屋照片', group: '房屋照片' }]
+      },
+      备用房: {
+        iconKey: 'icon-zhaopian',
+        imgUrls: [{ label: '备用房', group: '备用房' }]
       }
     },
     下户: Object.assign(xiahuInCommon, {
