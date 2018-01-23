@@ -817,6 +817,7 @@ var taskTypeBtnShow = {
 
 var flowKey2ImgTasktype = exports.flowKey2ImgTasktype = {
   进件: 'jinjian',
+  jinjian: 'jinjian',
   下户: '下户',
   合同: '合同',
   抵押: '抵押',
