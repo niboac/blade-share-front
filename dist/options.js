@@ -8384,7 +8384,9 @@ var city = [{
   value: 820000, label: '澳门'
 }];
 
-var cities = city;
+var cities = city.sort(function (a, b) {
+  return a.label.localeCompare(b.label, 'zh-Hans-CN', { sensitivity: 'accent' });
+});
 exports.default = cities;
 
 /***/ })
