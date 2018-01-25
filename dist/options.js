@@ -8377,7 +8377,7 @@ var city = [{
 }];
 
 var cities = city.sort(function (a, b) {
-  return a.label.localCompare(b.label, 'zh-Hans-CN', { sensitivity: 'accent' });
+  return a.label.localeCompare(b.label, 'zh-Hans-CN', { sensitivity: 'accent' });
 });
 exports.default = cities;
 
