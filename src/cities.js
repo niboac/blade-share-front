@@ -4225,5 +4225,5 @@ const city = [{
   value: 820000, label: '澳门'
 }];
 
-const cities = city.sort((a, b) => a.label.localCompare(b.label, 'zh-Hans-CN', {sensitivity: 'accent'}));
+const cities = city.sort((a, b) => a.label.localeCompare(b.label, 'zh-Hans-CN', {sensitivity: 'accent'}));
 export default cities;
