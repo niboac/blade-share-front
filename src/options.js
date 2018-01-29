@@ -549,10 +549,13 @@ export const orderDetailLabel = Object.assign(clone(orderLabel), clone(applicant
 export const orderDetailDefault = Object.assign(clone(orderDefault), clone(applicantDefault))
 
 // export const fastOrderLabel = Object.assign(clone(orderLabel), clone(applicantLabel))
+
 export const fastOrderLabel = clone(orderLabel)
 fastOrderLabel.applicant = clone(applicantLabel)
 export const fastOrderDefault = clone(orderDefault)
 fastOrderDefault.applicant = clone(applicantDefault)
+export const fastOrder_hhLabel = clone(fastOrderLabel)
+export const fastOrder_hhDefault = clone(fastOrderDefault)
 
 export const diyaResults = [
   { value: '抵押成功', key: '1' },
