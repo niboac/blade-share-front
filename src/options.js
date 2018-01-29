@@ -554,8 +554,8 @@ export const fastOrderLabel = clone(orderLabel)
 fastOrderLabel.applicant = clone(applicantLabel)
 export const fastOrderDefault = clone(orderDefault)
 fastOrderDefault.applicant = clone(applicantDefault)
-export const fastOrder_hhLabel = clone(fastOrderLabel)
-export const fastOrder_hhDefault = clone(fastOrderDefault)
+// export const fastOrder_hhLabel = clone(fastOrderLabel)
+// export const fastOrder_hhDefault = clone(fastOrderDefault)
 
 export const diyaResults = [
   { value: '抵押成功', key: '1' },
