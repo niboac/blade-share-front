@@ -354,7 +354,12 @@ var orderLabel = exports.orderLabel = {
   repayMode: '还款方式',
   serviceFee: '服务费',
   expectedRepayTime: '预计还款时间',
-  platform: '进件来源'
+  platform: '进件来源',
+  extra: {
+    customerName: '客户姓名',
+    loanperiodCode: '贷款期限代码',
+    productCode: '产品代码'
+  }
 };
 var childrenLabel = exports.childrenLabel = {
   name: '姓名',
@@ -444,7 +449,11 @@ var orderDefault = exports.orderDefault = {
   accompaniesName: null,
   accompaniesNumber: null,
   productId: null,
-  extra: {},
+  extra: {
+    customerName: null,
+    loanperiodCode: null,
+    productCode: null
+  },
   expectedRepayTime: '2018-01-08T21:02:49.000Z',
   platform: 1
 };
