@@ -1,31 +1,8 @@
 import industries from './industries'
 import cities from './cities'
+import { cloneDeep as clone } from 'lodash'
 
 export { blockSettingWeb, blockSetting } from './img-group-setting'
-
-function clone(obj) {
-  if (typeof obj !== 'object') {
-    return obj
-  } else if (!obj) { // null
-    return obj
-  } else {
-    let newobj = null
-    if (obj instanceof Set) {
-      newobj = new Set([...obj])
-    } else if (obj instanceof Map) {
-      newobj = new Map()
-      obj.forEach((i, key) => {
-        newobj.set(key, clone(i))
-      })
-    } else {
-      newobj = obj instanceof Array ? [] : {};
-      for (let i in obj) {
-        newobj[i] = typeof obj[i] === 'object' ? clone(obj[i]) : obj[i];
-      }
-    }
-    return newobj;
-  }
-}
 
 export const bankInfoLabel = {
   bankCode: '开户银行',
