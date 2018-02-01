@@ -327,7 +327,12 @@ var orderLabel = exports.orderLabel = {
   repayMode: '还款方式',
   serviceFee: '服务费',
   expectedRepayTime: '预计还款时间',
-  platform: '进件来源'
+  platform: '进件来源',
+  extra: {
+    customerName: '客户姓名',
+    loanperiodCode: '贷款期限代码',
+    productCode: '产品代码'
+  }
 };
 var childrenLabel = exports.childrenLabel = {
   name: '姓名',
@@ -417,7 +422,11 @@ var orderDefault = exports.orderDefault = {
   accompaniesName: null,
   accompaniesNumber: null,
   productId: null,
-  extra: {},
+  extra: {
+    customerName: null,
+    loanperiodCode: null,
+    productCode: null
+  },
   expectedRepayTime: '2018-01-08T21:02:49.000Z',
   platform: 1
 };
@@ -633,10 +642,13 @@ var orderDetailLabel = exports.orderDetailLabel = Object.assign((0, _lodash.clon
 var orderDetailDefault = exports.orderDetailDefault = Object.assign((0, _lodash.cloneDeep)(orderDefault), (0, _lodash.cloneDeep)(applicantDefault));
 
 // export const fastOrderLabel = Object.assign(clone(orderLabel), clone(applicantLabel))
+
 var fastOrderLabel = exports.fastOrderLabel = (0, _lodash.cloneDeep)(orderLabel);
 fastOrderLabel.applicant = (0, _lodash.cloneDeep)(applicantLabel);
 var fastOrderDefault = exports.fastOrderDefault = (0, _lodash.cloneDeep)(orderDefault);
 fastOrderDefault.applicant = (0, _lodash.cloneDeep)(applicantDefault);
+// export const fastOrder_hhLabel = clone(fastOrderLabel)
+// export const fastOrder_hhDefault = clone(fastOrderDefault)
 
 var diyaResults = exports.diyaResults = [{ value: '抵押成功', key: '1' }, { value: '抵押失败', key: '0' }];
 
