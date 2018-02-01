@@ -220,6 +220,11 @@ export const orderLabel = {
   serviceFee: '服务费',
   expectedRepayTime: '预计还款时间',
   platform: '进件来源',
+  extra: {
+    customerName: '客户姓名',
+    loanperiodCode: '贷款期限代码',
+    productCode: '产品代码',
+  },
 };
 export const childrenLabel = {
   name: '姓名',
@@ -309,7 +314,11 @@ export const orderDefault = {
   accompaniesName: null,
   accompaniesNumber: null,
   productId: null,
-  extra: {},
+  extra: {
+    customerName: null,
+    loanperiodCode: null,
+    productCode: null,
+  },
   expectedRepayTime: '2018-01-08T21:02:49.000Z',
   platform: 1,
 }
@@ -526,10 +535,13 @@ export const orderDetailLabel = Object.assign(clone(orderLabel), clone(applicant
 export const orderDetailDefault = Object.assign(clone(orderDefault), clone(applicantDefault))
 
 // export const fastOrderLabel = Object.assign(clone(orderLabel), clone(applicantLabel))
+
 export const fastOrderLabel = clone(orderLabel)
 fastOrderLabel.applicant = clone(applicantLabel)
 export const fastOrderDefault = clone(orderDefault)
 fastOrderDefault.applicant = clone(applicantDefault)
+// export const fastOrder_hhLabel = clone(fastOrderLabel)
+// export const fastOrder_hhDefault = clone(fastOrderDefault)
 
 export const diyaResults = [
   { value: '抵押成功', key: '1' },
