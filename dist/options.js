@@ -994,11 +994,7 @@ var blockSetting = {
       },
       进件上传图片: {
         iconKey: 'icon-zhaopian',
-        imgUrls: [
-        // { label: '婚姻证明', group: 'marriage', limit: 10, uploadType: 'multiPic' },
-        // { label: '户口本', group: 'household', limit: 10, uploadType: 'multiPic' },
-        // { label: '房产证', group: '房产证', limit: 10, uploadType: 'multiPic' },
-        { label: '其他资料', group: 'other', limit: 10, uploadType: 'multiPic' }],
+        imgUrls: [{ label: '婚姻证明', group: 'marriage', limit: 10, uploadType: 'multiPic' }, { label: '户口本', group: 'household', limit: 10, uploadType: 'multiPic' }, { label: '房产证', group: '房产证', limit: 10, uploadType: 'multiPic' }, { label: '其他资料', group: 'other', limit: 10, uploadType: 'multiPic' }],
         backRoutePath: '/nd/index'
       },
       房产证其他照片: {
