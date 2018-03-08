@@ -58,6 +58,8 @@ export const applicantLabel = {
   spouseCompany: '配偶工作单位',
   spouseCompanyType: '公司类型',
   spouseIndustry: '配偶从事行业',
+  startDate: '身份证有效期起始',
+  endDate: '身份证有效期终止',
   familyMonthlyIncome: '家庭月收入',
   emergencyContactName: '紧急联系人1', // 紧急联系人1
   emergencyContactMobile: '电话', // '紧急联系人电话'
@@ -434,6 +436,8 @@ export const applicantDefault = {
   spouseCompany: null,
   spouseCompanyType: null,
   spouseIndustry: null,
+  startDate: null,
+  endDate: null,
   familyMonthlyIncome: null,
   emergencyContactName: null, // 紧急联系人1
   emergencyContactMobile: null, // '紧急联系人电话'
