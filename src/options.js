@@ -168,7 +168,9 @@ export const unionBorrowerLabel = {
   professionalTitle: '职称',
   annualIncome: '年收入',
   companyPhone: '单位电话',
-  companyAddress: '单位地址'
+  companyAddress: '单位地址',
+  startDate: '身份证有效期起始',
+  endDate: '身份证有效期终止',
 };
 
 export const hlMortgageLabel = {
@@ -371,8 +373,9 @@ export const unionBorrowerDefault = {
   professionalTitle: null,
   annualIncome: null,
   companyPhone: null,
-  companyAddress: null
-
+  companyAddress: null,
+  startDate: null,
+  endDate: null,
 };
 
 export const childrenDefault = {
